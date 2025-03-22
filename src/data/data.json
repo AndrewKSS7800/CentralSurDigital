@@ -1,0 +1,6 @@
+{
+    "noticias":[
+        {"id":1, "titulo":"Noticia 01", "contenido":"contenido de la noticia 01", "genero":"economia", "reportero":"reportero"},
+        {"id":2, "titulo":"Noticia 02", "contenido":"contenido de la noticia 02", "genero":"politica", "reportero":"reportero"}
+    ]
+}
