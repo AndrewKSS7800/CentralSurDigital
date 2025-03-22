@@ -13,15 +13,15 @@ import Header from "./components/header";
 const App = () => {
   return (
     <>
-      <Header></Header>
+      
       <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/sobre-nosotros" element={<About/>}/>
-        <Route path="/noticias" element={<News/>}/>
-        <Route path="/contacto" element={<Contact/>}/>
+        <Route path="/" element={<><Header /><Home /><Footer /></>}/>
+        <Route path="/sobre-nosotros" element={<><Header /><About /><Footer /></>}/>
+        <Route path="/noticias" element={<><Header /><News /><Footer /></>}/>
+        <Route path="/contacto" element={<><Header /><Contact /><Footer /></>}/>
         <Route path="*" element={<NotFound/>}/>
       </Routes>
-      <Footer></Footer>
+      
     </>
   );
 };
