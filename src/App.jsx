@@ -8,12 +8,12 @@ import About from './pages/about';
 import News from './pages/news';
 import Contact from './pages/contact';
 import NotFound from './pages/notfound';
-import Navbar from './components/navbar';
 import Footer from './components/footer';
+import Header from "./components/header";
 const App = () => {
   return (
     <>
-      <Navbar></Navbar>
+      <Header></Header>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/sobre-nosotros" element={<About/>}/>
