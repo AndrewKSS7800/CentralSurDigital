@@ -14,6 +14,34 @@ html, body, #root{
 header{
     display: grid;
     grid-area: header;
+    grid-template-areas:
+    "head nav-ico";
+    grid-template-columns: auto 12vh;
+    grid-template-rows: 10vh;
+}
+.header{
+    grid-area: head;
+    display: grid;
+    grid-template-areas: 
+    "logo name";
+    grid-template-columns: 12vh auto;
+    grid-template-rows: 10vh;
+}
+.logo{
+    grid-area: logo;
+}
+.name{
+    grid-area: name;
+}
+.networks{
+    display: none;
+    grid-area: networks;
+}
+.nav-ico{
+    grid-area: nav-ico;
+}
+nav{
+    grid-area: nav;
 }
 section{
     display: grid;

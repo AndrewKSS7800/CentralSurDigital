@@ -15,35 +15,48 @@
     --Bold:'Contenido-B';
     --SemiBold:'Contenido-SB';
     /*******/
+
+    --pad-01:1rem;
+    --pad-02:3rem;
+    --pad-03:6rem;
+    --pad-04:10rem;
 }
+
 
 @font-face {
     font-family:'Titulo';
-    src: url(./assets/fonts/Anton/Anton-Regular.ttf);
+    src: url('./assets/fonts/Anton/Anton-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
     font-family: 'Contenido-R';
-    src: url(./assets/fonts/Open_Sans/static/OpenSans-Regular.ttf);
+    src: url('./assets/fonts/Open_Sans/static/OpenSans-Regular.ttf') format('truetype');
+    
 }
 @font-face {
     font-family: 'Contenido-B';
-    src: url(./assets/fonts/Open_Sans/static/OpenSans-Bold.ttf);
+    src: url('./assets/fonts/Open_Sans/static/OpenSans-Bold.ttf') format('truetype');
 }
 @font-face {
     font-family: 'Contenido-SB';
-    src: url(./assets/fonts/Open_Sans/static/OpenSans-SemiBold.ttf);
+    src: url('./assets/fonts/Open_Sans/static/OpenSans-SemiBold.ttf') format('truetype');
+
 }
 
 
 /* Móviles (hasta 480px) */
 @media screen and (max-width: 480px) {
+    
     body {
+        
         font-size: 0.875rem; /* 14px */
     }
 }
 
 /* Tablets en vertical (481px - 768px) */
 @media screen and (max-width: 768px) {
+    
     body {
         font-size: 1rem; /* 16px */
     }
@@ -51,6 +64,7 @@
 
 /* Laptops y Tablets en horizontal (769px - 1024px) */
 @media screen and (max-width: 1024px) {
+    
     body {
         font-size: 1.125rem; /* 18px */
     }
@@ -58,6 +72,7 @@
 
 /* Escritorios grandes (1025px en adelante) */
 @media screen and (min-width: 1025px) {
+    
     body {
         font-size: 1.25rem; /* 20px */
     }

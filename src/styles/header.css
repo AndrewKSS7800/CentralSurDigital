@@ -1,0 +1,120 @@
+.logo{
+    padding-left: var(--pad-01);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.logo img{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.name span{
+    width: 100%;
+    display: flex;
+    font-family:var(--titulo),fantasy;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 1rem;
+    font-style: normal;
+}
+.name span:nth-child(2){
+    font-family: var(--titulo),sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+.nav-ico{
+    padding-right: var(--pad-01);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-ico label{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cb-menu{
+    display: none;
+}
+
+.nav-open{
+    width: 70%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    height: auto;
+}
+input[type="checkbox"]:checked ~ nav{
+    display: flex;
+    transition: 1s;
+    width: 100%;
+    right: 0;
+}
+nav{
+    position: fixed;
+    right: -100%;
+    display: flex;
+    top: 0;
+    justify-content: safe;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    transition: right 0.5s ease-in-out;
+}
+
+nav .l-menu-btn-close{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+    padding-right: var(--pad-01);
+    min-height: 10vh;
+}
+.nav-close{
+    width: auto;
+    min-height: 6.3vh;
+    aspect-ratio: 1/1;
+}
+nav ul{
+    
+    list-style: none;
+    width: 100%;
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+nav ul li{
+    display: flex;
+    width: 100%;
+    
+}
+nav ul li label{
+    padding: none;
+    width: 100%;
+}
+nav ul li label a{
+    text-decoration:underline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    width: 100%;
+    font-family: var(--regular),sans-serif;
+    color: var(--white);
+}
+
+
+

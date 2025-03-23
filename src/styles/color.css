@@ -7,3 +7,20 @@ section{
 footer{
     background:var(--black);
 }
+
+.name{
+    color: var(--primary-color-v1);
+}
+.networks{
+    background-color: blueviolet;
+}
+
+nav{
+    background:var(--primary-color-v1);
+}
+.nav-open{
+    fill: var(--primary-color-v1);
+}
+.nav-close{
+    fill: var(--white);
+}
