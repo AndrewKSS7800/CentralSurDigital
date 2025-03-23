@@ -1,0 +1,25 @@
+html, body, #root{
+    width: 100%;
+    min-height: 100vh;
+}
+#root{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "section"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 10vh auto 10vh;
+}
+header{
+    display: grid;
+    grid-area: header;
+}
+section{
+    display: grid;
+    grid-area: section;
+}
+footer{
+    display: grid;
+    grid-area: footer;
+}

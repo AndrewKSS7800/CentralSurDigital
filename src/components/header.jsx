@@ -2,7 +2,11 @@ import Navbar from "./navbar";
 const Header = () => {
     return (
         <header>
-            <div>Logo</div>
+            <div className="header">
+                <div className="logo"></div>
+                <div className="name">Central Sur Digital</div>
+                <div className="networks"></div>
+            </div>
             <Navbar></Navbar>
         </header>
     );

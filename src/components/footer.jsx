@@ -1,6 +1,6 @@
 const Footer = () =>{
     return (
-        <section>Pie de pagina</section>
+        <footer>Pie de pagina</footer>
     );
 };
 export default Footer;

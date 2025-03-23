@@ -1,0 +1,9 @@
+header{
+    background:var(--white);
+}
+section{
+    background:var(--primary-color-v2);
+}
+footer{
+    background:var(--black);
+}
