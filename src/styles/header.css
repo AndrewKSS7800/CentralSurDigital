@@ -1,5 +1,5 @@
 .logo{
-    padding-left: var(--pad-01);
+    margin-left: var(--pad-01);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,14 +34,14 @@
 .nav-ico{
     padding-right: var(--pad-01);
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
 }
 .nav-ico label{
-    width: 100%;
+    width: 70%;
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
 }
 .cb-menu{
@@ -53,6 +53,7 @@
     aspect-ratio: 1/1;
     object-fit: cover;
     height: auto;
+    cursor: pointer;
 }
 input[type="checkbox"]:checked ~ nav{
     display: flex;
@@ -69,6 +70,7 @@ nav{
     align-items: center;
     flex-direction: column;
     width: 100%;
+    z-index: 2;
     min-height: 100vh;
     transition: right 0.5s ease-in-out;
 }
@@ -79,12 +81,13 @@ nav .l-menu-btn-close{
     align-items: center;
     width: 100%;
     padding-right: var(--pad-01);
-    min-height: 10vh;
+    min-height: 3.5rem;
 }
 .nav-close{
     width: auto;
     min-height: 6.3vh;
     aspect-ratio: 1/1;
+    cursor: pointer;
 }
 nav ul{
     
@@ -114,7 +117,651 @@ nav ul li label a{
     width: 100%;
     font-family: var(--regular),sans-serif;
     color: var(--white);
+    cursor: pointer;
 }
+
+
+/* Tablets en vertical (481px - 768px) */
+
+@media screen and (min-width: 480px) {
+    .logo{
+        margin-left: var(--pad-02);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .logo img{
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+    .name{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .name span{
+        width: 100%;
+        display: flex;
+        font-family:var(--titulo),fantasy;
+        text-transform: uppercase;
+        font-weight: 100;
+        font-size: 1rem;
+        font-style: normal;
+    }
+    .name span:nth-child(2){
+        font-family: var(--titulo),sans-serif;
+        font-weight: 700;
+        font-size: 0.8rem;
+    }
+    .networks{
+        justify-content: center;
+        align-items: center;
+        padding-right: var(--pad-02);
+    }
+    .networks ul{
+        width: 100%;
+        list-style: none;
+        justify-content: right;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+    }
+    .networks ul li{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+    .networks ul li a{
+        margin-left: 0.6rem;
+        width: 1.25rem;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+    .nav-ico{
+        padding-right: var(--pad-01);
+        display: none;
+        justify-content: right;
+        align-items: center;
+    }
+    .nav-ico label{
+        width: 100%;
+        height: 100%;
+        display: none;
+        justify-content: right;
+        align-items: center;
+    }
+    .cb-menu{
+        display: none;
+    }
+    
+    .nav-open{
+        width: 70%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        height: auto;
+        cursor: pointer;
+        display: none;
+    }
+    input[type="checkbox"]:checked ~ nav{
+        display: flex;
+        transition: 0;
+        width: none;
+        right: none;
+    }
+    nav{
+        position: relative;
+        padding-left: var(--pad-02);
+        padding-right: var(--pad-02);
+        right: 0;
+        display: flex;
+        top: 0;
+        justify-content: safe;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        min-height: 100%;
+        overflow: hidden;
+        transition: none;
+    }
+    
+    nav .l-menu-btn-close{
+        display: none;
+        justify-content: right;
+        align-items: center;
+        width: 100%;
+        padding-right: var(--pad-01);
+        min-height: 100%;
+    }
+    .nav-close{
+        width: auto;
+        min-height: 6.3vh;
+        aspect-ratio: 1/1;
+        cursor: pointer;
+    }
+    nav ul{
+        list-style: none;
+        width: 100%;
+        min-height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    nav ul li{
+        min-height: 100%;
+        display: flex;
+        width: 100%;
+        
+    }
+    nav ul li label{
+        min-height: 100%;
+        padding: none;
+        width: 100%;
+    }
+    nav ul li label a{
+        text-decoration:none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        height: 100%;
+        width: auto;
+        font-family: var(--regular),sans-serif;
+        color: var(--white);
+        cursor: pointer;
+        font-size: 0.9rem;
+    }
+    .menu-act{
+        background-color: var(--primary-color-v3);
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+    .logo{
+        margin-left: var(--pad-03);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .logo img{
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+    .name{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .name span{
+        width: 100%;
+        display: flex;
+        font-family:var(--titulo),fantasy;
+        text-transform: uppercase;
+        font-weight: 100;
+        font-size: 1.15rem;
+        font-style: normal;
+    }
+    .name span:nth-child(2){
+        font-family: var(--titulo),sans-serif;
+        font-weight: 700;
+        font-size: 0.95rem;
+    }
+    .networks{
+        justify-content: center;
+        align-items: center;
+        padding-right: var(--pad-03);
+    }
+    .networks ul{
+        width: 100%;
+        list-style: none;
+        justify-content: right;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+    }
+    .networks ul li{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+    .networks ul li a{
+        margin-left: 1rem;
+        width: 1.4rem;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+    .nav-ico{
+        padding-right: var(--pad-03);
+        display: none;
+        justify-content: right;
+        align-items: center;
+    }
+    .nav-ico label{
+        width: 100%;
+        height: 100%;
+        display: none;
+        justify-content: right;
+        align-items: center;
+    }
+    .cb-menu{
+        display: none;
+    }
+    
+    .nav-open{
+        width: 70%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        height: auto;
+        cursor: pointer;
+        display: none;
+    }
+    input[type="checkbox"]:checked ~ nav{
+        display: flex;
+        transition: 0;
+        width: none;
+        right: none;
+    }
+    nav{
+        position: relative;
+        padding-left: var(--pad-03);
+        padding-right: var(--pad-03);
+        right: 0;
+        display: flex;
+        top: 0;
+        justify-content: safe;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        min-height: 100%;
+        overflow: hidden;
+        transition: none;
+    }
+    
+    nav .l-menu-btn-close{
+        display: none;
+        justify-content: right;
+        align-items: center;
+        width: 100%;
+        padding-right: var(--pad-03);
+        min-height: 100%;
+    }
+    .nav-close{
+        width: auto;
+        min-height: 6.3vh;
+        aspect-ratio: 1/1;
+        cursor: pointer;
+    }
+    nav ul{
+        list-style: none;
+        width: 100%;
+        min-height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    nav ul li{
+        min-height: 100%;
+        display: flex;
+        width: 100%;
+        
+    }
+    nav ul li label{
+        min-height: 100%;
+        padding: none;
+        width: 100%;
+    }
+    nav ul li label a{
+        text-decoration:none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        height: 100%;
+        width: auto;
+        font-family: var(--regular),sans-serif;
+        color: var(--white);
+        cursor: pointer;
+        font-size: 0.9rem;
+    }
+    .menu-act{
+        background-color: var(--primary-color-v3);
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    .logo{
+        margin-left: var(--pad-03);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100%
+    }
+    .logo img{
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+    .name{
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .name span{
+        width: 100%;
+        display: flex;
+        font-family:var(--titulo),fantasy;
+        text-transform: uppercase;
+        font-weight: 100;
+        font-size: 1.35rem;
+        font-style: normal;
+    }
+    .name span:nth-child(2){
+        font-family: var(--titulo),sans-serif;
+        font-weight: 700;
+        font-size: 1.05rem;
+    }
+    .networks{
+        min-height: 100%;
+        justify-content: center;
+        align-items: center;
+        padding-right: var(--pad-03);
+    }
+    .networks ul{
+        width: 100%;
+        list-style: none;
+        justify-content: right;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+    }
+    .networks ul li{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+    .networks ul li a{
+        margin-left: 1.4rem;
+        min-height: auto;
+        width: 1.5em;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+    .nav-ico{
+        padding-right: var(--pad-01);
+        display: none;
+        justify-content: right;
+        align-items: center;
+    }
+    .nav-ico label{
+        width: 100%;
+        height: 100%;
+        display: none;
+        justify-content: right;
+        align-items: center;
+    }
+    .cb-menu{
+        display: none;
+    }
+    
+    .nav-open{
+        width: 70%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        height: auto;
+        cursor: pointer;
+        display: none;
+    }
+    input[type="checkbox"]:checked ~ nav{
+        display: flex;
+        transition: 0;
+        width: none;
+        right: none;
+    }
+    nav{
+        position: relative;
+        padding-left: var(--pad-03);
+        padding-right: var(--pad-03);
+        right: 0;
+        display: flex;
+        top: 0;
+        justify-content: safe;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        min-height: 100%;
+        overflow: hidden;
+        transition: none;
+    }
+    
+    nav .l-menu-btn-close{
+        display: none;
+        justify-content: right;
+        align-items: center;
+        width: 100%;
+        padding-right: var(--pad-01);
+        min-height: 100%;
+    }
+    .nav-close{
+        width: auto;
+        min-height: 6.3vh;
+        aspect-ratio: 1/1;
+        cursor: pointer;
+    }
+    nav ul{
+        list-style: none;
+        width: 100%;
+        min-height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    nav ul li{
+        min-height: 100%;
+        display: flex;
+        width: 100%;
+        
+    }
+    nav ul li label{
+        min-height: 100%;
+        padding: none;
+        width: 100%;
+    }
+    nav ul li label a{
+        text-decoration:none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        height: 100%;
+        width: auto;
+        font-family: var(--regular),sans-serif;
+        color: var(--white);
+        cursor: pointer;
+        font-size: 1.1rem;
+    }
+    .menu-act{
+        background-color: var(--primary-color-v3);
+    }
+    
+}
+
+@media screen and (min-width: 1500px) {
+    .logo{
+        margin-left: var(--pad-04);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100%;
+        
+    }
+    .logo img{
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+    .name{
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .name span{
+        width: 100%;
+        display: flex;
+        font-family:var(--titulo),fantasy;
+        text-transform: uppercase;
+        font-weight: 100;
+        font-size: 1.7rem;
+        font-style: normal;
+    }
+    .name span:nth-child(2){
+        font-family: var(--titulo),sans-serif;
+        font-weight: 700;
+        font-size: 1.3rem;
+    }
+    .networks{
+        min-height: 100%;
+        justify-content: center;
+        align-items: center;
+        padding-right: var(--pad-04);
+    }
+    .networks ul{
+        width: 100%;
+        list-style: none;
+        justify-content: right;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+    }
+    .networks ul li{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+    .networks ul li a{
+        margin-left: 1.2rem;
+        min-height: 100%;
+        width: 2rem;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+    .nav-ico{
+        padding-right: var(--pad-01);
+        display: none;
+        justify-content: right;
+        align-items: center;
+    }
+    .nav-ico label{
+        width: 100%;
+        height: 100%;
+        display: none;
+        justify-content: right;
+        align-items: center;
+    }
+    .cb-menu{
+        display: none;
+    }
+    
+    .nav-open{
+        width: 70%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        height: auto;
+        cursor: pointer;
+        display: none;
+    }
+    input[type="checkbox"]:checked ~ nav{
+        display: flex;
+        transition: 0;
+        width: none;
+        right: none;
+    }
+    nav{
+        position: relative;
+        padding-left: var(--pad-04);
+        padding-right: var(--pad-04);
+        right: 0;
+        display: flex;
+        top: 0;
+        justify-content: safe;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        min-height: 100%;
+        overflow: hidden;
+        transition: none;
+    }
+    
+    nav .l-menu-btn-close{
+        display: none;
+        justify-content: right;
+        align-items: center;
+        width: 100%;
+        padding-right: var(--pad-01);
+        min-height: 100%;
+    }
+    .nav-close{
+        width: auto;
+        min-height: 6.3vh;
+        aspect-ratio: 1/1;
+        cursor: pointer;
+    }
+    nav ul{
+        list-style: none;
+        width: 100%;
+        min-height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+    nav ul li{
+        min-height: 100%;
+        display: flex;
+        width: 100%;
+        
+    }
+    nav ul li label{
+        min-height: 100%;
+        padding: none;
+        width: 100%;
+    }
+    nav ul li label a{
+        text-decoration:none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        height: 100%;
+        width: auto;
+        font-family: var(--regular),sans-serif;
+        color: var(--white);
+        cursor: pointer;
+        font-size: 1.4rem;
+    }
+    .menu-act{
+        background-color: var(--primary-color-v3);
+    }
+    
+}
+
 
 
 

@@ -9,23 +9,23 @@ html, body, #root{
     "section"
     "footer";
     grid-template-columns: 100%;
-    grid-template-rows: 10vh auto 10vh;
+    grid-template-rows: 4.5rem auto auto;
 }
 header{
     display: grid;
     grid-area: header;
     grid-template-areas:
     "head nav-ico";
-    grid-template-columns: auto 12vh;
-    grid-template-rows: 10vh;
+    grid-template-columns: auto 5rem;
+    grid-template-rows: 4.5rem;
 }
 .header{
     grid-area: head;
     display: grid;
     grid-template-areas: 
     "logo name";
-    grid-template-columns: 12vh auto;
-    grid-template-rows: 10vh;
+    grid-template-columns: 4rem auto;
+    grid-template-rows:4.5rem;
 }
 .logo{
     grid-area: logo;
@@ -50,4 +50,221 @@ section{
 footer{
     display: grid;
     grid-area: footer;
+}
+
+@media screen and (min-width: 480px) {
+    
+    #root{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "section"
+        "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 6.5rem auto auto;
+    }
+    header{
+        display: grid;
+        grid-area: header;
+        grid-template-areas:
+        "head"
+        "nav";
+        grid-template-columns: 100%;
+        grid-template-rows: 4.5rem 2rem;
+    }
+    .header{
+        grid-area: head;
+        display: grid;
+        grid-template-areas: 
+        "logo name networks";
+        grid-template-columns:6rem auto auto;
+        grid-template-rows: 4.5rem;
+    }
+    .logo{
+        grid-area: logo;
+    }
+    .name{
+        grid-area: name;
+    }
+    .networks{
+        display: flex;
+        grid-area: networks;
+    }
+    .nav-ico{
+        display: none;
+        grid-area: nav-ico;
+    }
+    nav{
+        grid-area: nav;
+    }
+    section{
+        display: grid;
+        grid-area: section;
+    }
+    footer{
+        display: grid;
+        grid-area: footer;
+    }
+}
+@media screen and (min-width: 768px) {
+    #root{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "section"
+        "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 8rem auto auto;
+    }
+    header{
+        display: grid;
+        grid-area: header;
+        grid-template-areas:
+        "head"
+        "nav";
+        grid-template-columns: 100%;
+        grid-template-rows: 6rem 2rem;
+    }
+    .header{
+        grid-area: head;
+        display: grid;
+        grid-template-areas: 
+        "logo name networks";
+        grid-template-columns:10rem auto auto;
+        grid-template-rows: 6rem;
+    }
+    .logo{
+        grid-area: logo;
+    }
+    .name{
+        grid-area: name;
+    }
+    .networks{
+        display: flex;
+        grid-area: networks;
+    }
+    .nav-ico{
+        display: none;
+        grid-area: nav-ico;
+    }
+    nav{
+        grid-area: nav;
+    }
+    section{
+        display: grid;
+        grid-area: section;
+    }
+    footer{
+        display: grid;
+        grid-area: footer;
+    }
+    
+}
+@media screen and (min-width: 1024px) {
+    #root{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "section"
+        "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 9rem auto auto;
+    }
+    header{
+        display: grid;
+        grid-area: header;
+        grid-template-areas:
+        "head"
+        "nav";
+        grid-template-columns: 100%;
+        grid-template-rows: 6.5rem 2.5rem;
+    }
+    .header{
+        grid-area: head;
+        display: grid;
+        grid-template-areas: 
+        "logo name networks";
+        grid-template-columns: 10rem auto auto;
+        grid-template-rows: 6.5rem;
+    }
+    .logo{
+        grid-area: logo;
+    }
+    .name{
+        grid-area: name;
+    }
+    .networks{
+        display: flex;
+        grid-area: networks;
+    }
+    .nav-ico{
+        display: none;
+        grid-area: nav-ico;
+    }
+    nav{
+        grid-area: nav;
+    }
+    section{
+        display: grid;
+        grid-area: section;
+    }
+    footer{
+        display: grid;
+        grid-area: footer;
+    }
+    
+}
+
+@media screen and (min-width: 1500px) {
+    #root{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "section"
+        "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 11rem auto auto;
+    }
+    header{
+        display: grid;
+        grid-area: header;
+        grid-template-areas:
+        "head"
+        "nav";
+        grid-template-columns: 100%;
+        grid-template-rows: 8rem 3rem;
+    }
+    .header{
+        grid-area: head;
+        display: grid;
+        grid-template-areas: 
+        "logo name networks";
+        grid-template-columns: 16rem auto auto;
+        grid-template-rows: 8rem;
+    }
+    .logo{
+        grid-area: logo;
+    }
+    .name{
+        grid-area: name;
+    }
+    .networks{
+        display: flex;
+        grid-area: networks;
+    }
+    .nav-ico{
+        display: none;
+        grid-area: nav-ico;
+    }
+    nav{
+        grid-area: nav;
+    }
+    section{
+        display: grid;
+        grid-area: section;
+    }
+    footer{
+        display: grid;
+        grid-area: footer;
+    }
 }

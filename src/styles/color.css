@@ -11,8 +11,8 @@ footer{
 .name{
     color: var(--primary-color-v1);
 }
-.networks{
-    background-color: blueviolet;
+.ionicon{
+    fill: var(--primary-color-v1);
 }
 
 nav{
