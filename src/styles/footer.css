@@ -12,7 +12,6 @@ footer{
     position: relative;
     width: 100%;
     height: 100%;
-    
 }
 
 
@@ -201,7 +200,7 @@ footer{
         align-items: center;
         text-decoration: none;
         font-family: var(--regular),sans-serif;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         color: var(--white);
     }
     
@@ -233,7 +232,7 @@ footer{
         align-items: center;
         text-decoration: none;
         font-family: var(--regular),sans-serif;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         text-align: center;
         color: var(--white);
     }
@@ -265,7 +264,7 @@ footer{
     }
     .fionicon{
         display: flex;
-        width: 1.4rem;
+        width: 1.3rem;
         fill: var(--white);
     }
     
@@ -281,5 +280,521 @@ footer{
         font-size: 0.7rem;
     }
     
+    
+}
+
+@media screen and (min-width: 768px) {
+    footer{
+        background-color: var(--black);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: var(--white);
+        z-index: 1;
+    }
+    
+    .footer {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        flex-direction: row;
+        padding-left: var(--pad-03);
+        padding-right: var(--pad-03);
+    }
+    
+    
+    .lf:nth-child(1){
+        background: var(--primary-color-v4);
+        height: 0.5rem;
+        width: 100%;
+    }
+    .lf:nth-child(2){
+        background: var(--primary-color-v3);
+        height: 0.5rem;
+        width: 100%;
+    }
+    .footer .flogo{
+        padding: 0;
+        padding-left: 0;
+        padding-right: 0;
+        justify-content: left;
+        align-items: center;
+        display: flex;
+        width: 55%;
+    }
+    .footer .flogo img{
+        width: 5rem;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+    
+    .flinks{
+        padding: 0;
+        padding-left: 0;
+        padding-right: 0;
+        width: 60%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    .flinks ul{
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        flex-direction: column;
+        list-style: none;
+    }
+    .flinks ul li{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        
+    }
+    .flinks ul li a{
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        text-decoration: none;
+        font-family: var(--regular),sans-serif;
+        font-size: 0.8rem;
+        color: var(--white);
+        padding: 0.5rem;
+    }
+    
+    .fterm{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .fterm ul{
+        width: 100%;
+        height: auto;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .fterm ul li{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+    .fterm ul li a{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        text-decoration: none;
+        font-family: var(--regular),sans-serif;
+        font-size: 0.8rem;
+        text-align: left;
+        color: var(--white);
+        padding: 0.5rem;
+    }
+    
+    .fnetworks{
+        padding: 0;
+        padding-left:0;
+        padding-right: 0;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        width: 100%;
+        min-height: auto;
+    }
+    .fnetworks ul{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: auto;
+        height: auto;
+    }
+    .fnetworks ul li a{
+        display: flex;
+        width: auto;
+        height: auto;
+        padding: 0.3rem;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+    .fionicon{
+        display: flex;
+        width: 1.4rem;
+        fill: var(--white);
+    }
+    
+    .fcopy{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        width: 100%;
+        padding: var(--pad-01);
+        padding-left:var(--pad-03) ;
+        padding-right: var(--pad-03);
+        background:var(--gray);
+        font-family: var(--regular),sans-serif;
+        font-size: 0.7rem;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    footer{
+        background-color: var(--black);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: var(--white);
+        z-index: 1;
+    }
+    
+    .footer {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        flex-direction: row;
+        padding-left: var(--pad-03);
+        padding-right: var(--pad-03);
+    }
+    
+    
+    .lf:nth-child(1){
+        background: var(--primary-color-v4);
+        height: 0.5rem;
+        width: 100%;
+    }
+    .lf:nth-child(2){
+        background: var(--primary-color-v3);
+        height: 0.5rem;
+        width: 100%;
+    }
+    .footer .flogo{
+        padding: 0;
+        padding-left: 0;
+        padding-right: 0;
+        justify-content: left;
+        align-items: center;
+        display: flex;
+        width: 55%;
+    }
+    .footer .flogo img{
+        width: 5.5rem;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+    
+    .flinks{
+        padding: 0;
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    .flinks ul{
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        flex-direction: column;
+        list-style: none;
+    }
+    .flinks ul li{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        
+    }
+    .flinks ul li a{
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        text-decoration: none;
+        font-family: var(--regular),sans-serif;
+        font-size: 0.9rem;
+        color: var(--white);
+        padding: 0.5rem;
+    }
+    
+    .fterm{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .fterm ul{
+        width: 100%;
+        height: auto;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .fterm ul li{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+    .fterm ul li a{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        text-decoration: none;
+        font-family: var(--regular),sans-serif;
+        font-size: 0.9rem;
+        text-align: left;
+        color: var(--white);
+        padding: 0.5rem;
+    }
+    
+    .fnetworks{
+        padding: 0;
+        padding-left:0;
+        padding-right: 0;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        width: 100%;
+        min-height: auto;
+    }
+    .fnetworks ul{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: auto;
+        height: auto;
+    }
+    .fnetworks ul li a{
+        display: flex;
+        width: auto;
+        height: auto;
+        padding: 0.8rem;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+    .fionicon{
+        display: flex;
+        width: 1.4rem;
+        fill: var(--white);
+    }
+    
+    .fcopy{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        width: 100%;
+        padding: var(--pad-01);
+        padding-left:var(--pad-03) ;
+        padding-right: var(--pad-03);
+        background:var(--gray);
+        font-family: var(--regular),sans-serif;
+        font-size: 0.8rem;
+    }
+    
+}
+
+@media screen and (min-width: 1500px) {
+    footer{
+        background-color: var(--black);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: var(--white);
+        z-index: 1;
+    }
+    
+    .footer {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        flex-direction: row;
+        padding-left: var(--pad-04);
+        padding-right: var(--pad-04);
+    }
+    
+    
+    .lf:nth-child(1){
+        background: var(--primary-color-v4);
+        height: 0.5rem;
+        width: 100%;
+    }
+    .lf:nth-child(2){
+        background: var(--primary-color-v3);
+        height: 0.5rem;
+        width: 100%;
+    }
+    .footer .flogo{
+        padding: 0;
+        padding-left: 0;
+        padding-right: 0;
+        justify-content: left;
+        align-items: center;
+        display: flex;
+        width: 55%;
+    }
+    .footer .flogo img{
+        width: 6rem;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+    
+    .flinks{
+        padding: 0;
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    .flinks ul{
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        flex-direction: column;
+        list-style: none;
+    }
+    .flinks ul li{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        
+    }
+    .flinks ul li a{
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        text-decoration: none;
+        font-family: var(--regular),sans-serif;
+        font-size: 1rem;
+        color: var(--white);
+        padding: 0.5rem;
+    }
+    
+    .fterm{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .fterm ul{
+        width: 100%;
+        height: auto;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .fterm ul li{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+    .fterm ul li a{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        text-decoration: none;
+        font-family: var(--regular),sans-serif;
+        font-size: 1rem;
+        text-align: left;
+        color: var(--white);
+        padding: 0.5rem;
+    }
+    
+    .fnetworks{
+        padding: 0;
+        padding-left:0;
+        padding-right: 0;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        width: 100%;
+        min-height: auto;
+    }
+    .fnetworks ul{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: auto;
+        height: auto;
+    }
+    .fnetworks ul li a{
+        display: flex;
+        width: auto;
+        height: auto;
+        padding: 0.8rem;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+    .fionicon{
+        display: flex;
+        width: 1.8rem;
+        fill: var(--white);
+    }
+    
+    .fcopy{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        width: 100%;
+        padding: var(--pad-01);
+        padding-left:var(--pad-03) ;
+        padding-right: var(--pad-03);
+        background:var(--gray);
+        font-family: var(--regular),sans-serif;
+        font-size: 0.9rem;
+    }
     
 }

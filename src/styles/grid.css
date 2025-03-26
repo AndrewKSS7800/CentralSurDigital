@@ -9,7 +9,7 @@ html, body, #root{
     "section"
     "footer";
     grid-template-columns: 100%;
-    grid-template-rows: 4.5rem auto auto;
+    grid-template-rows: 4.5rem auto 22rem;
 }
 header{
     display: grid;
@@ -61,7 +61,7 @@ footer{
         "section"
         "footer";
         grid-template-columns: 100%;
-        grid-template-rows: 6.5rem auto auto;
+        grid-template-rows: 6.5rem auto 24rem;
     }
     header{
         display: grid;
@@ -114,7 +114,7 @@ footer{
         "section"
         "footer";
         grid-template-columns: 100%;
-        grid-template-rows: 8rem auto auto;
+        grid-template-rows: 8rem auto 14rem;
     }
     header{
         display: grid;
@@ -168,7 +168,7 @@ footer{
         "section"
         "footer";
         grid-template-columns: 100%;
-        grid-template-rows: 9rem auto auto;
+        grid-template-rows: 9rem auto 16rem;
     }
     header{
         display: grid;
@@ -223,7 +223,7 @@ footer{
         "section"
         "footer";
         grid-template-columns: 100%;
-        grid-template-rows: 11rem auto auto;
+        grid-template-rows: 11rem auto 16rem;
     }
     header{
         display: grid;
