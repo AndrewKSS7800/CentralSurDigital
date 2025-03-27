@@ -5,6 +5,7 @@
     --primary-color-v3:#1291df;
     --primary-color-v4:#5eb6ce;
     --white:#fcf7f7;
+    --gray-light:#e2dfdf;
     --gray:#494949;
     --black:#0f0f0f;
     /*******/
@@ -45,28 +46,53 @@
 
 }
 
-
+section{
+    padding-left: var(--pad-01);
+    padding-top: var(--pad-01);
+    padding-right: var(--pad-01);
+    padding-bottom: var(--pad-01);
+}
 /* Móviles (hasta 480px) */
 @media screen and (min-width: 480px) {
-    
+    section{
+        padding-left: var(--pad-02);
+        padding-top: var(--pad-01);
+        padding-right: var(--pad-02);
+        padding-bottom: var(--pad-01);
+    }
     
 }
 
 /* Tablets en vertical (481px - 768px) */
 @media screen and (min-width: 768px) {
-    
+    section{
+        padding-left: var(--pad-03);
+        padding-top: var(--pad-01);
+        padding-right: var(--pad-03);
+        padding-bottom: var(--pad-01);
+    }
     
 }
 
 /* Laptops y Tablets en horizontal (769px - 1024px) */
 @media screen and (min-width: 1024px) {
-    
+    section{
+        padding-left: var(--pad-03);
+        padding-top: var(--pad-02);
+        padding-right: var(--pad-03);
+        padding-bottom: var(--pad-02);
+    }
     
 }
 
 /* Escritorios grandes (1025px en adelante) */
 @media screen and (min-width: 1500px) {
-    
+    section{
+        padding-left: var(--pad-04);
+        padding-top: var(--pad-02);
+        padding-right: var(--pad-04);
+        padding-bottom: var(--pad-02);
+    }
     
 }
 
