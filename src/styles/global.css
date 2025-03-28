@@ -95,6 +95,15 @@ section{
     }
     
 }
+@media screen and (min-width: 1900px) {
+    section{
+        padding-left: var(--pad-05);
+        padding-top: var(--pad-02);
+        padding-right: var(--pad-05);
+        padding-bottom: var(--pad-02);
+    }
+    
+}
 
 *{
     margin: 0;
