@@ -42,9 +42,9 @@
 .name span{
     width: 100%;
     display: flex;
-    font-family:var(--titulo),fantasy;
+    font-family:var(--titulo),sans-serif;
     text-transform: uppercase;
-    font-weight: 100;
+    font-weight: 900;
     font-size: 1rem;
     font-style: normal;
 }
