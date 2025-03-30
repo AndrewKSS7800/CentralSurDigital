@@ -31,7 +31,11 @@ footer{
     align-items: center;
     display: flex;
     width: 100%;
+    position: relative;
+    animation: slideFromLeft 1s ease-out;
 }
+
+
 .footer .flogo img{
     width: 4rem;
     aspect-ratio: 1/1;
@@ -39,6 +43,7 @@ footer{
 }
 
 .flinks{
+    animation: slideFromLeft 1s ease-out;
     padding: var(--pad-01);
     padding-left: var(--pad-01);
 }
@@ -61,6 +66,11 @@ footer{
     font-size: 0.8rem;
     color: var(--white);
 }
+.flinks ul li a:hover{
+    color: var(--primary-color-v3);
+    transition: all 0.3s ease-in-out;
+    text-decoration: underline;
+}
 
 .fterm{
     width: 100%;
@@ -68,6 +78,7 @@ footer{
     justify-content: center;
     align-items: center;
     padding: var(--pad-01);
+    
 }
 .fterm ul{
     width: 100%;
@@ -91,6 +102,11 @@ footer{
     font-size: 0.8rem;
     text-align: center;
     color: var(--white);
+}
+.fterm ul li a:hover{
+    color: var(--primary-color-v3);
+    transition: all 0.3s ease-in-out;
+    text-decoration: underline;
 }
 
 .fnetworks{
@@ -120,6 +136,10 @@ footer{
     display: flex;
     width: 1.2rem;
     fill: var(--white);
+}
+.fionicon:hover{
+    fill: var(--primary-color-v3);
+    transition: all 0.3s ease-in-out;
 }
 
 .fcopy{
@@ -708,7 +728,7 @@ footer{
         align-items: center;
         text-decoration: none;
         font-family: var(--regular),sans-serif;
-        font-size: 1.1rem;
+        font-size: 0.95rem;
         color: var(--white);
         padding: 0.5rem;
     }
@@ -745,7 +765,7 @@ footer{
         align-items: center;
         text-decoration: none;
         font-family: var(--regular),sans-serif;
-        font-size: 1.1rem;
+        font-size: 0.95rem;
         text-align: left;
         color: var(--white);
         padding: 0.5rem;
@@ -780,7 +800,7 @@ footer{
     }
     .fionicon{
         display: flex;
-        width: 2rem;
+        width: 1.8rem;
         fill: var(--white);
     }
     
@@ -795,7 +815,7 @@ footer{
         padding-right: var(--pad-03);
         background:var(--gray);
         font-family: var(--regular),sans-serif;
-        font-size: 1rem;
+        font-size: 0.85rem;
     }
     
 }
@@ -880,7 +900,7 @@ footer{
         align-items: center;
         text-decoration: none;
         font-family: var(--regular),sans-serif;
-        font-size: 1.25rem;
+        font-size: 1.05rem;
         color: var(--white);
         padding: 0.5rem;
     }
@@ -917,7 +937,7 @@ footer{
         align-items: center;
         text-decoration: none;
         font-family: var(--regular),sans-serif;
-        font-size: 1.25rem;
+        font-size: 1.05rem;
         text-align: left;
         color: var(--white);
         padding: 0.5rem;
@@ -967,7 +987,7 @@ footer{
         padding-right: var(--pad-05);
         background:var(--gray);
         font-family: var(--regular),sans-serif;
-        font-size: 1.05rem;
+        font-size: 0.85rem;
     }
     
 }
