@@ -11,7 +11,7 @@
     /*******/
 
     /*Fonts*/
-    --titulo:'Titulo';
+    --titulo: 'Anton', sans-serif;
     --regular:'Contenido-R';
     --Bold:'Contenido-B';
     --SemiBold:'Contenido-SB';
@@ -25,12 +25,8 @@
 }
 
 
-@font-face {
-    font-family:'Titulo';
-    src: url('./assets/fonts/Anton/Anton-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+
+
 @font-face {
     font-family: 'Contenido-R';
     src: url('./assets/fonts/Open_Sans/static/OpenSans-Regular.ttf') format('truetype');
