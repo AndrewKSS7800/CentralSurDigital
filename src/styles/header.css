@@ -45,7 +45,7 @@
     font-family:var(--titulo);
     text-transform: uppercase;
     font-weight: 100;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-style: normal;
 }
 .name span:nth-child(2){
@@ -178,7 +178,7 @@ nav ul li label a{
         width: 100%;
         display: flex;
         text-transform: uppercase;
-        font-size: 1rem;
+        font-size: 1.2rem;
         font-style: normal;
     }
     .name span:nth-child(2){
@@ -335,7 +335,7 @@ nav ul li label a{
         width: 100%;
         display: flex;
         text-transform: uppercase;
-        font-size: 1.15rem;
+        font-size: 1.35rem;
         font-style: normal;
     }
     .name span:nth-child(2){
@@ -489,6 +489,7 @@ nav ul li label a{
         display: flex;
         text-transform: uppercase;
         font-weight: 100;
+        font-size: 1.55rem;
         font-style: normal;
     }
     .name span:nth-child(2){
@@ -643,7 +644,7 @@ nav ul li label a{
         width: 100%;
         display: flex;
         text-transform: uppercase;
-        font-size: 1.55rem;
+        font-size: 1.75rem;
         font-style: normal;
     }
     .name span:nth-child(2){
@@ -797,7 +798,7 @@ nav ul li label a{
         width: 100%;
         display: flex;
         text-transform: uppercase;
-        font-size: 1.7rem;
+        font-size: 1.9rem;
         font-style: normal;
     }
     .name span:nth-child(2){
