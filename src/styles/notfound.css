@@ -1,0 +1,91 @@
+.error-container {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #011c73, #6ec4e3);
+    color: white;
+    font-family: 'Arial', sans-serif;
+    animation: fadeIn 1s ease-in-out;
+    row-gap: 1rem;
+    padding: var(--pad-01);
+}
+
+.error-container .logonf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14rem;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 1/1;
+    animation: float 3s ease-in-out infinite;
+}
+
+
+.error-container h1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.6rem;
+    margin-bottom: 10px;
+    animation: slideIn 1s ease-in-out;
+}
+
+.error-container p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards 0.5s;
+}
+
+.error-container .btn-home {
+    font-family: var(--regular),sans-serif;
+    padding: 12px 20px;
+    font-size: 1rem;
+    background: var(--white);
+    color: var(--primary-color-v1);
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    animation: bounceIn 1.2s ease-in-out;
+}
+
+.error-container .btn-home:hover {
+    background: var(--primary-color-v1);
+    color: var(--white);
+    transform: scale(1.1);
+}
+
+  /* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0.8); opacity: 0; }
+    50% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}

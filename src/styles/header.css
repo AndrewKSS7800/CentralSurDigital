@@ -301,11 +301,15 @@ nav ul li label a{
         cursor: pointer;
         font-size: 0.9rem;
     }
+    nav ul li label a:hover{
+        background-color: var(--primary-color-v4);
+        transition: all 0.3s ease-in-out;
+    }
     .menu-act {
     background-color: var(--primary-color-v3);
     transition: all 0.3s ease-in-out;
     transform: scale(1.01); 
-    box-shadow: 0px 0px 12px var(--primary-color-v3); 
+    box-shadow: 0px 0px 10px var(--primary-color-v3); 
     }
     
 }
