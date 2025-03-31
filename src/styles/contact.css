@@ -147,6 +147,7 @@
     flex-direction: column;
     position: relative;
     height: auto;
+    cursor: pointer;
 }
 
 .cform label input{
@@ -187,6 +188,10 @@ input{
 }
 
 .cform button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     border: none;
     background-color: var(--primary-color-v1);
     padding: 0.5rem 3rem;
@@ -196,6 +201,12 @@ input{
     text-transform: uppercase;
     color: var(--white);
     font-family: var(--regular),sans-serif;
+    cursor: pointer;
+}
+.cform button:hover{
+    background: var(--white);
+    color: var(--primary-color-v1);
+    transition: all 0.3s ease-in-out;
 }
 
 @media screen and (min-width: 480px) {
