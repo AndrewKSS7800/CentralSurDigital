@@ -302,7 +302,7 @@ nav ul li label a{
         font-size: 0.9rem;
     }
     nav ul li label a:hover{
-        background-color: var(--primary-color-v4);
+        color: var(--gray-light);
         transition: all 0.3s ease-in-out;
     }
     .menu-act {
