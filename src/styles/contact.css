@@ -50,6 +50,10 @@
     width: 1.3rem;
     height: 100%;
 }
+.clinks ul li:hover .ionicon{
+    fill: var(--primary-color-v3);
+    transition: all 0.3s ease-in-out;
+}
 
 .cimg{
     width: 100%;
