@@ -7,6 +7,7 @@ import "./styles/header.css"
 import "./styles/footer.css"
 import "./styles/contact.css"
 import "./styles/notfound.css"
+import "./styles/home.css"
 import App from './App.jsx'
 import { BrowserRouter } from "react-router-dom";
 
