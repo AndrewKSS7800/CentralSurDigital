@@ -1,64 +1,142 @@
 import { Link } from 'react-router-dom';
 
-import Img1 from "../assets/imgs/economia.jpg";
-import Img2 from "../assets/imgs/educacion.jpg";
-import Img3 from "../assets/imgs/politica.jpg";
-import Img4 from "../assets/imgs/tecnologia.jpg"
-import Img5 from "../assets/imgs/sociedad.jpg";
-import Img6 from "../assets/imgs/ambiente.jpg";
-import Img7 from "../assets/imgs/Cultura.jpg";
-import Img8 from "../assets/imgs/Deporte.jpg"
+import Economia from "../assets/imgs/Economia.png";
+import Deporte from "../assets/imgs/deporte-img.jpg";
+import Politica from "../assets/imgs/politica.jpg";
+import Cultura from "../assets/imgs/cultura peruana.jpg"
+import Tecnologia from "../assets/imgs/tecnologia.png";
+import Ambiente from "../assets/imgs/ambiente.png";
+import Educacion from "../assets/imgs/educacion1.jpg";
+import Sociedad from "../assets/imgs/sociedad.jpg"
 
 
 const Home = () => {
     
     return (
         <section className="home">
-            <div className="container">
-                <input checked type="radio" name="slider" id="item-1" />
-                <input checked type="radio" name="slider" id="item-2"/>
-                <input checked type="radio" name="slider" id="item-3"/>
-                <input checked type="radio" name="slider" id="item-4"/>
-                <input checked type="radio" name="slider" id="item-5"/>
-                <input checked type="radio" name="slider" id="item-6" />
-                <input checked type="radio" name="slider" id="item-7"/>
-                <input checked type="radio" name="slider" id="item-8"/>
+            <div className="slider">
+                <input type="radio" name="toggle" id="btn-8" checked/>
+                <input type="radio" name="toggle" id="btn-7" checked />
+                <input type="radio" name="toggle" id="btn-6" checked/>
+                <input type="radio" name="toggle" id="btn-5" checked/>
+                <input type="radio" name="toggle" id="btn-4" checked />
+                <input type="radio" name="toggle" id="btn-2" checked/>
+                <input type="radio" name="toggle" id="btn-3" checked/>
+                <input type="radio" name="toggle" id="btn-1" checked/>
                 
-                <div className="cards">
-                    <label className="card" htmlFor="item-1" id="card-1">
-                        <img src={Img8} alt=""/>
-                        <Link to="/noticias" className='name-card' id='name-card-1'> Deporte</Link>
-                    </label>
-                    <label className="card" htmlFor="item-2" id="card-2">
-                        <img src={Img1} alt=""/>
-                        <Link to="/noticias" className='name-card' id='name-card-2'> Economia</Link>
-                    </label>
-                    <label className="card" htmlFor="item-3" id="card-3">
-                        <img src={Img4} alt=""/>
-                        <Link to="/noticias" className='name-card' id='name-card-3'> Tecnología</Link>
-                    </label>
-                    <label className="card" htmlFor="item-4" id="card-4">
-                        <img src={Img5} alt=""/>
-                        <Link to="/noticias" className='name-card' id='name-card-4'> Sociedad</Link>
-                    </label>
-                    <label className="card" htmlFor="item-5" id="card-5">
-                        <img src={Img6} alt=""/>
-                        <Link to="/noticias" className='name-card' id='name-card-5'> Ambiente</Link>
-                    </label>
-                    <label className="card" htmlFor="item-6" id="card-6">
-                        <img src={Img7} alt=""/>
-                        <Link to="/noticias" className='name-card' id='name-card-6'> Cultura</Link>
-                    </label>
-                    <label className="card" htmlFor="item-7" id="card-7">
-                        <img src={Img2} alt=""/>
-                        <Link to="/noticias" className='name-card' id='name-card-7'> Educacion</Link>
-                    </label>
-                    <label className="card" htmlFor="item-8" id="card-8">
-                        <img src={Img3} alt=""/>
-                        <Link to="/noticias" className='name-card' id='name-card-8'> Política</Link>
-                    </label>
+                
+
+                <div className="slider-controls">
+                    <label for="btn-1"></label>
+                    <label for="btn-2"></label>
+                    <label for="btn-3"></label>
+                    <label for="btn-4"></label>
+                    <label for="btn-5"></label>
+                    <label for="btn-6"></label>
+                    <label for="btn-7"></label>
+                    <label for="btn-8"></label>
                 </div>
-                
+
+                <ul className="slides">
+                    <li className="slide">
+                        <div className='slide-bac-img'>
+                            <img src={Politica}  alt="" />
+                        </div>
+                        
+                        <div className="slide-content">
+                            <h2 className="slide-title">Política</h2>
+                            <p className="slide-text">Análisis y cobertura de las decisiones del Congreso, el Ejecutivo y los protagonistas del panorama político nacional.</p>
+                            <Link to="/noticias" className="slide-link">Leer más</Link>
+                            
+                        </div>
+                        
+                    </li>
+                    <li className="slide">
+                        <div className='slide-bac-img'>
+                            <img src={Deporte}  alt="" />
+                        </div>
+                        
+                        <div className="slide-content">
+                            <h2 className="slide-title">Deporte</h2>
+                            <p className="slide-text">Entérate de los triunfos, retos y pasión de los deportistas peruanos. Fútbol, vóley, atletismo y más disciplinas que nos unen.</p>
+                            <Link to="/noticias" className="slide-link">Leer más</Link>
+                        </div>
+                        
+                    </li>
+                    <li className="slide">
+                        <div className='slide-bac-img'>
+                            <img src={Economia}  alt="" />
+                        </div>
+                        
+                        <div className="slide-content">
+                            <h2 className="slide-title">Economía</h2>
+                            <p className="slide-text">Explora el pulso económico del país con noticias clave sobre el empleo, inflación, negocios, precios y decisiones que impactan tu bolsillo y el crecimiento del Perú.</p>
+                            <Link to="/noticias" className="slide-link">Leer más</Link>
+                        </div>
+                        
+                    </li>
+                    <li className="slide">
+                        <div className='slide-bac-img'>
+                            <img src={Cultura}  alt="" />
+                        </div>
+                        
+                        <div className="slide-content">
+                            <h2 className="slide-title">Cultura</h2>
+                            <p className="slide-text">Sumérgete en las expresiones artísticas, festividades, cine, literatura y todo lo que enriquece la identidad cultural del Perú.</p>
+                            <Link to="/noticias" className="slide-link">Leer más</Link>
+                        </div>
+                        
+                    </li>
+                    <li className="slide">
+                        <div className='slide-bac-img'>
+                            <img src={Tecnologia}  alt="" />
+                        </div>
+                        
+                        <div className="slide-content">
+                            <h2 className="slide-title">Tecnología</h2>
+                            <p className="slide-text">Descubre cómo la innovación y el avance digital están transformando la vida diaria en Lima y el mundo. Lo último en apps, IA, ciencia y más.</p>
+                            <Link to="/noticias" className="slide-link">Leer más</Link>
+                            
+                        </div>
+                        
+                    </li>
+                    <li className="slide">
+                        <div className='slide-bac-img'>
+                            <img src={Ambiente}  alt="" />
+                        </div>
+                        
+                        <div className="slide-content">
+                            <h2 className="slide-title">Ambiente</h2>
+                            <p className="slide-text">Reportes sobre el cambio climático, conservación, gestión de residuos y los desafíos ecológicos que enfrenta el país.</p>
+                            <Link to="/noticias" className="slide-link">Leer más</Link>
+                        </div>
+                        
+                    </li>
+                    <li className="slide">
+                        <div className='slide-bac-img'>
+                            <img src={Educacion}  alt="" />
+                        </div>
+                        
+                        <div className="slide-content">
+                            <h2 className="slide-title">Educación</h2>
+                            <p className="slide-text">Noticias sobre el sistema educativo, innovaciones en el aprendizaje, universidades y temas que impactan el futuro de los jóvenes.</p>
+                            <Link to="/noticias" className="slide-link">Leer más</Link>
+                        </div>
+                        
+                    </li>
+                    <li className="slide">
+                        <div className='slide-bac-img'>
+                            <img src={Sociedad}  alt="" />
+                        </div>
+                        
+                        <div className="slide-content">
+                            <h2 className="slide-title">Sociedad</h2>
+                            <p className="slide-text">Historias que reflejan los desafíos, logros y cambios de la vida social peruana. Desde realidades urbanas hasta voces de la periferia.</p>
+                            <Link to="/noticias" className="slide-link">Leer más</Link>
+                        </div>
+                        
+                    </li>
+                </ul>
             </div>
         </section>
     );
