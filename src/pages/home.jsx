@@ -15,14 +15,14 @@ const Home = () => {
     return (
         <section className="home">
             <div className="slider">
-                <input type="radio" name="toggle" id="btn-8" checked/>
-                <input type="radio" name="toggle" id="btn-7" checked />
-                <input type="radio" name="toggle" id="btn-6" checked/>
-                <input type="radio" name="toggle" id="btn-5" checked/>
-                <input type="radio" name="toggle" id="btn-4" checked />
-                <input type="radio" name="toggle" id="btn-2" checked/>
-                <input type="radio" name="toggle" id="btn-3" checked/>
                 <input type="radio" name="toggle" id="btn-1" checked/>
+                <input type="radio" name="toggle" id="btn-2" checked />
+                <input type="radio" name="toggle" id="btn-3" checked/>
+                <input type="radio" name="toggle" id="btn-4" checked/>
+                <input type="radio" name="toggle" id="btn-5" checked />
+                <input type="radio" name="toggle" id="btn-6" checked/>
+                <input type="radio" name="toggle" id="btn-7" checked/>
+                <input type="radio" name="toggle" id="btn-8" checked/>
                 
                 
 
@@ -38,19 +38,7 @@ const Home = () => {
                 </div>
 
                 <ul className="slides">
-                    <li className="slide">
-                        <div className='slide-bac-img'>
-                            <img src={Politica}  alt="" />
-                        </div>
-                        
-                        <div className="slide-content">
-                            <h2 className="slide-title">Política</h2>
-                            <p className="slide-text">Análisis y cobertura de las decisiones del Congreso, el Ejecutivo y los protagonistas del panorama político nacional.</p>
-                            <Link to="/noticias" className="slide-link">Leer más</Link>
-                            
-                        </div>
-                        
-                    </li>
+                    
                     <li className="slide">
                         <div className='slide-bac-img'>
                             <img src={Deporte}  alt="" />
@@ -133,6 +121,19 @@ const Home = () => {
                             <h2 className="slide-title">Sociedad</h2>
                             <p className="slide-text">Historias que reflejan los desafíos, logros y cambios de la vida social peruana. Desde realidades urbanas hasta voces de la periferia.</p>
                             <Link to="/noticias" className="slide-link">Leer más</Link>
+                        </div>
+                        
+                    </li>
+                    <li className="slide">
+                        <div className='slide-bac-img'>
+                            <img src={Politica}  alt="" />
+                        </div>
+                        
+                        <div className="slide-content">
+                            <h2 className="slide-title">Política</h2>
+                            <p className="slide-text">Análisis y cobertura de las decisiones del Congreso, el Ejecutivo y los protagonistas del panorama político nacional.</p>
+                            <Link to="/noticias" className="slide-link">Leer más</Link>
+                            
                         </div>
                         
                     </li>
