@@ -7,7 +7,13 @@ import Cultura from "../assets/imgs/cultura peruana.jpg"
 import Tecnologia from "../assets/imgs/tecnologia.png";
 import Ambiente from "../assets/imgs/ambiente.png";
 import Educacion from "../assets/imgs/educacion1.jpg";
-import Sociedad from "../assets/imgs/sociedad.jpg"
+import Sociedad from "../assets/imgs/sociedad.jpg";
+import BannerX from "../assets/imgs/Banner-x.png";
+import BannerYoutube from "../assets/imgs/Banner-youtube.png";
+import BannerFacebook from "../assets/imgs/Banner-facebook.png";
+import BannerTiktok from "../assets/imgs/Banner-tiktok.png";
+import BannerInstagram from "../assets/imgs/Banner-instagram.png";
+
 
 
 const Home = () => {
@@ -276,8 +282,89 @@ const Home = () => {
                         </div>
                         <img src={Politica} alt="" width="40px" />
                     </div>
+
+
+                    <div className="col">
+                        <div className="sp-colum"></div>
+                        <div className="t-colum">
+                            <span>Columnas</span>
+                        </div>
+                        <div className="colum-n">
+                            <div className="colum-n-g">
+                                <div>
+                                    <span className='c-t'>
+                                        El gobierno del peru en estado de emergencia ante el covid 19.
+                                    </span>
+                                    <span className="c-a">
+                                        Por Graciela Reyes 
+                                    </span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, natus sunt provident ullam dignissimos suscipit error? Magni eveniet quisquam natus. Quas, quaerat. Excepturi sint provident tempora rem, ipsum sequi? Quae, iure optio? Voluptatum minus ab dolore fugit mollitia consequatur earum libero blanditiis id, excepturi maiores ipsam iste. Dignissimos, id aliquid!</p>
+                                </div>
+                                <img src={Ambiente} alt="" width="30px" />
+                            </div>
+                            <div className="colum-n-g">
+                                <div>
+                                    <span className='c-t'>
+                                        El gobierno del peru en estado de emergencia ante el covid 19.
+                                    </span>
+                                    <span className="c-a">
+                                        Por Graciela Reyes 
+                                    </span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, natus sunt provident ullam dignissimos suscipit error? Magni eveniet quisquam natus. Quas, quaerat. Excepturi sint provident tempora rem, ipsum sequi? Quae, iure optio? Voluptatum minus ab dolore fugit mollitia consequatur earum libero blanditiis id, excepturi maiores ipsam iste. Dignissimos, id aliquid!</p>
+                                </div>
+                                <img src={Ambiente} alt="" width="30px" />
+                            </div>
+                            <div className="colum-n-g">
+                                <div>
+                                    <span className='c-t'>
+                                        El gobierno del peru en estado de emergencia ante el covid 19.
+                                    </span>
+                                    <span className="c-a">
+                                        Por Graciela Reyes 
+                                    </span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, natus sunt provident ullam dignissimos suscipit error? Magni eveniet quisquam natus. Quas, quaerat. Excepturi sint provident tempora rem, ipsum sequi? Quae, iure optio? Voluptatum minus ab dolore fugit mollitia consequatur earum libero blanditiis id, excepturi maiores ipsam iste. Dignissimos, id aliquid!</p>
+                                </div>
+                                <img src={Ambiente} alt="" width="30px" />
+                            </div>
+                            <div className="colum-n-g">
+                                <div>
+                                    <span className='c-t'>
+                                        El gobierno del peru en estado de emergencia ante el covid 19.
+                                    </span>
+                                    <span className="c-a">
+                                        Por Graciela Reyes 
+                                    </span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, natus sunt provident ullam dignissimos suscipit error? Magni eveniet quisquam natus. Quas, quaerat. Excepturi sint provident tempora rem, ipsum sequi? Quae, iure optio? Voluptatum minus ab dolore fugit mollitia consequatur earum libero blanditiis id, excepturi maiores ipsam iste. Dignissimos, id aliquid!</p>
+                                </div>
+                                <img src={Ambiente} alt="" width="30px" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="banner-r">
+                        <div className='b-img' id='bnx'>
+                            <img src={BannerX} alt="" />
+                        </div>
+                        <div className='b-img' id='bny'> 
+                            <img src={BannerYoutube} alt="" />
+                        </div>
+                        
+                        <div className='b-img' id='bni'>
+                            <img src={BannerInstagram} alt="" />
+                        </div>
+                        <div className='b-img' id='bnt'>
+                            <img src={BannerTiktok} alt="" />
+                        </div>
+                        <div className='b-img' id='bnf'>
+                            <img src={BannerFacebook} alt="" />
+                        </div>
+                    </div>
                 </div>
+                
             </div>
+            
+            
+
         </section>
     );
 };

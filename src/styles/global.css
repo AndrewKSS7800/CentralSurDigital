@@ -12,7 +12,7 @@
 
     /*Fonts*/
     --titulo: 'Anton', sans-serif;
-    --regular:'Contenido-R';
+    --regular:'Open Sans', sans-serif;
     --Bold:'Contenido-B';
     --SemiBold:'Contenido-SB';
     /*******/
@@ -27,11 +27,7 @@
 
 
 
-@font-face {
-    font-family: 'Contenido-R';
-    src: url('./assets/fonts/Open_Sans/static/OpenSans-Regular.ttf') format('truetype');
-    
-}
+
 @font-face {
     font-family: 'Contenido-B';
     src: url('./assets/fonts/Open_Sans/static/OpenSans-Bold.ttf') format('truetype');
@@ -47,6 +43,7 @@ section{
     padding-top: var(--pad-01);
     padding-right: var(--pad-01);
     padding-bottom: var(--pad-01);
+    overflow: hidden;
 }
 /* Móviles (hasta 480px) */
 @media screen and (min-width: 480px) {
