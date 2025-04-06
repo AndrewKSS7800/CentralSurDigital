@@ -217,7 +217,7 @@ const Home = () => {
                     </div>
                     <div className="n-card" id='ncard06'>
                         <span className="cat">
-                            Política
+                            | Política
                         </span>
                         <span className="tit">
                             Gobierno designó a Pedro Chira como presidente del Directorio de Perupetro.
@@ -229,7 +229,7 @@ const Home = () => {
                     </div>
                     <div className="n-card" id='ncard07'>
                         <span className="cat">
-                            Política
+                            | Política
                         </span>
                         <span className="tit">
                             Gobierno designó a Pedro Chira como presidente del Directorio de Perupetro.
