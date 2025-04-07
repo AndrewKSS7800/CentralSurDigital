@@ -53,7 +53,7 @@ const Home = () => {
                         <div className="slide-content">
                             <h2 className="slide-title">Deporte</h2>
                             <p className="slide-text">Entérate de los triunfos, retos y pasión de los deportistas peruanos. Fútbol, vóley, atletismo y más disciplinas que nos unen.</p>
-                            <Link to="/noticias" className="slide-link">Leer más</Link>
+                            <Link to="/noticias/deporte" className="slide-link">Leer más</Link>
                         </div>
                         
                     </li>
@@ -65,7 +65,7 @@ const Home = () => {
                         <div className="slide-content">
                             <h2 className="slide-title">Economía</h2>
                             <p className="slide-text">Explora el pulso económico del país con noticias clave sobre el empleo, inflación, negocios, precios y decisiones que impactan tu bolsillo y el crecimiento del Perú.</p>
-                            <Link to="/noticias" className="slide-link">Leer más</Link>
+                            <Link to="/noticias/economia" className="slide-link">Leer más</Link>
                         </div>
                         
                     </li>
@@ -77,7 +77,7 @@ const Home = () => {
                         <div className="slide-content">
                             <h2 className="slide-title">Cultura</h2>
                             <p className="slide-text">Sumérgete en las expresiones artísticas, festividades, cine, literatura y todo lo que enriquece la identidad cultural del Perú.</p>
-                            <Link to="/noticias" className="slide-link">Leer más</Link>
+                            <Link to="/noticias/cultura" className="slide-link">Leer más</Link>
                         </div>
                         
                     </li>
@@ -89,7 +89,7 @@ const Home = () => {
                         <div className="slide-content">
                             <h2 className="slide-title">Tecnología</h2>
                             <p className="slide-text">Descubre cómo la innovación y el avance digital están transformando la vida diaria en Lima y el mundo. Lo último en apps, IA, ciencia y más.</p>
-                            <Link to="/noticias" className="slide-link">Leer más</Link>
+                            <Link to="/noticias/tecnologia" className="slide-link">Leer más</Link>
                             
                         </div>
                         
@@ -102,7 +102,7 @@ const Home = () => {
                         <div className="slide-content">
                             <h2 className="slide-title">Ambiente</h2>
                             <p className="slide-text">Reportes sobre el cambio climático, conservación, gestión de residuos y los desafíos ecológicos que enfrenta el país.</p>
-                            <Link to="/noticias" className="slide-link">Leer más</Link>
+                            <Link to="/noticias/ambiente" className="slide-link">Leer más</Link>
                         </div>
                         
                     </li>
@@ -114,7 +114,7 @@ const Home = () => {
                         <div className="slide-content">
                             <h2 className="slide-title">Educación</h2>
                             <p className="slide-text">Noticias sobre el sistema educativo, innovaciones en el aprendizaje, universidades y temas que impactan el futuro de los jóvenes.</p>
-                            <Link to="/noticias" className="slide-link">Leer más</Link>
+                            <Link to="/noticias/educacion" className="slide-link">Leer más</Link>
                         </div>
                         
                     </li>
@@ -126,7 +126,7 @@ const Home = () => {
                         <div className="slide-content">
                             <h2 className="slide-title">Sociedad</h2>
                             <p className="slide-text">Historias que reflejan los desafíos, logros y cambios de la vida social peruana. Desde realidades urbanas hasta voces de la periferia.</p>
-                            <Link to="/noticias" className="slide-link">Leer más</Link>
+                            <Link to="/noticias/sociedad" className="slide-link">Leer más</Link>
                         </div>
                         
                     </li>
@@ -138,7 +138,7 @@ const Home = () => {
                         <div className="slide-content">
                             <h2 className="slide-title">Política</h2>
                             <p className="slide-text">Análisis y cobertura de las decisiones del Congreso, el Ejecutivo y los protagonistas del panorama político nacional.</p>
-                            <Link to="/noticias" className="slide-link">Leer más</Link>
+                            <Link to="/noticias/politica" className="slide-link">Leer más</Link>
                             
                         </div>
                         
@@ -287,7 +287,8 @@ const Home = () => {
                     <div className="col">
                         <div className="sp-colum"></div>
                         <div className="t-colum">
-                            <span>Columnas</span>
+                            <span>Columnistas</span>
+                            <Link to="/noticias/columnas">Leer más</Link>
                         </div>
                         <div className="colum-n">
                             <div className="colum-n-g">

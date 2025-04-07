@@ -9,7 +9,7 @@ const News = () => {
             <div className="news-list">
                 <div className="nlist-h">
                     <span>Lo ultimo en Economía</span>
-                    <Link to="">Leer más</Link>
+                    <Link to="/noticias/economia">Leer más</Link>
                 </div>
                 <div className="nlist-b">
                     <div className="nlbc">
@@ -72,7 +72,7 @@ const News = () => {
 
                 <div className="nlist-h">
                     <span>Lo ultimo en Política</span>
-                    <Link to="">Leer más</Link>
+                    <Link to="/noticias/politica">Leer más</Link>
                 </div>
                 <div className="nlist-b">
                     <div className="nlbc">

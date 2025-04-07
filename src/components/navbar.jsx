@@ -43,7 +43,7 @@ const Navbar = () => {
                     <label htmlFor="menu-btn">
                         <Link 
                             to="/noticias" 
-                            className={active === "/noticias" ? "menu-act" : ""}
+                            className={active.startsWith("/noticias") ? "menu-act" : ""}
                             onClick={() => document.getElementById("menu-btn").click()}
                         >
                             Noticias
@@ -51,7 +51,7 @@ const Navbar = () => {
                         <ul className="sub-menu-not">
                             <li>
                                 <label htmlFor="menu-btn">
-                                    <Link to="/home">
+                                    <Link to="/noticias/columnas">
                                     Columnistas 
                                     </Link>
                                     
@@ -60,7 +60,7 @@ const Navbar = () => {
                             </li>
                             <li>
                                 <label htmlFor="menu-btn">
-                                    <Link to="/home">
+                                    <Link to="/noticias/politica">
                                     Política
                                     </Link>
                                 </label>
@@ -68,7 +68,7 @@ const Navbar = () => {
                             </li>
                             <li>
                                 <label htmlFor="menu-btn">
-                                    <Link to="/home">
+                                    <Link to="/noticias/sociedad">
                                     Sociedad
                                     </Link>
                                     
@@ -77,7 +77,7 @@ const Navbar = () => {
                             </li>
                             <li>
                                 <label htmlFor="menu-btn">
-                                    <Link>
+                                    <Link to="/noticias/educacion">
                                     Educación
                                     </Link>
 
@@ -87,32 +87,33 @@ const Navbar = () => {
                             </li>
                             <li>
                                 <label htmlFor="menu-btn">
-                                    <Link>
+                                    <Link to="/noticias/ambiente">
                                     Ambiente</Link>
                                 </label>
                                 
                             </li>
                             <li>
                                 <label htmlFor="menu-btn">
-                                    <Link>Tecnología</Link>
+                                    <Link to="/noticias/tecnologia" >
+                                    Tecnología</Link>
                                 </label>
                                 
                             </li>
                             <li>
                                 <label htmlFor="menu-btn">
-                                    <Link>Cultura</Link>
+                                    <Link to="/noticias/cultura">Cultura</Link>
                                 </label>
                                 
                             </li>
                             <li>
                                 <label htmlFor="menu-btn">
-                                    <Link>Economía</Link>
+                                    <Link to="/noticias/economia">Economía</Link>
                                 </label>
                                 
                             </li>
                             <li>
                                 <label htmlFor="menu-btn">
-                                    <Link>Deporte</Link>
+                                    <Link to="/noticias/deporte">Deporte</Link>
                                 </label>
                                 
                             </li>

@@ -64,6 +64,35 @@
 }
 
 
+.card.historia {
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    background: var(--white);
+    color: var(--primary-color-v1);
+    border: 2px solid var(--primary-color-v2);
+}
+.card.historia h3 {
+    color: var(--primary-color-v2);
+}
+.card.historia .chimg{
+    background-color: var(--primary-color-v1);
+    border-radius: 1rem;
+    overflow: hidden;
+    width: 100%;
+    height: 10rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.card.historia .chimg img{
+    width: 100%;
+    height: 100%;
+    
+    object-fit: cover;
+    object-position: center;
+}
+
+
 @media screen and (min-width: 480px) {
     .about-us {
         color: var(--black);
@@ -128,6 +157,15 @@
     @keyframes fadeInUp {
         from { opacity: 0; transform: translateY(20px); }
         to { opacity: 1; transform: translateY(0); }
+    }
+
+    .card.historia .chimg{
+        background-color: var(--primary-color-v1);
+        border-radius: 1rem;
+        overflow: hidden;
+        width: 100%;
+        height: 10rem;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     }
     
 }
@@ -198,6 +236,15 @@
         from { opacity: 0; transform: translateY(20px); }
         to { opacity: 1; transform: translateY(0); }
     }
+
+    .card.historia .chimg{
+        background-color: var(--primary-color-v1);
+        border-radius: 1rem;
+        overflow: hidden;
+        width: 100%;
+        height: 15rem;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
     
 }
 @media screen and (min-width: 1024px) {
@@ -265,6 +312,15 @@
     @keyframes fadeInUp {
         from { opacity: 0; transform: translateY(20px); }
         to { opacity: 1; transform: translateY(0); }
+    }
+
+    .card.historia .chimg{
+        background-color: var(--primary-color-v1);
+        border-radius: 1rem;
+        overflow: hidden;
+        width: 100%;
+        height: 20rem;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     }
     
 }
@@ -337,6 +393,14 @@
         to { opacity: 1; transform: translateY(0); }
     }
     
+    .card.historia .chimg{
+        background-color: var(--primary-color-v1);
+        border-radius: 1rem;
+        overflow: hidden;
+        width: 100%;
+        height: 32rem;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
 }
 
 @media screen and (min-width: 1900px) {
@@ -407,4 +471,12 @@
         to { opacity: 1; transform: translateY(0); }
     }
     
+    .card.historia .chimg{
+        background-color: var(--primary-color-v1);
+        border-radius: 1rem;
+        overflow: hidden;
+        width: 100%;
+        height: 35rem;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
 }
