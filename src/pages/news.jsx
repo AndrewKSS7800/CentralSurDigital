@@ -1,24 +1,139 @@
-import { useEffect, useState } from "react";
-import data from "../data/data.json"
+import { Link} from "react-router-dom";
+import IMG1 from "../assets/imgs/Economia.png"
+import IMG2 from "../assets/imgs/politica.jpg"
 const News = () => {
-    const [noticias, setNoticias] = useState([]);
-
-    useEffect(() => {
-        setNoticias(data.noticias); // Acceder al array dentro del objeto
-    }, []);
+    
 
     return (
         <section className="news">
-            <h1>Últimas Noticias</h1>
             <div className="news-list">
-                {noticias.map((item) => (
-                <div key={item.id} className="news-item">
-                    <h2>{item.titulo}</h2>
-                    <p><strong>Género:</strong> {item.genero}</p>
-                    <p><strong>Reportero:</strong> {item.reportero}</p>
-                    <p>{item.contenido}</p>
+                <div className="nlist-h">
+                    <span>Lo ultimo en Economía</span>
+                    <Link to="">Leer más</Link>
                 </div>
-                ))}
+                <div className="nlist-b">
+                    <div className="nlbc">
+                        <div className="nlbc-img">
+                            <img src={IMG1} alt="" width="40px"/>
+                        </div>
+                        <div className="nlbc-content">
+                            <span>Economía</span>
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sapiente rerum, reiciendis repudiandae totam consectetur.</span>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores praesentium nisi. Excepturi voluptates quidem quaerat, beatae libero repudiandae recusandae, mollitia aspernatur doloribus tempora molestiae nisi accusantium a? Incidunt reiciendis laborum unde minima, nobis quos a odit porro magni autem totam rerum exercitationem cupiditate qui. Esse quam perspiciatis magnam aperiam.</p>
+                            <span className="nlbc-at">Por <b> Graciela Reyes </b> 20/08/2025 15:07</span>
+                        </div>
+                    </div>
+                    <div className="nlbc">
+                        <div className="nlbc-img">
+                            <img src={IMG1} alt="" width="40px"/>
+                        </div>
+                        <div className="nlbc-content">
+                            <span>Economía</span>
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sapiente rerum, reiciendis repudiandae totam consectetur.</span>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores praesentium nisi. Excepturi voluptates quidem quaerat, beatae libero repudiandae recusandae, mollitia aspernatur doloribus tempora molestiae nisi accusantium a? Incidunt reiciendis laborum unde minima, nobis quos a odit porro magni autem totam rerum exercitationem cupiditate qui. Esse quam perspiciatis magnam aperiam.</p>
+                            <span className="nlbc-at">Por <b> Graciela Reyes </b> 20/08/2025 15:07</span>
+                        </div>
+                    </div>
+                    <div className="nlbc">
+                        <div className="nlbc-img">
+                            <img src={IMG1} alt="" width="40px"/>
+                        </div>
+                        <div className="nlbc-content">
+                            <span>Economía</span>
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sapiente rerum, reiciendis repudiandae totam consectetur.</span>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores praesentium nisi. Excepturi voluptates quidem quaerat, beatae libero repudiandae recusandae, mollitia aspernatur doloribus tempora molestiae nisi accusantium a? Incidunt reiciendis laborum unde minima, nobis quos a odit porro magni autem totam rerum exercitationem cupiditate qui. Esse quam perspiciatis magnam aperiam.</p>
+                            <span className="nlbc-at">Por <b> Graciela Reyes </b> 20/08/2025 15:07</span>
+                        </div>
+                    </div>
+                    <div className="nlbc">
+                        <div className="nlbc-img">
+                            <img src={IMG1} alt="" width="40px"/>
+                        </div>
+                        <div className="nlbc-content">
+                            <span>Economía</span>
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sapiente rerum, reiciendis repudiandae totam consectetur.</span>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores praesentium nisi. Excepturi voluptates quidem quaerat, beatae libero repudiandae recusandae, mollitia aspernatur doloribus tempora molestiae nisi accusantium a? Incidunt reiciendis laborum unde minima, nobis quos a odit porro magni autem totam rerum exercitationem cupiditate qui. Esse quam perspiciatis magnam aperiam.</p>
+                            <span className="nlbc-at">Por <b> Graciela Reyes </b> 20/08/2025 15:07</span>
+                        </div>
+                    </div>
+                    <div className="nlbc">
+                        <div className="nlbc-img">
+                            <img src={IMG1} alt="" width="40px"/>
+                        </div>
+                        <div className="nlbc-content">
+                            <span>Economía</span>
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sapiente rerum, reiciendis repudiandae totam consectetur.</span>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores praesentium nisi. Excepturi voluptates quidem quaerat, beatae libero repudiandae recusandae, mollitia aspernatur doloribus tempora molestiae nisi accusantium a? Incidunt reiciendis laborum unde minima, nobis quos a odit porro magni autem totam rerum exercitationem cupiditate qui. Esse quam perspiciatis magnam aperiam.</p>
+                            <span className="nlbc-at">Por <b> Graciela Reyes </b> 20/08/2025 15:07</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div className="nlist-h">
+                    <span>Lo ultimo en Política</span>
+                    <Link to="">Leer más</Link>
+                </div>
+                <div className="nlist-b">
+                    <div className="nlbc">
+                        <div className="nlbc-img">
+                            <img src={IMG2} alt="" width="40px"/>
+                        </div>
+                        <div className="nlbc-content">
+                            <span>Política</span>
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sapiente rerum, reiciendis repudiandae totam consectetur.</span>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores praesentium nisi. Excepturi voluptates quidem quaerat, beatae libero repudiandae recusandae, mollitia aspernatur doloribus tempora molestiae nisi accusantium a? Incidunt reiciendis laborum unde minima, nobis quos a odit porro magni autem totam rerum exercitationem cupiditate qui. Esse quam perspiciatis magnam aperiam.</p>
+                            <span className="nlbc-at">Por <b> Graciela Reyes </b> 20/08/2025 15:07</span>
+                        </div>
+                    </div>
+                    <div className="nlbc">
+                        <div className="nlbc-img">
+                            <img src={IMG2} alt="" width="40px"/>
+                        </div>
+                        <div className="nlbc-content">
+                            <span>Política</span>
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sapiente rerum, reiciendis repudiandae totam consectetur.</span>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores praesentium nisi. Excepturi voluptates quidem quaerat, beatae libero repudiandae recusandae, mollitia aspernatur doloribus tempora molestiae nisi accusantium a? Incidunt reiciendis laborum unde minima, nobis quos a odit porro magni autem totam rerum exercitationem cupiditate qui. Esse quam perspiciatis magnam aperiam.</p>
+                            <span className="nlbc-at">Por <b> Graciela Reyes </b> 20/08/2025 15:07</span>
+                        </div>
+                    </div>
+                    <div className="nlbc">
+                        <div className="nlbc-img">
+                            <img src={IMG2} alt="" width="40px"/>
+                        </div>
+                        <div className="nlbc-content">
+                            <span>Política</span>
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sapiente rerum, reiciendis repudiandae totam consectetur.</span>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores praesentium nisi. Excepturi voluptates quidem quaerat, beatae libero repudiandae recusandae, mollitia aspernatur doloribus tempora molestiae nisi accusantium a? Incidunt reiciendis laborum unde minima, nobis quos a odit porro magni autem totam rerum exercitationem cupiditate qui. Esse quam perspiciatis magnam aperiam.</p>
+                            <span className="nlbc-at">Por <b> Graciela Reyes </b> 20/08/2025 15:07</span>
+                        </div>
+                    </div>
+                    <div className="nlbc">
+                        <div className="nlbc-img">
+                            <img src={IMG2} alt="" width="40px"/>
+                        </div>
+                        <div className="nlbc-content">
+                            <span>Política</span>
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sapiente rerum, reiciendis repudiandae totam consectetur.</span>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores praesentium nisi. Excepturi voluptates quidem quaerat, beatae libero repudiandae recusandae, mollitia aspernatur doloribus tempora molestiae nisi accusantium a? Incidunt reiciendis laborum unde minima, nobis quos a odit porro magni autem totam rerum exercitationem cupiditate qui. Esse quam perspiciatis magnam aperiam.</p>
+                            <span className="nlbc-at">Por <b> Graciela Reyes </b> 20/08/2025 15:07</span>
+                        </div>
+                    </div>
+                    <div className="nlbc">
+                        <div className="nlbc-img">
+                            <img src={IMG2} alt="" width="40px"/>
+                        </div>
+                        <div className="nlbc-content">
+                            <span>Política</span>
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sapiente rerum, reiciendis repudiandae totam consectetur.</span>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores praesentium nisi. Excepturi voluptates quidem quaerat, beatae libero repudiandae recusandae, mollitia aspernatur doloribus tempora molestiae nisi accusantium a? Incidunt reiciendis laborum unde minima, nobis quos a odit porro magni autem totam rerum exercitationem cupiditate qui. Esse quam perspiciatis magnam aperiam.</p>
+                            <span className="nlbc-at">Por <b> Graciela Reyes </b> 20/08/2025 15:07</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="news-add">
+                anuncio
             </div>
         </section>
     );

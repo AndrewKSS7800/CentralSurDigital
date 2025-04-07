@@ -1,3 +1,5 @@
+
+
 .logo{
     margin-left: var(--pad-01);
     display: flex;
@@ -144,6 +146,10 @@ nav ul li label a{
     cursor: pointer;
 }
 
+.sub-menu-not{
+    display: none;
+}
+
 
 .networks ul li a .ionicon:hover{
     fill: var(--primary-color-v3);
@@ -155,6 +161,8 @@ nav ul li label a{
 /* Tablets en vertical (481px - 768px) */
 
 @media screen and (min-width: 480px) {
+
+    
     .logo{
         margin-left: var(--pad-02);
         display: flex;
@@ -289,6 +297,7 @@ nav ul li label a{
         width: 100%;
     }
     nav ul li label a{
+
         text-decoration:none;
         display: flex;
         justify-content: center;
@@ -302,15 +311,73 @@ nav ul li label a{
         font-size: 0.9rem;
     }
     nav ul li label a:hover{
-        color: var(--gray-light);
+        
+        color: var(--primary-color-v4);
         transition: all 0.3s ease-in-out;
     }
+    .menu-act:hover{
+        color: var(--primary-color-v1);
+        transition: all 0.3s ease-in-out;
+    }
+
+    
+    
     .menu-act {
     background-color: var(--primary-color-v3);
     transition: all 0.3s ease-in-out;
     transform: scale(1.01); 
     box-shadow: 0px 0px 10px var(--primary-color-v3); 
     }
+    
+
+    .sub-menu-not{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--primary-color-v3);
+        width: 100%;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transform: translateY(-20%);
+        transition: max-height 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+        z-index: 1;
+        pointer-events: none; /* ← importante para que no se dispare accidentalmente */
+    }
+    
+    .menu-act:hover ~ .sub-menu-not,
+    .sub-menu-not:hover{
+        max-height: 500px;
+    opacity: 1;
+    transform: translateY(0%);
+    pointer-events: auto;
+    }
+
+    .sub-menu-not li{
+        width: 33%;
+    }
+    .sub-menu-not li label{
+        width: 100%;
+        font-family: var(--regular);
+    }
+    .sub-menu-not li label a{
+        
+        padding: 1rem;
+    }
+
+    .sub-menu-not li label a:hover{
+        
+        color: var(--primary-color-v1);
+        transition: all 0.3s ease-in-out;
+    }
+    
     
 }
 
@@ -464,6 +531,48 @@ nav ul li label a{
         font-size: 0.9rem;
     }
     
+
+    .sub-menu-not{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--primary-color-v3);
+        width: 100%;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transform: translateY(-20%);
+        transition: max-height 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+        z-index: 1;
+        pointer-events: none; /* ← importante para que no se dispare accidentalmente */
+    }
+    
+    .menu-act:hover ~ .sub-menu-not,
+    .sub-menu-not:hover{
+        max-height: 900px;
+    opacity: 1;
+    transform: translateY(0%);
+    pointer-events: auto;
+    }
+
+    .sub-menu-not li{
+        width: 33%;
+    }
+    .sub-menu-not li label{
+        width: 100%;
+        font-family: var(--regular);
+    }
+    .sub-menu-not li label a{
+        
+        padding: 1.5rem;
+    }
 }
 
 @media screen and (min-width: 1024px) {

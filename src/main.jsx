@@ -9,6 +9,7 @@ import "./styles/contact.css"
 import "./styles/notfound.css"
 import "./styles/home.css"
 import "./styles/about.css"
+import "./styles/news.css"
 import App from './App.jsx'
 import { BrowserRouter } from "react-router-dom";
 

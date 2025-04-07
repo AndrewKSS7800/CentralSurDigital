@@ -48,6 +48,75 @@ const Navbar = () => {
                         >
                             Noticias
                         </Link>
+                        <ul className="sub-menu-not">
+                            <li>
+                                <label htmlFor="menu-btn">
+                                    <Link to="/home">
+                                    Columnistas 
+                                    </Link>
+                                    
+                                </label>
+                                
+                            </li>
+                            <li>
+                                <label htmlFor="menu-btn">
+                                    <Link to="/home">
+                                    Política
+                                    </Link>
+                                </label>
+                                
+                            </li>
+                            <li>
+                                <label htmlFor="menu-btn">
+                                    <Link to="/home">
+                                    Sociedad
+                                    </Link>
+                                    
+                                </label>
+                                
+                            </li>
+                            <li>
+                                <label htmlFor="menu-btn">
+                                    <Link>
+                                    Educación
+                                    </Link>
+
+                                    
+                                </label>
+                                
+                            </li>
+                            <li>
+                                <label htmlFor="menu-btn">
+                                    <Link>
+                                    Ambiente</Link>
+                                </label>
+                                
+                            </li>
+                            <li>
+                                <label htmlFor="menu-btn">
+                                    <Link>Tecnología</Link>
+                                </label>
+                                
+                            </li>
+                            <li>
+                                <label htmlFor="menu-btn">
+                                    <Link>Cultura</Link>
+                                </label>
+                                
+                            </li>
+                            <li>
+                                <label htmlFor="menu-btn">
+                                    <Link>Economía</Link>
+                                </label>
+                                
+                            </li>
+                            <li>
+                                <label htmlFor="menu-btn">
+                                    <Link>Deporte</Link>
+                                </label>
+                                
+                            </li>
+                        </ul>
                     </label>
                 </li>
                 <li>
