@@ -311,6 +311,79 @@
     padding-bottom: 1.3rem;
     border-bottom: 2px solid var(--primary-color-v1);
 }
+
+
+.cobesp{
+    background-color: var(--gray-light);
+    grid-area: cosp;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 0;
+    z-index: 4;
+}
+.cobesp::before{
+    background-color: var(--gray-light);
+    content: "";
+    position: absolute;
+    width: calc(100% + 1rem + 1rem);
+    height: 100%;
+
+}
+.csptitle{
+    text-transform: uppercase;
+    color: var(--primary-color-v1);
+    width: 100%;
+    font-family: var(--regular);
+    font-weight: 700;
+    font-size: 0.7rem;
+    z-index: 4;
+}
+
+.cspsubtitle{
+    display: flex;
+    transform: translateY(-0.25rem);
+    text-transform: uppercase;
+    color: var(--primary-color-v1);
+    width: 100%;
+    font-family: var(--regular);
+    font-weight: 900;
+    font-size: 1.35rem;
+    z-index: 4;
+}
+.cobesp p{
+    padding-bottom: 1rem;
+    width: 100%;
+    color: var(--primary-color-v1);
+    text-align: justify;
+    font-family: var(--regular);
+    font-size: 0.8rem;
+    z-index: 5;
+}
+.cspiframes{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    z-index: 4;
+}
+.cobesp iframe{
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+    aspect-ratio: 16/8.9;
+    width: 100%;
+    transition: 1s ease-in-out;
+    background-color: var(--gray);
+    z-index: 4;
+    height: 100%;
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.541);
+}
+.cobesp iframe:hover{
+    scale: 1.02;
+}
 .n-container{
     row-gap: 1rem;
     padding-top: 1rem;
@@ -318,6 +391,7 @@
     position: relative;
     display: grid;
     grid-template-areas: 
+    "cosp cosp" 
     "n01 n01"
     "n02 n02"
     "n03 n03"
@@ -332,7 +406,7 @@
     "col col"
     "bnr bnr";
     grid-template-columns:50% 50%;
-    grid-template-rows: 25rem 18rem 18rem 18rem 18rem 18rem 18rem 4rem 13rem 13rem 13rem auto auto;
+    grid-template-rows: auto 25rem 18rem 18rem 18rem 18rem 18rem 18rem 4rem 13rem 13rem 13rem auto auto;
 }
 
 #ncard01{
@@ -1099,6 +1173,7 @@
         background-color: #212121;
         width: 10rem;
         height: 40rem;
+        transform: translateY(-1.85rem);
     }
     /**
     .n-container{
@@ -1118,12 +1193,88 @@
         padding-bottom: 1.3rem;
         border-bottom: 2px solid var(--primary-color-v1);
     }
+
+
+    .cobesp{
+        background-color: var(--gray-light);
+        grid-area: cosp;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 2rem 1rem;
+        z-index: 4;
+        
+    }
+    .cobesp::before{
+        background-color: var(--gray-light);
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform:none;
+        height: 100%;
+    
+    }
+    .csptitle{
+        text-transform: uppercase;
+        color: var(--primary-color-v1);
+        width: 100%;
+        font-family: var(--regular);
+        font-weight: 700;
+        font-size: 0.75rem;
+        z-index: 4;
+    }
+    
+    .cspsubtitle{
+        display: flex;
+        transform: translateY(-0.25rem);
+        text-transform: uppercase;
+        color: var(--primary-color-v1);
+        width: 100%;
+        font-family: var(--regular);
+        font-weight: 900;
+        font-size: 1.4rem;
+        z-index: 4;
+    }
+    .cobesp p{
+        padding-bottom: 1rem;
+        width: 100%;
+        color: var(--primary-color-v1);
+        text-align: justify;
+        font-family: var(--regular);
+        font-size: 0.8rem;
+        z-index: 5;
+    }
+    .cspiframes{
+        width: 100%;
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        z-index: 4;
+    }
+    .cobesp iframe{
+        object-fit: cover;
+        object-position: center;
+        border-radius: 5px;
+        aspect-ratio: 16/8.9;
+        width: 100%;
+        transition: 1s ease-in-out;
+        background-color: var(--gray);
+        z-index: 4;
+        height: 100%;
+        box-shadow: 0 0px 15px rgba(0, 0, 0, 0.541);
+    }
+    .cobesp iframe:hover{
+        scale: 1.02;
+    }
     .n-container{
         padding-top: 1rem;
         width: 100%;
         position: relative;
         display: grid;
         grid-template-areas: 
+        "cosp cosp"
         "n01 n01"
         "n02 n02"
         "n03 n03"
@@ -1138,7 +1289,7 @@
         "col col"
         "bnr bnr";
         grid-template-columns:50% 50%;
-        grid-template-rows: 25rem 18rem 18rem 18rem 18rem 18rem 18rem 4rem 13rem 13rem 13rem auto auto;
+        grid-template-rows: auto 25rem 18rem 18rem 18rem 18rem 18rem 18rem 4rem 13rem 13rem 13rem auto auto;
     }
     
     #ncard01{
@@ -1926,8 +2077,91 @@
     }
     .add-h{
         background-color: #212121;
-        width: 15rem;
+        width: 14rem;
         height: 40rem;
+    }
+    .cobesp{
+        background-color: var(--gray-light);
+        grid-area: cosp;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 2rem 1rem;
+        z-index: 4;
+        
+    }
+    .cobesp::before{
+        background-color: var(--gray-light);
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform:none;
+        height: 100%;
+    
+    }
+    .csptitle{
+        text-transform: uppercase;
+        color: var(--primary-color-v1);
+        width: 100%;
+        font-family: var(--regular);
+        font-weight: 700;
+        font-size: 0.75rem;
+        z-index: 4;
+    }
+    
+    .cspsubtitle{
+        display: flex;
+        transform: translateY(-0.25rem);
+        text-transform: uppercase;
+        color: var(--primary-color-v1);
+        width: 100%;
+        font-family: var(--regular);
+        font-weight: 900;
+        font-size: 1.5rem;
+        z-index: 4;
+    }
+    .cobesp p{
+        padding-bottom: 1rem;
+        width: 100%;
+        color: var(--primary-color-v1);
+        text-align: justify;
+        font-family: var(--regular);
+        font-size: 0.8rem;
+        z-index: 5;
+    }
+    .cspiframes{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center; /* Para centrar si hay una sola fila */
+        z-index: 4;
+    }
+    .csconifr{
+        width: calc(49.9% - 0.5rem);
+        aspect-ratio: 16 / 9;
+        background-color: var(--gray);
+        border-radius: 5px;
+        box-shadow: 0 0px 15px rgba(0, 0, 0, 0.541);
+        
+        position: relative;
+    }
+    .cobesp iframe{
+        display: flex;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 5px;
+        aspect-ratio: 16/9; /* más estándar */
+        width:100%; /* compensa el gap de 1rem */
+        transition: 1s ease-in-out;
+        z-index: 4;
+    }
+    .cobesp iframe:hover{
+        scale: 1.02;
     }
     /**
     .n-container{
@@ -1948,11 +2182,12 @@
         border-bottom: 2px solid var(--primary-color-v1);
     }
     .n-container{
-        padding-top: 1rem;
+        padding-top: 3rem;
         width: 100%;
         position: relative;
         display: grid;
         grid-template-areas: 
+        "cosp cosp"
         "n01 n01"
         "n02 n02"
         "n03 n03"
@@ -1967,7 +2202,7 @@
         "col col"
         "bnr bnr";
         grid-template-columns:50% 50%;
-        grid-template-rows: 25rem 18rem 18rem 18rem 18rem 18rem 18rem 4rem 13rem 13rem 13rem auto auto;
+        grid-template-rows: auto 25rem 18rem 18rem 18rem 18rem 18rem 18rem 4rem 13rem 13rem 13rem auto auto;
     }
     
     #ncard01{
@@ -2767,14 +3002,95 @@
         border-bottom: 2px solid var(--primary-color-v1);
     }
 
+    .cobesp{
+        background-color: var(--gray-light);
+        grid-area: cosp;
+        position: relative;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+        padding: 2rem 1rem;
+        z-index: 4;
+        
+    }
+    .cobesp::before{
+        display: none;
+        
     
+    }
+    .csptitle{
+        text-transform: uppercase;
+        color: var(--primary-color-v1);
+        width: 100%;
+        font-family: var(--regular);
+        font-weight: 700;
+        font-size: 0.75rem;
+        z-index: 4;
+    }
+    
+    .cspsubtitle{
+        display: flex;
+        transform: translateY(-0.25rem);
+        text-transform: uppercase;
+        color: var(--primary-color-v1);
+        width: 100%;
+        font-family: var(--regular);
+        font-weight: 900;
+        font-size: 1.5rem;
+        z-index: 4;
+    }
+    .cobesp p{
+        padding-bottom: 1rem;
+        width: 100%;
+        color: var(--primary-color-v1);
+        text-align: justify;
+        font-family: var(--regular);
+        font-size: 0.8rem;
+        z-index: 5;
+    }
+    .cspiframes{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center; /* Para centrar si hay una sola fila */
+        z-index: 4;
+    }
+    .csconifr{
+        width: calc(32.9% - 0.5rem);
+        aspect-ratio: 16 / 9;
+        background-color: var(--gray);
+        border-radius: 5px;
+        box-shadow: 0 0px 15px rgba(0, 0, 0, 0.541);
+        
+        position: relative;
+    }
+    .cobesp iframe{
+        display: flex;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 5px;
+        aspect-ratio: 16/9; /* más estándar */
+        width:100%; /* compensa el gap de 1rem */
+        transition: 1s ease-in-out;
+        z-index: 4;
+    }
+    .cobesp iframe:hover{
+        scale: 1.02;
+    }
     .n-container{
         row-gap: 0;
         column-gap: 1.5rem;
         width: 100%;
         position: relative;
         display: grid;
-        grid-template-areas: 
+        grid-template-areas:
+        "cosp cosp cosp" 
         "n01 n01 n06"
         "n01 n01 n06"
         "n01 n01 n06"
@@ -2788,7 +3104,7 @@
         "col col col"
         "bnr bnr bnr";
         grid-template-columns:30% auto 40%;
-        grid-template-rows: 2rem 7rem 7rem 2rem 7rem 7rem 5rem 10rem 10rem 10rem auto auto;
+        grid-template-rows: auto 2rem 7rem 7rem 2rem 7rem 7rem 5rem 10rem 10rem 10rem auto auto;
     }
     
 
@@ -3680,6 +3996,87 @@
         border-bottom: 2px solid var(--primary-color-v1);
     }
 
+    .cobesp{
+        background-color: var(--gray-light);
+        grid-area: cosp;
+        position: relative;
+        margin-bottom: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+        padding: 2rem 1rem;
+        z-index: 4;
+        
+    }
+    .cobesp::before{
+        display: none;
+        
+    
+    }
+    .csptitle{
+        text-transform: uppercase;
+        color: var(--primary-color-v1);
+        width: 100%;
+        font-family: var(--regular);
+        font-weight: 700;
+        font-size: 0.85rem;
+        z-index: 4;
+    }
+    
+    .cspsubtitle{
+        display: flex;
+        transform: translateY(-0.25rem);
+        text-transform: uppercase;
+        color: var(--primary-color-v1);
+        width: 100%;
+        font-family: var(--regular);
+        font-weight: 900;
+        font-size: 1.8rem;
+        z-index: 4;
+    }
+    .cobesp p{
+        padding-bottom: 1rem;
+        width: 100%;
+        color: var(--primary-color-v1);
+        text-align: justify;
+        font-family: var(--regular);
+        font-size: 1rem;
+        z-index: 5;
+    }
+    .cspiframes{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center; /* Para centrar si hay una sola fila */
+        z-index: 4;
+    }
+    .csconifr{
+        width: calc(33% - 0.5rem);
+        aspect-ratio: 16 / 9;
+        background-color: var(--gray);
+        border-radius: 5px;
+        box-shadow: 0 0px 15px rgba(0, 0, 0, 0.541);
+        
+        position: relative;
+    }
+    .cobesp iframe{
+        display: flex;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 5px;
+        aspect-ratio: 16/9; /* más estándar */
+        width:100%; /* compensa el gap de 1rem */
+        transition: 1s ease-in-out;
+        z-index: 4;
+    }
+    .cobesp iframe:hover{
+        scale: 1.02;
+    }
     
     .n-container{
         row-gap: 0;
@@ -3688,6 +4085,7 @@
         position: relative;
         display: grid;
         grid-template-areas: 
+        "cosp cosp cosp"
         "n01 n01 n06"
         "n01 n01 n06"
         "n01 n01 n06"
@@ -3701,7 +4099,7 @@
         "col col col"
         "bnr bnr bnr";
         grid-template-columns:30% auto 40%;
-        grid-template-rows: 2rem 7rem 7rem 2rem 7rem 7rem 5rem 10rem 10rem 10rem auto auto;
+        grid-template-rows: auto 2rem 7rem 7rem 2rem 7rem 7rem 5rem 10rem 10rem 10rem auto auto;
     }
     
 
@@ -4596,6 +4994,87 @@
         border-bottom: 2px solid var(--primary-color-v1);
     }
 
+    .cobesp{
+        background-color: var(--gray-light);
+        grid-area: cosp;
+        position: relative;
+        margin-bottom: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+        padding: 2rem 1rem;
+        z-index: 4;
+        
+    }
+    .cobesp::before{
+        display: none;
+        
+    
+    }
+    .csptitle{
+        text-transform: uppercase;
+        color: var(--primary-color-v1);
+        width: 100%;
+        font-family: var(--regular);
+        font-weight: 700;
+        font-size: 0.85rem;
+        z-index: 4;
+    }
+    
+    .cspsubtitle{
+        display: flex;
+        transform: translateY(-0.25rem);
+        text-transform: uppercase;
+        color: var(--primary-color-v1);
+        width: 100%;
+        font-family: var(--regular);
+        font-weight: 900;
+        font-size: 1.8rem;
+        z-index: 4;
+    }
+    .cobesp p{
+        padding-bottom: 1rem;
+        width: 100%;
+        color: var(--primary-color-v1);
+        text-align: justify;
+        font-family: var(--regular);
+        font-size: 1rem;
+        z-index: 5;
+    }
+    .cspiframes{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center; /* Para centrar si hay una sola fila */
+        z-index: 4;
+    }
+    .csconifr{
+        width: calc(33% - 0.5rem);
+        aspect-ratio: 16 / 9;
+        background-color: var(--gray);
+        border-radius: 5px;
+        box-shadow: 0 0px 15px rgba(0, 0, 0, 0.541);
+        
+        position: relative;
+    }
+    .cobesp iframe{
+        display: flex;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 5px;
+        aspect-ratio: 16/9; /* más estándar */
+        width:100%; /* compensa el gap de 1rem */
+        transition: 1s ease-in-out;
+        z-index: 4;
+    }
+    .cobesp iframe:hover{
+        scale: 1.02;
+    }
     
     .n-container{
         row-gap: 0;
@@ -4604,6 +5083,7 @@
         position: relative;
         display: grid;
         grid-template-areas: 
+        "cosp cosp cosp"
         "n01 n01 n06"
         "n01 n01 n06"
         "n01 n01 n06"
@@ -4617,7 +5097,7 @@
         "col col col"
         "bnr bnr bnr";
         grid-template-columns:30% auto 40%;
-        grid-template-rows: 2rem 7rem 7rem 2rem 7rem 7rem 5rem 10rem 10rem 10rem auto auto;
+        grid-template-rows: auto 2rem 7rem 7rem 2rem 7rem 7rem 5rem 10rem 10rem 10rem auto auto;
     }
     
 

@@ -150,6 +150,81 @@ const Home = () => {
                     anuncio
                 </div>
                 <div className="n-container">
+                    <div className="cobesp">
+                        <div className="csptitle">Cobertura Especial</div>
+                        <div className="cspsubtitle">Apec Perú 2024</div>
+                        <p>Central Sur Digital estuvo presente en uno de los eventos económicos más importantes del mundo. Nuestra cobertura destacó por su enfoque regional y periodismo directo desde el lugar de los hechos.</p>
+                        <div className="cspiframes">
+                            <div className="csconifr">
+                                <iframe
+                                src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F61566849996187%2Fvideos%2F1133519301441743%2F&show_text=false&width=560&t=0"
+                                width="auto"
+                                height="auto"
+                                style={{ border: "none", overflow: "hidden" }}
+                                scrolling="no"
+                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                                allowFullScreen={true}
+                                ></iframe>
+                            </div>
+                            <div className="csconifr">
+                                <iframe
+                                src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F61566849996187%2Fvideos%2F1819454095254489%2F&show_text=false&width=560&t=0"
+                                width="auto"
+                                height="auto"
+                                style={{ border: "none", overflow: "hidden" }}
+                                scrolling="no"
+                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                                allowFullScreen={true}
+                                ></iframe>
+
+                            </div>
+                            <div className="csconifr">
+                                <iframe
+                                src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F61566849996187%2Fvideos%2F1615853372650220%2F&show_text=false&width=560&t=0"
+                                width="auto"
+                                height="auto"
+                                style={{ border: "none", overflow: "hidden" }}
+                                scrolling="no"
+                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                                allowFullScreen={true}
+                                ></iframe>
+                            </div>
+                            <div className="csconifr">
+                                <iframe
+                                src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F61566849996187%2Fvideos%2F920264586195367%2F&show_text=false&width=560&t=0"
+                                width="auto"
+                                height="auto"
+                                style={{ border: "none", overflow: "hidden" }}
+                                scrolling="no"
+                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                                allowFullScreen={true}
+                                ></iframe>
+                            </div>
+                            <div className="csconifr">
+                                <iframe
+                                src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F61566849996187%2Fvideos%2F541695385324953%2F&show_text=false&width=560&t=0"
+                                width="auto"
+                                height="auto"
+                                style={{ border: "none", overflow: "hidden" }}
+                                scrolling="no"
+                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                                allowFullScreen={true}
+                                ></iframe>
+                            </div>
+                            <div className="csconifr">
+                                <iframe
+                                src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F61566849996187%2Fvideos%2F934317455268344%2F&show_text=false&width=560&t=0"
+                                width="auto"
+                                height="auto"
+                                style={{ border: "none", overflow: "hidden" }}
+                                scrolling="no"
+                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                                allowFullScreen={true}
+                                ></iframe>
+                            </div>
+                    
+                        </div>
+                    </div>
                     <div className="n-card" id='ncard01'>
                         <span className="cat">
                             | Política
