@@ -307,7 +307,6 @@
 }
 **/
 .n-card{
-    padding-top: 1.3rem;
     padding-bottom: 1.3rem;
     border-bottom: 2px solid var(--primary-color-v1);
 }
@@ -384,6 +383,9 @@
 .cobesp iframe:hover{
     scale: 1.02;
 }
+.t-colum{
+    grid-area: tcol;
+}
 .n-container{
     row-gap: 1rem;
     padding-top: 1rem;
@@ -392,6 +394,7 @@
     display: grid;
     grid-template-areas: 
     "cosp cosp" 
+    "tcol tcol"
     "n01 n01"
     "n02 n02"
     "n03 n03"
@@ -406,7 +409,7 @@
     "col col"
     "bnr bnr";
     grid-template-columns:50% 50%;
-    grid-template-rows: auto 25rem 18rem 18rem 18rem 18rem 18rem 18rem 4rem 13rem 13rem 13rem auto auto;
+    grid-template-rows: auto auto 25rem 18rem 18rem 18rem 18rem 18rem 18rem 4rem 13rem 13rem 13rem auto auto;
 }
 
 #ncard01{
@@ -426,7 +429,7 @@
     align-items: center;
     width: 100%;
     height: 8%;
-    font-family: var(--regular),sans-serif;
+    font-family: var(--regular);
 } 
 
 #ncard01 .tit{
@@ -434,7 +437,7 @@
     justify-content: left;
     align-items: center;
     width: 100%;
-    font-family: var(--regular),sans-serif;
+    font-family: var(--regular);
     font-weight: 700;
     height: 20%;
     overflow: hidden;
@@ -451,7 +454,7 @@
     width: 100%;
     display: flex;
     justify-content: left;
-    font-family: var(--regular),sans-serif;
+    font-family: var(--regular);
     align-items: center;
     height: 8%;
     font-size: 0.8rem;
@@ -1189,7 +1192,6 @@
     }
     **/
     .n-card{
-        padding-top: 1.3rem;
         padding-bottom: 1.3rem;
         border-bottom: 2px solid var(--primary-color-v1);
     }
@@ -1275,6 +1277,7 @@
         display: grid;
         grid-template-areas: 
         "cosp cosp"
+        "tcol tcol"
         "n01 n01"
         "n02 n02"
         "n03 n03"
@@ -1289,7 +1292,7 @@
         "col col"
         "bnr bnr";
         grid-template-columns:50% 50%;
-        grid-template-rows: auto 25rem 18rem 18rem 18rem 18rem 18rem 18rem 4rem 13rem 13rem 13rem auto auto;
+        grid-template-rows: auto auto 25rem 18rem 18rem 18rem 18rem 18rem 18rem 4rem 13rem 13rem 13rem auto auto;
     }
     
     #ncard01{
@@ -2188,6 +2191,7 @@
         display: grid;
         grid-template-areas: 
         "cosp cosp"
+        "tcol tcol"
         "n01 n01"
         "n02 n02"
         "n03 n03"
@@ -2202,7 +2206,7 @@
         "col col"
         "bnr bnr";
         grid-template-columns:50% 50%;
-        grid-template-rows: auto 25rem 18rem 18rem 18rem 18rem 18rem 18rem 4rem 13rem 13rem 13rem auto auto;
+        grid-template-rows: auto auto 25rem 18rem 18rem 18rem 18rem 18rem 18rem 4rem 13rem 13rem 13rem auto auto;
     }
     
     #ncard01{
@@ -3091,6 +3095,7 @@
         display: grid;
         grid-template-areas:
         "cosp cosp cosp" 
+        "tcol tcol tcol"
         "n01 n01 n06"
         "n01 n01 n06"
         "n01 n01 n06"
@@ -3104,7 +3109,7 @@
         "col col col"
         "bnr bnr bnr";
         grid-template-columns:30% auto 40%;
-        grid-template-rows: auto 2rem 7rem 7rem 2rem 7rem 7rem 5rem 10rem 10rem 10rem auto auto;
+        grid-template-rows: auto auto 2rem 7rem 7rem 2rem 7rem 7rem 5rem 10rem 10rem 10rem auto auto;
     }
     
 
@@ -4086,6 +4091,7 @@
         display: grid;
         grid-template-areas: 
         "cosp cosp cosp"
+        "tcol tcol tcol"
         "n01 n01 n06"
         "n01 n01 n06"
         "n01 n01 n06"
@@ -4099,7 +4105,7 @@
         "col col col"
         "bnr bnr bnr";
         grid-template-columns:30% auto 40%;
-        grid-template-rows: auto 2rem 7rem 7rem 2rem 7rem 7rem 5rem 10rem 10rem 10rem auto auto;
+        grid-template-rows: auto auto 2rem 7rem 7rem 2rem 7rem 7rem 5rem 10rem 10rem 10rem auto auto;
     }
     
 
@@ -5084,6 +5090,7 @@
         display: grid;
         grid-template-areas: 
         "cosp cosp cosp"
+        "tcol tcol tcol"
         "n01 n01 n06"
         "n01 n01 n06"
         "n01 n01 n06"
@@ -5097,7 +5104,7 @@
         "col col col"
         "bnr bnr bnr";
         grid-template-columns:30% auto 40%;
-        grid-template-rows: auto 2rem 7rem 7rem 2rem 7rem 7rem 5rem 10rem 10rem 10rem auto auto;
+        grid-template-rows: auto auto 2rem 7rem 7rem 2rem 7rem 7rem 5rem 10rem 10rem 10rem auto auto;
     }
     
 

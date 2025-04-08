@@ -225,6 +225,11 @@ const Home = () => {
                     
                         </div>
                     </div>
+
+                    <div className="t-colum">
+                            <span>Noticias</span>
+                            <Link to="/noticias">Leer más</Link>
+                    </div>
                     <div className="n-card" id='ncard01'>
                         <span className="cat">
                             | Política
