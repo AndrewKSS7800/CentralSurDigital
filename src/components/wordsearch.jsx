@@ -84,12 +84,20 @@ const WordSearch = ({ wordList }) => {
     setSelectedCells([[row, col]]);
   };
 
-  const handleTouchMove = (row, col) => {
+  const handleTouchMove = (e) => {
     if (mouseDown) {
-      setSelectedCells((prev) => {
-        const alreadyIncluded = prev.some(([r, c]) => r === row && c === col);
-        return alreadyIncluded ? prev : [...prev, [row, col]];
-      });
+      const touch = e.touches[0];
+      const row = Math.floor((touch.clientY - touchElement.offsetTop) / cellSize);
+      const col = Math.floor((touch.clientX - touchElement.offsetLeft) / cellSize);
+  
+      const newCell = [row, col];
+      if (
+        !selectedCells.some(([r, c]) => r === row && c === col) &&
+        row >= 0 && row < SIZE && col >= 0 && col < SIZE
+      ) {
+        console.log(`Adding cell: (${row}, ${col})`); // Verifica las celdas agregadas
+        setSelectedCells((prev) => [...prev, newCell]);
+      }
     }
   };
 
