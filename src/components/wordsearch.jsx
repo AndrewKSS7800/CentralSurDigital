@@ -15,7 +15,6 @@ const WordSearch = ({ wordList }) => {
   const finalVictorySoundRef = useRef(null);
   const [highlightedCells, setHighlightedCells] = useState([]);
 
-
   useEffect(() => {
     generateGrid();
     setStartTime(Date.now());
@@ -80,11 +79,12 @@ const WordSearch = ({ wordList }) => {
     }
   };
 
+  // Event handlers for touch devices
   const handleTouchStart = (row, col) => {
     setMouseDown(true);
     setSelectedCells([[row, col]]);
   };
-  
+
   const handleTouchMove = (row, col) => {
     if (mouseDown) {
       setSelectedCells((prev) => {
@@ -93,45 +93,22 @@ const WordSearch = ({ wordList }) => {
       });
     }
   };
-  
+
   const handleTouchEnd = () => {
     setMouseDown(false);
-    
-    const word = selectedCells.map(([r, c]) => grid[r][c]).join("");
-    const reversed = word.split("").reverse().join("");
-    
-    const validWord = wordList.find(
-      (w) => w.toUpperCase() === word || w.toUpperCase() === reversed
-    );
-    
-    if (validWord && !foundWords.includes(validWord)) {
-      setFoundWords([...foundWords, validWord]);
-      setScore(score + validWord.length * 10);
-  
-      // Sonido para cada palabra encontrada
-      const foundSound = new Audio("/sounds/prewin.mp3");
-      foundSound.play();
-  
-      setHighlightedCells((prev) => [...prev, ...selectedCells]);
-    }
-  
-    if (foundWords.length + 1 === wordList.length) {
-      triggerConfetti();
-    }
-  
-    setSelectedCells([]);
+    finalizeSelection();
   };
 
-
+  // Event handlers for mouse devices
   const handleMouseDown = (row, col) => {
-    if (!isTouchDevice()) { // Solo manejar eventos del ratón en dispositivos no táctiles
+    if (!isTouchDevice()) {
       setMouseDown(true);
       setSelectedCells([[row, col]]);
     }
   };
 
   const handleMouseEnter = (row, col) => {
-    if (mouseDown && !isTouchDevice()) { // Solo manejar eventos del ratón en dispositivos no táctiles
+    if (mouseDown && !isTouchDevice()) {
       setSelectedCells((prev) => {
         const alreadyIncluded = prev.some(([r, c]) => r === row && c === col);
         return alreadyIncluded ? prev : [...prev, [row, col]];
@@ -140,36 +117,37 @@ const WordSearch = ({ wordList }) => {
   };
 
   const handleMouseUp = () => {
-    if (!isTouchDevice()) { // Solo manejar eventos del ratón en dispositivos no táctiles
+    if (!isTouchDevice()) {
       setMouseDown(false);
-    
-      const word = selectedCells.map(([r, c]) => grid[r][c]).join("");
-      const reversed = word.split("").reverse().join("");
-    
-      const validWord = wordList.find(
-        (w) => w.toUpperCase() === word || w.toUpperCase() === reversed
-      );
-    
-      if (validWord && !foundWords.includes(validWord)) {
-        setFoundWords([...foundWords, validWord]);
-        setScore(score + validWord.length * 10);
-  
-        // Sonido para cada palabra encontrada
-        const foundSound = new Audio("/sounds/prewin.mp3");
-        foundSound.play();
-  
-        setHighlightedCells((prev) => [...prev, ...selectedCells]);
-      }
-    
-      if (foundWords.length + 1 === wordList.length) {
-        triggerConfetti();
-      }
-    
-      setSelectedCells([]);
+      finalizeSelection();
     }
   };
-  
-  
+
+  // Finalize word selection logic
+  const finalizeSelection = () => {
+    const word = selectedCells.map(([r, c]) => grid[r][c]).join("");
+    const reversed = word.split("").reverse().join("");
+    const validWord = wordList.find(
+      (w) => w.toUpperCase() === word || w.toUpperCase() === reversed
+    );
+
+    if (validWord && !foundWords.includes(validWord)) {
+      setFoundWords([...foundWords, validWord]);
+      setScore(score + validWord.length * 10);
+
+      // Play sound for found word
+      const foundSound = new Audio("/sounds/prewin.mp3");
+      foundSound.play();
+
+      setHighlightedCells((prev) => [...prev, ...selectedCells]);
+    }
+
+    if (foundWords.length + 1 === wordList.length) {
+      triggerConfetti();
+    }
+
+    setSelectedCells([]);
+  };
 
   const getElapsedTime = () => {
     const seconds = Math.floor((Date.now() - startTime) / 1000);
@@ -181,10 +159,10 @@ const WordSearch = ({ wordList }) => {
   const isCellSelected = (r, c) => {
     return selectedCells.some(([row, col]) => row === r && col === c);
   };
+
   const isCellHighlighted = (r, c) => {
     return highlightedCells.some(([row, col]) => row === r && col === c);
   };
-  
 
   // Function to trigger confetti
   const triggerConfetti = () => {
@@ -196,13 +174,11 @@ const WordSearch = ({ wordList }) => {
     finalVictorySoundRef.current?.play();
   };
 
+  // Function to detect if it's a touch device
+  const isTouchDevice = () => {
+    return "ontouchstart" in window || navigator.maxTouchPoints > 0;
+  };
 
-  // Función para detectar si es un dispositivo táctil
-    const isTouchDevice = () => {
-        return 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-    };
-
-  
   return (
     <div className="wordsearch-container" onMouseLeave={() => setMouseDown(false)}>
       <div className="score-time">
@@ -212,9 +188,9 @@ const WordSearch = ({ wordList }) => {
 
       <div className="grid">
         {grid.map((row, i) => (
-            <div key={i} className="row">
+          <div key={i} className="row">
             {row.map((letter, j) => (
-                <span
+              <span
                 key={j}
                 className={`cell 
                     ${isCellSelected(i, j) ? "selected" : ""} 
@@ -222,16 +198,16 @@ const WordSearch = ({ wordList }) => {
                 onMouseDown={() => handleMouseDown(i, j)}
                 onMouseEnter={() => handleMouseEnter(i, j)}
                 onMouseUp={handleMouseUp}
-                onTouchStart={() => handleTouchStart(i, j)} // Para pantallas táctiles
-                onTouchMove={() => handleTouchMove(i, j)} // Para pantallas táctiles
-                onTouchEnd={handleTouchEnd} // Para pantallas táctiles
-                >
+                onTouchStart={() => handleTouchStart(i, j)} 
+                onTouchMove={() => handleTouchMove(i, j)} 
+                onTouchEnd={handleTouchEnd} 
+              >
                 {letter}
-                </span>
+              </span>
             ))}
-        </div>
-  ))}
-</div>
+          </div>
+        ))}
+      </div>
 
       <div className="wordlist">
         {wordList.map((word, idx) => (
@@ -244,12 +220,9 @@ const WordSearch = ({ wordList }) => {
         ))}
       </div>
 
-      {/* Sonido cuando encuentra una palabra */}
-        
-
-        <audio ref={finalVictorySoundRef} preload="auto">
-            <source src="/sounds/win.mp3" type="audio/mpeg" />
-        </audio>
+      <audio ref={finalVictorySoundRef} preload="auto">
+        <source src="/sounds/win.mp3" type="audio/mpeg" />
+      </audio>
     </div>
   );
 };
