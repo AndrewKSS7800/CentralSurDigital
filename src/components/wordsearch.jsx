@@ -88,11 +88,14 @@ const WordSearch = ({ wordList }) => {
 
   const handleTouchMove = (row, col) => {
     if (mouseDown) {
-      touchSelectionRef.current = (prev) => {
-        const alreadyIncluded = prev.some(([r, c]) => r === row && c === col);
-        return alreadyIncluded ? prev : [...prev, [row, col]];
-      };
-      setSelectedCells(touchSelectionRef.current);
+      // Only add the cell if it hasn't been added yet
+      const newSelection = touchSelectionRef.current.slice();
+      const cellAlreadySelected = newSelection.some(([r, c]) => r === row && c === col);
+      if (!cellAlreadySelected) {
+        newSelection.push([row, col]);
+        touchSelectionRef.current = newSelection;
+        setSelectedCells(newSelection);
+      }
     }
   };
 
