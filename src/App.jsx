@@ -1,7 +1,3 @@
-//import { useState } from 'react'
-//import reactLogo from './assets/react.svg'
-//import viteLogo from '/vite.svg'
-//import './App.css'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './pages/home';
 import About from './pages/about';
@@ -22,12 +18,9 @@ import Columns from "./pages/news/columns";
 const App = () => {
   return (
     <>
-      
       <Routes>
         <Route path="/" element={<><Header /><Home /><Footer /></>}/>
-
         <Route path="/sobre-nosotros" element={<><Header /><About /><Footer /></>}/>
-
         <Route path="/noticias" element={<><Header /><News /><Footer /></>}/>
         <Route path="/noticias/politica" element={<><Header /><Policy /><Footer /></>}/>
         <Route path="/noticias/cultura" element={<><Header /><Culture /><Footer /></>}/>
@@ -38,13 +31,9 @@ const App = () => {
         <Route path="/noticias/deporte" element={<><Header /><Sport /><Footer /></>}/>
         <Route path="/noticias/tecnologia" element={<><Header /><Technology /><Footer /></>}/>
         <Route path="/noticias/columnas" element={<><Header /><Columns /><Footer /></>}/>
-
-
         <Route path="/contacto" element={<><Header /><Contact /><Footer /></>}/>
-
         <Route path="*" element={<NotFound/>}/>
       </Routes>
-      
     </>
   );
 };

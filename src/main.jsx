@@ -10,6 +10,7 @@ import "./styles/notfound.css"
 import "./styles/home.css"
 import "./styles/about.css"
 import "./styles/news.css"
+import "./styles/news-cat.css"
 import App from './App.jsx'
 import { BrowserRouter } from "react-router-dom";
 
