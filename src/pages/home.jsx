@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-
+import WordSearch from '../components/wordsearch';
 import Economia from "../assets/imgs/Economia.png";
 import Deporte from "../assets/imgs/deporte-img.jpg";
 import Politica from "../assets/imgs/politica.jpg";
@@ -17,7 +17,7 @@ import BannerInstagram from "../assets/imgs/Banner-instagram.png";
 
 
 const Home = () => {
-    
+    const palabras = ["PERU", "LIMA", "NOTICIA", "POLITICA", "REPORTE", "REGION", "SUR", "ANDES"];
     return (
         <section className="home">
             <div className="slider">
@@ -420,6 +420,11 @@ const Home = () => {
                                 <img src={Ambiente} alt="" width="30px" />
                             </div>
                         </div>
+                    </div>
+
+                    <div className='wsch'>
+                        <h2>Amenidades - Pupiletras 🧩</h2>
+                        <WordSearch wordList={palabras} />
                     </div>
 
                     <div className="banner-r">
