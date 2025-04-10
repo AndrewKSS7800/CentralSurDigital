@@ -80,12 +80,12 @@ const WordSearch = ({ wordList }) => {
     }
   };
 
-  const handleMouseDown = (row, col) => {
+  const handleTouchStart = (row, col) => {
     setMouseDown(true);
     setSelectedCells([[row, col]]);
   };
-
-  const handleMouseEnter = (row, col) => {
+  
+  const handleTouchMove = (row, col) => {
     if (mouseDown) {
       setSelectedCells((prev) => {
         const alreadyIncluded = prev.some(([r, c]) => r === row && c === col);
@@ -93,26 +93,25 @@ const WordSearch = ({ wordList }) => {
       });
     }
   };
-
-  const handleMouseUp = () => {
-    setMouseDown(false);
   
+  const handleTouchEnd = () => {
+    setMouseDown(false);
+    
     const word = selectedCells.map(([r, c]) => grid[r][c]).join("");
     const reversed = word.split("").reverse().join("");
-  
+    
     const validWord = wordList.find(
       (w) => w.toUpperCase() === word || w.toUpperCase() === reversed
     );
-  
+    
     if (validWord && !foundWords.includes(validWord)) {
       setFoundWords([...foundWords, validWord]);
       setScore(score + validWord.length * 10);
-
-    // 🎧 Reproducir con nueva instancia
-    const foundSound = new Audio("/sounds/prewin.mp3");
-    foundSound.play();
   
-      // 🔥 Aquí guardamos las celdas encontradas
+      // Sonido para cada palabra encontrada
+      const foundSound = new Audio("/sounds/prewin.mp3");
+      foundSound.play();
+  
       setHighlightedCells((prev) => [...prev, ...selectedCells]);
     }
   
@@ -121,6 +120,53 @@ const WordSearch = ({ wordList }) => {
     }
   
     setSelectedCells([]);
+  };
+
+
+  const handleMouseDown = (row, col) => {
+    if (!isTouchDevice()) { // Solo manejar eventos del ratón en dispositivos no táctiles
+      setMouseDown(true);
+      setSelectedCells([[row, col]]);
+    }
+  };
+
+  const handleMouseEnter = (row, col) => {
+    if (mouseDown && !isTouchDevice()) { // Solo manejar eventos del ratón en dispositivos no táctiles
+      setSelectedCells((prev) => {
+        const alreadyIncluded = prev.some(([r, c]) => r === row && c === col);
+        return alreadyIncluded ? prev : [...prev, [row, col]];
+      });
+    }
+  };
+
+  const handleMouseUp = () => {
+    if (!isTouchDevice()) { // Solo manejar eventos del ratón en dispositivos no táctiles
+      setMouseDown(false);
+    
+      const word = selectedCells.map(([r, c]) => grid[r][c]).join("");
+      const reversed = word.split("").reverse().join("");
+    
+      const validWord = wordList.find(
+        (w) => w.toUpperCase() === word || w.toUpperCase() === reversed
+      );
+    
+      if (validWord && !foundWords.includes(validWord)) {
+        setFoundWords([...foundWords, validWord]);
+        setScore(score + validWord.length * 10);
+  
+        // Sonido para cada palabra encontrada
+        const foundSound = new Audio("/sounds/prewin.mp3");
+        foundSound.play();
+  
+        setHighlightedCells((prev) => [...prev, ...selectedCells]);
+      }
+    
+      if (foundWords.length + 1 === wordList.length) {
+        triggerConfetti();
+      }
+    
+      setSelectedCells([]);
+    }
   };
   
   
@@ -150,6 +196,13 @@ const WordSearch = ({ wordList }) => {
     finalVictorySoundRef.current?.play();
   };
 
+
+  // Función para detectar si es un dispositivo táctil
+    const isTouchDevice = () => {
+        return 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+    };
+
+  
   return (
     <div className="wordsearch-container" onMouseLeave={() => setMouseDown(false)}>
       <div className="score-time">
@@ -159,24 +212,26 @@ const WordSearch = ({ wordList }) => {
 
       <div className="grid">
         {grid.map((row, i) => (
-          <div key={i} className="row">
+            <div key={i} className="row">
             {row.map((letter, j) => (
                 <span
                 key={j}
                 className={`cell 
                     ${isCellSelected(i, j) ? "selected" : ""} 
-                    ${isCellHighlighted(i, j) ? "highlighted" : ""}
-                `}
+                    ${isCellHighlighted(i, j) ? "highlighted" : ""}`}
                 onMouseDown={() => handleMouseDown(i, j)}
                 onMouseEnter={() => handleMouseEnter(i, j)}
                 onMouseUp={handleMouseUp}
+                onTouchStart={() => handleTouchStart(i, j)} // Para pantallas táctiles
+                onTouchMove={() => handleTouchMove(i, j)} // Para pantallas táctiles
+                onTouchEnd={handleTouchEnd} // Para pantallas táctiles
                 >
                 {letter}
                 </span>
             ))}
-          </div>
-        ))}
-      </div>
+        </div>
+  ))}
+</div>
 
       <div className="wordlist">
         {wordList.map((word, idx) => (
