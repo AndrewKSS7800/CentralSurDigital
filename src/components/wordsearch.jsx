@@ -85,13 +85,15 @@ const WordSearch = ({ wordList }) => {
   };
 
   const handleTouchMove = (e) => {
-    if (mouseDown) {
-      const touch = e.touches[0];
-      const elem = document.elementFromPoint(touch.clientX, touch.clientY);
+    e.preventDefault(); // previene scroll
   
-      if (elem && elem.dataset.row && elem.dataset.col) {
-        const row = parseInt(elem.dataset.row);
-        const col = parseInt(elem.dataset.col);
+    if (mouseDown && e.touches.length === 1) {
+      const touch = e.touches[0];
+      const target = document.elementFromPoint(touch.clientX, touch.clientY);
+  
+      if (target && target.dataset && target.dataset.row && target.dataset.col) {
+        const row = parseInt(target.dataset.row, 10);
+        const col = parseInt(target.dataset.col, 10);
   
         setSelectedCells((prev) => {
           const alreadyIncluded = prev.some(([r, c]) => r === row && c === col);
@@ -198,21 +200,21 @@ const WordSearch = ({ wordList }) => {
           <div key={i} className="row">
             {row.map((letter, j) => (
               <span
-                key={j}
-                data-row={i}
-                data-col={j}
-                className={`cell 
-                  ${isCellSelected(i, j) ? "selected" : ""} 
-                  ${isCellHighlighted(i, j) ? "highlighted" : ""}`}
-                onMouseDown={() => handleMouseDown(i, j)}
-                onMouseEnter={() => handleMouseEnter(i, j)}
-                onMouseUp={handleMouseUp}
-                onTouchStart={() => handleTouchStart(i, j)} // Para pantallas táctiles
-                onTouchMove={() => handleTouchMove(i, j)} // Para pantallas táctiles
-                onTouchEnd={handleTouchEnd} // Para pantallas táctiles
-              >
-                {letter}
-              </span>
+              key={j}
+              data-row={i}
+              data-col={j}
+              className={`cell 
+                ${isCellSelected(i, j) ? "selected" : ""} 
+                ${isCellHighlighted(i, j) ? "highlighted" : ""}`}
+              onMouseDown={() => handleMouseDown(i, j)}
+              onMouseEnter={() => handleMouseEnter(i, j)}
+              onMouseUp={handleMouseUp}
+              onTouchStart={() => handleTouchStart(i, j)}
+              onTouchMove={handleTouchMove}
+              onTouchEnd={handleTouchEnd}
+            >
+              {letter}
+            </span>
             ))}
           </div>
         ))}
