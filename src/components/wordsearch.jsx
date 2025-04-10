@@ -87,19 +87,20 @@ const WordSearch = ({ wordList }) => {
   const handleTouchMove = (e) => {
     if (mouseDown) {
       const touch = e.touches[0];
-      const row = Math.floor((touch.clientY - touchElement.offsetTop) / cellSize);
-      const col = Math.floor((touch.clientX - touchElement.offsetLeft) / cellSize);
+      const elem = document.elementFromPoint(touch.clientX, touch.clientY);
   
-      const newCell = [row, col];
-      if (
-        !selectedCells.some(([r, c]) => r === row && c === col) &&
-        row >= 0 && row < SIZE && col >= 0 && col < SIZE
-      ) {
-        console.log(`Adding cell: (${row}, ${col})`); // Verifica las celdas agregadas
-        setSelectedCells((prev) => [...prev, newCell]);
+      if (elem && elem.dataset.row && elem.dataset.col) {
+        const row = parseInt(elem.dataset.row);
+        const col = parseInt(elem.dataset.col);
+  
+        setSelectedCells((prev) => {
+          const alreadyIncluded = prev.some(([r, c]) => r === row && c === col);
+          return alreadyIncluded ? prev : [...prev, [row, col]];
+        });
       }
     }
   };
+  
 
   const handleTouchEnd = () => {
     setMouseDown(false);
@@ -198,6 +199,8 @@ const WordSearch = ({ wordList }) => {
             {row.map((letter, j) => (
               <span
                 key={j}
+                data-row={i}
+                data-col={j}
                 className={`cell 
                   ${isCellSelected(i, j) ? "selected" : ""} 
                   ${isCellHighlighted(i, j) ? "highlighted" : ""}`}
