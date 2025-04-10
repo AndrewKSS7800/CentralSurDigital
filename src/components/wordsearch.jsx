@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "../styles/wordsearch.css";
 import confetti from "canvas-confetti";
 
@@ -13,8 +13,7 @@ const WordSearch = ({ wordList }) => {
   const [startTime, setStartTime] = useState(Date.now());
   const [score, setScore] = useState(0);
   const finalVictorySoundRef = useRef(null);
-  const [highlightedCells, setHighlightedCells] = useState([]);
-  const touchSelectionRef = useRef([]); // Ref to keep track of selected cells during touch events
+  const touchSelectionRef = useRef([]);
 
   useEffect(() => {
     generateGrid();
@@ -82,50 +81,28 @@ const WordSearch = ({ wordList }) => {
 
   const handleTouchStart = (row, col) => {
     setMouseDown(true);
-    touchSelectionRef.current = [[row, col]]; // Reset selection on touch start
+    touchSelectionRef.current = [[row, col]]; // Reset selection
     setSelectedCells(touchSelectionRef.current);
   };
 
-  const handleTouchMove = (row, col) => {
-    if (mouseDown) {
-      // Only add the cell if it hasn't been added yet
-      const newSelection = touchSelectionRef.current.slice();
-      const cellAlreadySelected = newSelection.some(([r, c]) => r === row && c === col);
-      if (!cellAlreadySelected) {
-        newSelection.push([row, col]);
-        touchSelectionRef.current = newSelection;
-        setSelectedCells(newSelection);
-      }
+  const handleTouchMove = (e) => {
+    if (!mouseDown) return;
+    
+    const touch = e.touches[0];
+    const cell = getCellFromTouch(touch.clientX, touch.clientY);
+
+    if (!cell) return;
+
+    const [row, col] = cell;
+    if (!touchSelectionRef.current.some(([r, c]) => r === row && c === col)) {
+      touchSelectionRef.current.push([row, col]);
+      setSelectedCells([...touchSelectionRef.current]);
     }
   };
 
   const handleTouchEnd = () => {
     setMouseDown(false);
-
-    const word = selectedCells.map(([r, c]) => grid[r][c]).join("");
-    const reversed = word.split("").reverse().join("");
-
-    const validWord = wordList.find(
-      (w) => w.toUpperCase() === word || w.toUpperCase() === reversed
-    );
-
-    if (validWord && !foundWords.includes(validWord)) {
-      setFoundWords([...foundWords, validWord]);
-      setScore(score + validWord.length * 10);
-
-      // Play sound for each word found
-      const foundSound = new Audio("/sounds/prewin.mp3");
-      foundSound.play();
-
-      setHighlightedCells((prev) => [...prev, ...selectedCells]);
-    }
-
-    if (foundWords.length + 1 === wordList.length) {
-      triggerConfetti();
-    }
-
-    setSelectedCells([]);
-    touchSelectionRef.current = []; // Reset touch selection after completing selection
+    processSelectedCells();
   };
 
   const handleMouseDown = (row, col) => {
@@ -147,31 +124,46 @@ const WordSearch = ({ wordList }) => {
   const handleMouseUp = () => {
     if (!isTouchDevice()) {
       setMouseDown(false);
-
-      const word = selectedCells.map(([r, c]) => grid[r][c]).join("");
-      const reversed = word.split("").reverse().join("");
-
-      const validWord = wordList.find(
-        (w) => w.toUpperCase() === word || w.toUpperCase() === reversed
-      );
-
-      if (validWord && !foundWords.includes(validWord)) {
-        setFoundWords([...foundWords, validWord]);
-        setScore(score + validWord.length * 10);
-
-        // Play sound for each word found
-        const foundSound = new Audio("/sounds/prewin.mp3");
-        foundSound.play();
-
-        setHighlightedCells((prev) => [...prev, ...selectedCells]);
-      }
-
-      if (foundWords.length + 1 === wordList.length) {
-        triggerConfetti();
-      }
-
-      setSelectedCells([]);
+      processSelectedCells();
     }
+  };
+
+  const getCellFromTouch = (x, y) => {
+    const gridElement = document.querySelector(".grid");
+    const cellSize = gridElement.offsetWidth / SIZE;
+    const row = Math.floor(y / cellSize);
+    const col = Math.floor(x / cellSize);
+
+    if (row < 0 || row >= SIZE || col < 0 || col >= SIZE) return null;
+
+    return [row, col];
+  };
+
+  const processSelectedCells = () => {
+    const word = selectedCells.map(([r, c]) => grid[r][c]).join("");
+    const reversed = word.split("").reverse().join("");
+
+    const validWord = wordList.find(
+      (w) => w.toUpperCase() === word || w.toUpperCase() === reversed
+    );
+
+    if (validWord && !foundWords.includes(validWord)) {
+      setFoundWords([...foundWords, validWord]);
+      setScore(score + validWord.length * 10);
+      
+      // Play sound for each word found
+      const foundSound = new Audio("/sounds/prewin.mp3");
+      foundSound.play();
+
+      setHighlightedCells((prev) => [...prev, ...selectedCells]);
+    }
+
+    if (foundWords.length + 1 === wordList.length) {
+      triggerConfetti();
+    }
+
+    setSelectedCells([]);
+    touchSelectionRef.current = []; // Reset after selection
   };
 
   const getElapsedTime = () => {
@@ -181,15 +173,10 @@ const WordSearch = ({ wordList }) => {
     return `${mins}:${secs < 10 ? "0" + secs : secs}`;
   };
 
-  const isCellSelected = (r, c) => {
-    return selectedCells.some(([row, col]) => row === r && col === c);
+  const isTouchDevice = () => {
+    return "ontouchstart" in window || navigator.maxTouchPoints > 0;
   };
 
-  const isCellHighlighted = (r, c) => {
-    return highlightedCells.some(([row, col]) => row === r && col === c);
-  };
-
-  // Function to trigger confetti
   const triggerConfetti = () => {
     confetti({
       particleCount: 200,
@@ -197,11 +184,6 @@ const WordSearch = ({ wordList }) => {
       origin: { y: 0.6 },
     });
     finalVictorySoundRef.current?.play();
-  };
-
-  // Función para detectar si es un dispositivo táctil
-  const isTouchDevice = () => {
-    return "ontouchstart" in window || navigator.maxTouchPoints > 0;
   };
 
   return (
@@ -217,15 +199,13 @@ const WordSearch = ({ wordList }) => {
             {row.map((letter, j) => (
               <span
                 key={j}
-                className={`cell 
-                    ${isCellSelected(i, j) ? "selected" : ""} 
-                    ${isCellHighlighted(i, j) ? "highlighted" : ""}`}
+                className={`cell ${selectedCells.some(([r, c]) => r === i && c === j) ? "selected" : ""}`}
                 onMouseDown={() => handleMouseDown(i, j)}
                 onMouseEnter={() => handleMouseEnter(i, j)}
                 onMouseUp={handleMouseUp}
-                onTouchStart={() => handleTouchStart(i, j)} // Para pantallas táctiles
-                onTouchMove={() => handleTouchMove(i, j)} // Para pantallas táctiles
-                onTouchEnd={handleTouchEnd} // Para pantallas táctiles
+                onTouchStart={() => handleTouchStart(i, j)}
+                onTouchMove={handleTouchMove}
+                onTouchEnd={handleTouchEnd}
               >
                 {letter}
               </span>
