@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "../styles/wordsearch.css";
 import confetti from "canvas-confetti";
 
@@ -13,7 +13,7 @@ const WordSearch = ({ wordList }) => {
   const [startTime, setStartTime] = useState(Date.now());
   const [score, setScore] = useState(0);
   const finalVictorySoundRef = useRef(null);
-  const touchSelectionRef = useRef([]);
+  const [highlightedCells, setHighlightedCells] = useState([]); // Celdas resaltadas
 
   useEffect(() => {
     generateGrid();
@@ -81,28 +81,21 @@ const WordSearch = ({ wordList }) => {
 
   const handleTouchStart = (row, col) => {
     setMouseDown(true);
-    touchSelectionRef.current = [[row, col]]; // Reset selection
-    setSelectedCells(touchSelectionRef.current);
+    setSelectedCells([[row, col]]);
   };
 
-  const handleTouchMove = (e) => {
-    if (!mouseDown) return;
-    
-    const touch = e.touches[0];
-    const cell = getCellFromTouch(touch.clientX, touch.clientY);
-
-    if (!cell) return;
-
-    const [row, col] = cell;
-    if (!touchSelectionRef.current.some(([r, c]) => r === row && c === col)) {
-      touchSelectionRef.current.push([row, col]);
-      setSelectedCells([...touchSelectionRef.current]);
+  const handleTouchMove = (row, col) => {
+    if (mouseDown) {
+      setSelectedCells((prev) => {
+        const alreadyIncluded = prev.some(([r, c]) => r === row && c === col);
+        return alreadyIncluded ? prev : [...prev, [row, col]];
+      });
     }
   };
 
   const handleTouchEnd = () => {
     setMouseDown(false);
-    processSelectedCells();
+    processSelection();
   };
 
   const handleMouseDown = (row, col) => {
@@ -124,34 +117,23 @@ const WordSearch = ({ wordList }) => {
   const handleMouseUp = () => {
     if (!isTouchDevice()) {
       setMouseDown(false);
-      processSelectedCells();
+      processSelection();
     }
   };
 
-  const getCellFromTouch = (x, y) => {
-    const gridElement = document.querySelector(".grid");
-    const cellSize = gridElement.offsetWidth / SIZE;
-    const row = Math.floor(y / cellSize);
-    const col = Math.floor(x / cellSize);
-
-    if (row < 0 || row >= SIZE || col < 0 || col >= SIZE) return null;
-
-    return [row, col];
-  };
-
-  const processSelectedCells = () => {
+  const processSelection = () => {
     const word = selectedCells.map(([r, c]) => grid[r][c]).join("");
     const reversed = word.split("").reverse().join("");
-
+    
     const validWord = wordList.find(
       (w) => w.toUpperCase() === word || w.toUpperCase() === reversed
     );
-
+    
     if (validWord && !foundWords.includes(validWord)) {
       setFoundWords([...foundWords, validWord]);
       setScore(score + validWord.length * 10);
-      
-      // Play sound for each word found
+
+      // Sonido para cada palabra encontrada
       const foundSound = new Audio("/sounds/prewin.mp3");
       foundSound.play();
 
@@ -163,7 +145,6 @@ const WordSearch = ({ wordList }) => {
     }
 
     setSelectedCells([]);
-    touchSelectionRef.current = []; // Reset after selection
   };
 
   const getElapsedTime = () => {
@@ -173,10 +154,15 @@ const WordSearch = ({ wordList }) => {
     return `${mins}:${secs < 10 ? "0" + secs : secs}`;
   };
 
-  const isTouchDevice = () => {
-    return "ontouchstart" in window || navigator.maxTouchPoints > 0;
+  const isCellSelected = (r, c) => {
+    return selectedCells.some(([row, col]) => row === r && col === c);
   };
 
+  const isCellHighlighted = (r, c) => {
+    return highlightedCells.some(([row, col]) => row === r && col === c);
+  };
+
+  // Function to trigger confetti
   const triggerConfetti = () => {
     confetti({
       particleCount: 200,
@@ -184,6 +170,11 @@ const WordSearch = ({ wordList }) => {
       origin: { y: 0.6 },
     });
     finalVictorySoundRef.current?.play();
+  };
+
+  // Función para detectar si es un dispositivo táctil
+  const isTouchDevice = () => {
+    return "ontouchstart" in window || navigator.maxTouchPoints > 0;
   };
 
   return (
@@ -199,13 +190,15 @@ const WordSearch = ({ wordList }) => {
             {row.map((letter, j) => (
               <span
                 key={j}
-                className={`cell ${selectedCells.some(([r, c]) => r === i && c === j) ? "selected" : ""}`}
+                className={`cell 
+                  ${isCellSelected(i, j) ? "selected" : ""} 
+                  ${isCellHighlighted(i, j) ? "highlighted" : ""}`}
                 onMouseDown={() => handleMouseDown(i, j)}
                 onMouseEnter={() => handleMouseEnter(i, j)}
                 onMouseUp={handleMouseUp}
-                onTouchStart={() => handleTouchStart(i, j)}
-                onTouchMove={handleTouchMove}
-                onTouchEnd={handleTouchEnd}
+                onTouchStart={() => handleTouchStart(i, j)} // Para pantallas táctiles
+                onTouchMove={() => handleTouchMove(i, j)} // Para pantallas táctiles
+                onTouchEnd={handleTouchEnd} // Para pantallas táctiles
               >
                 {letter}
               </span>
@@ -216,10 +209,7 @@ const WordSearch = ({ wordList }) => {
 
       <div className="wordlist">
         {wordList.map((word, idx) => (
-          <span
-            key={idx}
-            className={`word ${foundWords.includes(word) ? "found" : ""}`}
-          >
+          <span key={idx} className={`word ${foundWords.includes(word) ? "found" : ""}`}>
             {word}
           </span>
         ))}
