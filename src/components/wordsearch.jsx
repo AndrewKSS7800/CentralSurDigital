@@ -14,6 +14,7 @@ const WordSearch = ({ wordList }) => {
   const [score, setScore] = useState(0);
   const finalVictorySoundRef = useRef(null);
   const [highlightedCells, setHighlightedCells] = useState([]);
+  const touchSelectionRef = useRef([]); // Ref to keep track of selected cells during touch events
 
   useEffect(() => {
     generateGrid();
@@ -79,27 +80,51 @@ const WordSearch = ({ wordList }) => {
     }
   };
 
-  // Event handlers for touch devices
   const handleTouchStart = (row, col) => {
     setMouseDown(true);
-    setSelectedCells([[row, col]]);
+    touchSelectionRef.current = [[row, col]]; // Reset selection on touch start
+    setSelectedCells(touchSelectionRef.current);
   };
 
   const handleTouchMove = (row, col) => {
     if (mouseDown) {
-      setSelectedCells((prev) => {
+      touchSelectionRef.current = (prev) => {
         const alreadyIncluded = prev.some(([r, c]) => r === row && c === col);
         return alreadyIncluded ? prev : [...prev, [row, col]];
-      });
+      };
+      setSelectedCells(touchSelectionRef.current);
     }
   };
 
   const handleTouchEnd = () => {
     setMouseDown(false);
-    finalizeSelection();
+
+    const word = selectedCells.map(([r, c]) => grid[r][c]).join("");
+    const reversed = word.split("").reverse().join("");
+
+    const validWord = wordList.find(
+      (w) => w.toUpperCase() === word || w.toUpperCase() === reversed
+    );
+
+    if (validWord && !foundWords.includes(validWord)) {
+      setFoundWords([...foundWords, validWord]);
+      setScore(score + validWord.length * 10);
+
+      // Play sound for each word found
+      const foundSound = new Audio("/sounds/prewin.mp3");
+      foundSound.play();
+
+      setHighlightedCells((prev) => [...prev, ...selectedCells]);
+    }
+
+    if (foundWords.length + 1 === wordList.length) {
+      triggerConfetti();
+    }
+
+    setSelectedCells([]);
+    touchSelectionRef.current = []; // Reset touch selection after completing selection
   };
 
-  // Event handlers for mouse devices
   const handleMouseDown = (row, col) => {
     if (!isTouchDevice()) {
       setMouseDown(true);
@@ -119,34 +144,31 @@ const WordSearch = ({ wordList }) => {
   const handleMouseUp = () => {
     if (!isTouchDevice()) {
       setMouseDown(false);
-      finalizeSelection();
+
+      const word = selectedCells.map(([r, c]) => grid[r][c]).join("");
+      const reversed = word.split("").reverse().join("");
+
+      const validWord = wordList.find(
+        (w) => w.toUpperCase() === word || w.toUpperCase() === reversed
+      );
+
+      if (validWord && !foundWords.includes(validWord)) {
+        setFoundWords([...foundWords, validWord]);
+        setScore(score + validWord.length * 10);
+
+        // Play sound for each word found
+        const foundSound = new Audio("/sounds/prewin.mp3");
+        foundSound.play();
+
+        setHighlightedCells((prev) => [...prev, ...selectedCells]);
+      }
+
+      if (foundWords.length + 1 === wordList.length) {
+        triggerConfetti();
+      }
+
+      setSelectedCells([]);
     }
-  };
-
-  // Finalize word selection logic
-  const finalizeSelection = () => {
-    const word = selectedCells.map(([r, c]) => grid[r][c]).join("");
-    const reversed = word.split("").reverse().join("");
-    const validWord = wordList.find(
-      (w) => w.toUpperCase() === word || w.toUpperCase() === reversed
-    );
-
-    if (validWord && !foundWords.includes(validWord)) {
-      setFoundWords([...foundWords, validWord]);
-      setScore(score + validWord.length * 10);
-
-      // Play sound for found word
-      const foundSound = new Audio("/sounds/prewin.mp3");
-      foundSound.play();
-
-      setHighlightedCells((prev) => [...prev, ...selectedCells]);
-    }
-
-    if (foundWords.length + 1 === wordList.length) {
-      triggerConfetti();
-    }
-
-    setSelectedCells([]);
   };
 
   const getElapsedTime = () => {
@@ -174,7 +196,7 @@ const WordSearch = ({ wordList }) => {
     finalVictorySoundRef.current?.play();
   };
 
-  // Function to detect if it's a touch device
+  // Función para detectar si es un dispositivo táctil
   const isTouchDevice = () => {
     return "ontouchstart" in window || navigator.maxTouchPoints > 0;
   };
@@ -198,9 +220,9 @@ const WordSearch = ({ wordList }) => {
                 onMouseDown={() => handleMouseDown(i, j)}
                 onMouseEnter={() => handleMouseEnter(i, j)}
                 onMouseUp={handleMouseUp}
-                onTouchStart={() => handleTouchStart(i, j)} 
-                onTouchMove={() => handleTouchMove(i, j)} 
-                onTouchEnd={handleTouchEnd} 
+                onTouchStart={() => handleTouchStart(i, j)} // Para pantallas táctiles
+                onTouchMove={() => handleTouchMove(i, j)} // Para pantallas táctiles
+                onTouchEnd={handleTouchEnd} // Para pantallas táctiles
               >
                 {letter}
               </span>
@@ -220,6 +242,7 @@ const WordSearch = ({ wordList }) => {
         ))}
       </div>
 
+      {/* Sonido cuando encuentra una palabra */}
       <audio ref={finalVictorySoundRef} preload="auto">
         <source src="/sounds/win.mp3" type="audio/mpeg" />
       </audio>
