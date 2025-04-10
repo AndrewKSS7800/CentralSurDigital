@@ -32,8 +32,8 @@
     width: auto;
     height: auto;
     font-weight: bold;
-    background-color: #f0f0f0;
-    color: #333;
+    background-color: var(--gray-light);
+    color: var(--primary-color-v1);
     text-align: center;
     font-family: var(--regular);
     display: flex;
@@ -65,10 +65,11 @@
     font-family: var(--regular);
     cursor: pointer;
     font-size: 0.75rem;
+    color: var(--primary-color-v1);
 }
 
 .word.found {
-    background-color: #87e087;
+    background-color: var(--primary-color-v4);
     font-weight: bold;
     text-decoration: line-through;
 }
@@ -91,16 +92,18 @@
     font-weight: bold;
 }
 .score-time div:nth-child(1){
+    color: var(--primary-color-v1);
     font-family: var(--regular);
     font-size: 0.8rem;
 }
 .score-time div:nth-child(2){
+    color: var(--primary-color-v1);
     font-family: var(--regular);
     font-size: 0.8rem;
 }
 
 .cell.highlighted {
-    background-color: #a1f0a1; /* verde claro */
+    background-color: var(--primary-color-v4); /* verde claro */
     color: #000;
     font-weight: bold;
 }
@@ -138,8 +141,6 @@
         width: auto;
         height: auto;
         font-weight: bold;
-        background-color: #f0f0f0;
-        color: #333;
         text-align: center;
         font-family: var(--regular);
         display: flex;
@@ -159,7 +160,6 @@
     }
     
     .word {
-        background-color: var(--gray-light);
         padding: 5px 10px;
         border-radius: 4px;
         font-family: var(--regular);
@@ -168,7 +168,6 @@
     }
     
     .word.found {
-        background-color: #87e087;
         font-weight: bold;
         text-decoration: line-through;
     }
@@ -176,10 +175,8 @@
     .wsch h2{
         width: 100%;
         font-size: 0.9rem;
-        color: var(--primary-color-v1);
         font-family: var(--regular);
         text-transform: uppercase;
-        border-bottom: 1px solid var(--primary-color-v1);
         margin: 1rem 0rem;
     }
 
@@ -209,7 +206,6 @@
         gap: 1rem;
         overflow: hidden;
         border-radius: 10px;
-        background-color: var(--gray-light);
         padding: 1rem 0.5rem;
     }
     
@@ -235,8 +231,6 @@
         width: auto;
         height: auto;
         font-weight: bold;
-        background-color: #f0f0f0;
-        color: #333;
         text-align: center;
         font-family: var(--regular);
         display: flex;
@@ -256,7 +250,6 @@
     }
     
     .word {
-        background-color: var(--gray-light);
         padding: 5px 10px;
         border-radius: 4px;
         font-family: var(--regular);
@@ -265,7 +258,6 @@
     }
     
     .word.found {
-        background-color: #87e087;
         font-weight: bold;
         text-decoration: line-through;
     }
@@ -273,7 +265,6 @@
     .wsch h2{
         width: 100%;
         font-size: 0.9rem;
-        color: var(--primary-color-v1);
         font-family: var(--regular);
         text-transform: uppercase;
         border-bottom: 1px solid var(--primary-color-v1);
@@ -307,7 +298,6 @@
         gap: 2rem;
         overflow: hidden;
         border-radius: 10px;
-        background-color: var(--gray-light);
         padding: 1rem 0.5rem;
     }
     
@@ -333,8 +323,6 @@
         width: auto;
         height: auto;
         font-weight: bold;
-        background-color: #f0f0f0;
-        color: #333;
         text-align: center;
         font-family: var(--regular);
         display: flex;
@@ -357,7 +345,6 @@
     
     .word {
         height: 2rem;
-        background-color: var(--gray-light);
         padding: 5px 10px;
         border-radius: 4px;
         font-family: var(--regular);
@@ -366,7 +353,6 @@
     }
     
     .word.found {
-        background-color: #87e087;
         font-weight: bold;
         text-decoration: line-through;
     }
@@ -374,10 +360,8 @@
     .wsch h2{
         width: 100%;
         font-size: 0.95rem;
-        color: var(--primary-color-v1);
         font-family: var(--regular);
         text-transform: uppercase;
-        border-bottom: 1px solid var(--primary-color-v1);
         margin: 1rem 0rem;
     }
     .wsch{
@@ -420,7 +404,6 @@
         gap: 3rem;
         overflow: hidden;
         border-radius: 10px;
-        background-color: var(--gray-light);
         padding: 1rem 0.5rem;
     }
     
@@ -437,7 +420,6 @@
     
     .row {
         width: 100%;
-        background-color: #87e087;
         display: grid;
         grid-template-columns: repeat(15, 1fr);
     }
@@ -447,8 +429,6 @@
         width: auto;
         height: auto;
         font-weight: bold;
-        background-color: #f0f0f0;
-        color: #333;
         text-align: center;
         font-family: var(--regular);
         display: flex;
@@ -471,7 +451,6 @@
     
     .word {
         height: 2rem;
-        background-color: var(--gray-light);
         padding: 5px 10px;
         border-radius: 4px;
         font-family: var(--regular);
@@ -480,7 +459,6 @@
     }
     
     .word.found {
-        background-color: #87e087;
         font-weight: bold;
         text-decoration: line-through;
     }
@@ -488,10 +466,8 @@
     .wsch h2{
         width: 100%;
         font-size: 1.1rem;
-        color: var(--primary-color-v1);
         font-family: var(--regular);
         text-transform: uppercase;
-        border-bottom: 1px solid var(--primary-color-v1);
         margin: 1rem 0rem;
     }
     .wsch{
@@ -531,7 +507,6 @@
         gap: 3rem;
         overflow: hidden;
         border-radius: 10px;
-        background-color: var(--gray-light);
         padding: 1rem 0.5rem;
     }
     
@@ -548,7 +523,6 @@
     
     .row {
         width: 100%;
-        background-color: #87e087;
         display: grid;
         grid-template-columns: repeat(15, 1fr);
     }
@@ -558,8 +532,6 @@
         width: auto;
         height: auto;
         font-weight: bold;
-        background-color: #f0f0f0;
-        color: #333;
         text-align: center;
         font-family: var(--regular);
         display: flex;
@@ -582,7 +554,6 @@
     
     .word {
         height: 2rem;
-        background-color: var(--gray-light);
         padding: 5px 10px;
         border-radius: 4px;
         font-family: var(--regular);
@@ -591,7 +562,6 @@
     }
     
     .word.found {
-        background-color: #87e087;
         font-weight: bold;
         text-decoration: line-through;
     }
@@ -599,10 +569,8 @@
     .wsch h2{
         width: 100%;
         font-size: 1.1rem;
-        color: var(--primary-color-v1);
         font-family: var(--regular);
         text-transform: uppercase;
-        border-bottom: 1px solid var(--primary-color-v1);
         margin: 1rem 0rem;
     }
     .wsch{
