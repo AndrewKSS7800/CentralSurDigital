@@ -157,7 +157,7 @@ const Home = () => {
                         <div className="cspiframes">
                             <div className="csconifr">
                                 <iframe
-                                src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F61566849996187%2Fvideos%2F1133519301441743%2F&show_text=false&width=560&t=0"
+                                src="https://www.canva.com/design/DAGWZm1oJCk/msjmpuM3PTtdUUXi1kmUmw/watch?embed"
                                 width="auto"
                                 height="auto"
                                 style={{ border: "none", overflow: "hidden" }}
@@ -168,7 +168,7 @@ const Home = () => {
                             </div>
                             <div className="csconifr">
                                 <iframe
-                                src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F61566849996187%2Fvideos%2F1819454095254489%2F&show_text=false&width=560&t=0"
+                                src="https://www.canva.com/design/DAGWYkm42fg/lW0u_8aZmVWkBbXkzWlR8g/watch?embed"
                                 width="auto"
                                 height="auto"
                                 style={{ border: "none", overflow: "hidden" }}
@@ -180,7 +180,7 @@ const Home = () => {
                             </div>
                             <div className="csconifr">
                                 <iframe
-                                src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F61566849996187%2Fvideos%2F1615853372650220%2F&show_text=false&width=560&t=0"
+                                src="https://www.canva.com/design/DAGWHua6weQ/JPFFyx67Gqolu_-8O5u2pQ/watch?embed"
                                 width="auto"
                                 height="auto"
                                 style={{ border: "none", overflow: "hidden" }}
@@ -191,7 +191,7 @@ const Home = () => {
                             </div>
                             <div className="csconifr">
                                 <iframe
-                                src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F61566849996187%2Fvideos%2F920264586195367%2F&show_text=false&width=560&t=0"
+                                src="https://www.canva.com/design/DAGWZoctrhU/GDv-VJkeASj7QaIQtJ1_GQ/watch?embed"
                                 width="auto"
                                 height="auto"
                                 style={{ border: "none", overflow: "hidden" }}
@@ -202,7 +202,7 @@ const Home = () => {
                             </div>
                             <div className="csconifr">
                                 <iframe
-                                src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F61566849996187%2Fvideos%2F541695385324953%2F&show_text=false&width=560&t=0"
+                                src="https://www.canva.com/design/DAGWkqh07B0/dNq8xSrK97947Ytu6uJLIA/watch?embed"
                                 width="auto"
                                 height="auto"
                                 style={{ border: "none", overflow: "hidden" }}
@@ -213,7 +213,7 @@ const Home = () => {
                             </div>
                             <div className="csconifr">
                                 <iframe
-                                src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F61566849996187%2Fvideos%2F934317455268344%2F&show_text=false&width=560&t=0"
+                                src="https://www.canva.com/design/DAGWw_lEpLc/Mt_mrOQAiCB93a8ZZ2WYXQ/watch?embed"
                                 width="auto"
                                 height="auto"
                                 style={{ border: "none", overflow: "hidden" }}
