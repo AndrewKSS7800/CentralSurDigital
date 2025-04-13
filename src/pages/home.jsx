@@ -424,9 +424,11 @@ const Home = () => {
                                 <img src={Ambiente} alt="" width="30px" />
                             </div>
                         </div>
+                        <div className="sp-colum"></div>
                     </div>
 
                     <div className='wsch'>
+                        
                         <h2>Amenidades - Pupiletras 🧩</h2>
                         <WordSearch wordList={palabras} />
                     </div>

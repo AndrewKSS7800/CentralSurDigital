@@ -741,14 +741,14 @@
     grid-area: spcol;
     margin-top: 2rem;
     width: 100%;
-    height: 0.3rem;
+    height: 0.2rem;
 }
 .sp-colum::after{
     content: "";
     position: absolute;
     background-color: var(--primary-color-v1);
     width: calc(100% + 1rem + 1rem);
-    height: 0.3rem;
+    height: 0.2rem;
     transform: translateX(-1rem);
     
 }
@@ -1611,14 +1611,14 @@
         grid-area: spcol;
         margin-top: 2rem;
         width: 100%;
-        height: 0.5rem;
+        height: 0.2rem;
     }
     .sp-colum::after{
         content: "";
         position: absolute;
         background-color: var(--primary-color-v1);
         width: calc(100% + 3rem + 13rem);
-        height: 0.5rem;
+        height: 0.2rem;
         transform: translateX(-3rem);
         
     }
@@ -2560,14 +2560,14 @@
         grid-area: spcol;
         margin-top: 2rem;
         width: 100%;
-        height: 0.5rem;
+        height: 0.2rem;
     }
     .sp-colum::after{
         content: "";
         position: absolute;
         background-color: var(--primary-color-v1);
         width: calc(100% + 33rem + 13rem);
-        height: 0.5rem;
+        height: 0.2rem;
         transform: translateX(-6rem);
         
     }
@@ -3152,7 +3152,10 @@
         grid-template-rows: auto auto 2rem 7rem 7rem 2rem 7rem 7rem 5rem 10rem 10rem 10rem auto auto auto;
     }
     
-
+    .wsch{
+        margin-top: 1.5rem;
+        grid-area: ws;
+    }
     
     #ncard01{
         grid-area: n01;
@@ -3557,14 +3560,14 @@
     .sp-colum{
         margin-top: 2rem;
         width: 100%;
-        height: 0.8rem;
+        height: 0.2rem;
     }
     .sp-colum::after{
         content: "";
         position: absolute;
         background-color: var(--primary-color-v1);
         width: calc(100% + 33rem + 13rem);
-        height: 0.8rem;
+        height: 0.2rem;
         transform: translateX(-6rem);
         
     }
@@ -4558,14 +4561,14 @@
     .sp-colum{
         margin-top: 3rem;
         width: 100%;
-        height: 0.8rem;
+        height: 0.2rem;
     }
     .sp-colum::after{
         content: "";
         position: absolute;
         background-color: var(--primary-color-v1);
         width: calc(100% + 33rem + 33rem);
-        height: 0.8rem;
+        height: 0.2rem;
         transform: translateX(-10rem);
         
     }
@@ -5564,14 +5567,14 @@
     .sp-colum{
         margin-top: 3rem;
         width: 100%;
-        height: 0.8rem;
+        height: 0.2rem;
     }
     .sp-colum::after{
         content: "";
         position: absolute;
         background-color: var(--primary-color-v1);
         width: calc(100% + 33rem + 53rem);
-        height: 0.8rem;
+        height: 0.2rem;
         transform: translateX(-20rem);
         
     }

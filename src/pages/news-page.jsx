@@ -15,155 +15,161 @@ const Newspage = () =>{
             <div className="nptitle">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus incidunt harum consequatur! Quos, laborum minus.
             </div>
-            <div className="npimg">
-                <img src={Img1} alt="" />
-            </div>
-            <div className="npescritor">
-                <div className="npesimg">
-                    <img src={Img2} alt=""  width="30px"/>
+            <div className="npcontent01">
+                <div className="npimg">
+                    <img src={Img1} alt="" />
                 </div>
-                <div className="npescon">
-                    <span>Por Autor Autor</span>
-                    <span>19 de marzo del 2024 17:56</span>
-                </div>
-            </div>
-            <div className="npcontent">
-                {texto}
-            </div>
-            <div className="nprelevante">
-                <h3>Lo más relevante</h3>
-                <div className="nprcontent">
-                    <div className="nprcontents">
-                        <div className="nprcontentcard">
-                            <span>
-                                Economia
-                            </span>
-                            <span>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, maiores ullam soluta doloribus provident accusantium ab beatae laborum vero a!
-                            </span>
-                        </div>
-                        <div className="nprimg">
-                            <img src={Img1} alt="" width="20px"/>
-                        </div>
+                <div className="npescritor">
+                    <div className="npesimg">
+                        <img src={Img2} alt=""  width="30px"/>
                     </div>
-                    <div className="nprcontents">
-                        <div className="nprcontentcard">
-                            <span>
-                                Economia
-                            </span>
-                            <span>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, maiores ullam soluta doloribus provident accusantium ab beatae laborum vero a!
-                            </span>
-                        </div>
-                        <div className="nprimg">
-                            <img src={Img1} alt="" width="20px"/>
-                        </div>
-                    </div>
-                    <div className="nprcontents">
-                        <div className="nprcontentcard">
-                            <span>
-                                Economia
-                            </span>
-                            <span>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, maiores ullam soluta doloribus provident accusantium ab beatae laborum vero a!
-                            </span>
-                        </div>
-                        <div className="nprimg">
-                            <img src={Img1} alt="" width="20px"/>
-                        </div>
-                    </div>
-                    <div className="nprcontents">
-                        <div className="nprcontentcard">
-                            <span>
-                                Economia
-                            </span>
-                            <span>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, maiores ullam soluta doloribus provident accusantium ab beatae laborum vero a!
-                            </span>
-                        </div>
-                        <div className="nprimg">
-                            <img src={Img1} alt="" width="20px"/>
-                        </div>
+                    <div className="npescon">
+                        <span>Por Autor Autor</span>
+                        <span>19 de marzo del 2024 17:56</span>
                     </div>
                 </div>
-            </div>
-            <div className="npadd-1">
-                Anuncio
-            </div>
-            <div className="npadd-2">
-                Anuncio
-            </div>
-            <div className="npultcat">
-                <h3>Lo último en economía</h3>
-                <div>
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dicta, incidunt sunt quo nam sint, rem laudantium explicabo temporibus officia quae numquam maxime, cupiditate eum.</span>
+                <div className="npcontent">
+                    {texto}
                 </div>
-                <div>
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dicta, incidunt sunt quo nam sint, rem laudantium explicabo temporibus officia quae numquam maxime, cupiditate eum.</span>
-                </div>
-                <div>
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dicta, incidunt sunt quo nam sint, rem laudantium explicabo temporibus officia quae numquam maxime, cupiditate eum.</span>
-                </div>
-                <div>
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dicta, incidunt sunt quo nam sint, rem laudantium explicabo temporibus officia quae numquam maxime, cupiditate eum.</span>
-                </div>
-                <div>
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dicta, incidunt sunt quo nam sint, rem laudantium explicabo temporibus officia quae numquam maxime, cupiditate eum.</span>
-                </div>
-            </div>
-            <div className="npultgen">
-                <h3>
-                    Última Hora
-                </h3>
-                <div className="npugcontent">
-                    
-                    <div className="npugcard">
-                        <div className="npugcardcont">
-                            <span>Economía</span>
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo dolore mollitia corrupti modi error repudiandae, aliquam voluptatibus velit quisquam perferendis.</span>
+                <div className="nprelevante">
+                    <h3>Lo más relevante</h3>
+                    <div className="nprcontent">
+                        <div className="nprcontents">
+                            <div className="nprcontentcard">
+                                <span>
+                                    Economia
+                                </span>
+                                <span>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, maiores ullam soluta doloribus provident accusantium ab beatae laborum vero a!
+                                </span>
+                            </div>
+                            <div className="nprimg">
+                                <img src={Img1} alt="" width="20px"/>
+                            </div>
                         </div>
-                        <div className="npugcardimg">
-                            <img src={Img1} alt="" width="20px" />
+                        <div className="nprcontents">
+                            <div className="nprcontentcard">
+                                <span>
+                                    Economia
+                                </span>
+                                <span>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, maiores ullam soluta doloribus provident accusantium ab beatae laborum vero a!
+                                </span>
+                            </div>
+                            <div className="nprimg">
+                                <img src={Img1} alt="" width="20px"/>
+                            </div>
                         </div>
-                    </div>
-                    <div className="npugcard">
-                        <div className="npugcardcont">
-                            <span>Economía</span>
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo dolore mollitia corrupti modi error repudiandae, aliquam voluptatibus velit quisquam perferendis.</span>
+                        <div className="nprcontents">
+                            <div className="nprcontentcard">
+                                <span>
+                                    Economia
+                                </span>
+                                <span>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, maiores ullam soluta doloribus provident accusantium ab beatae laborum vero a!
+                                </span>
+                            </div>
+                            <div className="nprimg">
+                                <img src={Img1} alt="" width="20px"/>
+                            </div>
                         </div>
-                        <div className="npugcardimg">
-                            <img src={Img1} alt="" width="20px" />
-                        </div>
-                    </div>
-                    <div className="npugcard">
-                        <div className="npugcardcont">
-                            <span>Economía</span>
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo dolore mollitia corrupti modi error repudiandae, aliquam voluptatibus velit quisquam perferendis.</span>
-                        </div>
-                        <div className="npugcardimg">
-                            <img src={Img1} alt="" width="20px" />
-                        </div>
-                    </div>
-                    <div className="npugcard">
-                        <div className="npugcardcont">
-                            <span>Economía</span>
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo dolore mollitia corrupti modi error repudiandae, aliquam voluptatibus velit quisquam perferendis.</span>
-                        </div>
-                        <div className="npugcardimg">
-                            <img src={Img1} alt="" width="20px" />
-                        </div>
-                    </div>
-                    <div className="npugcard">
-                        <div className="npugcardcont">
-                            <span>Economía</span>
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo dolore mollitia corrupti modi error repudiandae, aliquam voluptatibus velit quisquam perferendis.</span>
-                        </div>
-                        <div className="npugcardimg">
-                            <img src={Img1} alt="" width="20px" />
+                        <div className="nprcontents">
+                            <div className="nprcontentcard">
+                                <span>
+                                    Economia
+                                </span>
+                                <span>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, maiores ullam soluta doloribus provident accusantium ab beatae laborum vero a!
+                                </span>
+                            </div>
+                            <div className="nprimg">
+                                <img src={Img1} alt="" width="20px"/>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div className="npcontent02">
+                <div className="npadd-1">
+                    Anuncio
+                </div>
+                <div className="npadd-2">
+                    Anuncio
+                </div>
+                <div className="npultcat">
+                    <h3>Lo último en economía</h3>
+                    <div>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dicta, incidunt sunt quo nam sint, rem laudantium explicabo temporibus officia quae numquam maxime, cupiditate eum.</span>
+                    </div>
+                    <div>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dicta, incidunt sunt quo nam sint, rem laudantium explicabo temporibus officia quae numquam maxime, cupiditate eum.</span>
+                    </div>
+                    <div>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dicta, incidunt sunt quo nam sint, rem laudantium explicabo temporibus officia quae numquam maxime, cupiditate eum.</span>
+                    </div>
+                    <div>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dicta, incidunt sunt quo nam sint, rem laudantium explicabo temporibus officia quae numquam maxime, cupiditate eum.</span>
+                    </div>
+                    <div>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dicta, incidunt sunt quo nam sint, rem laudantium explicabo temporibus officia quae numquam maxime, cupiditate eum.</span>
+                    </div>
+                </div>
+                <div className="npultgen">
+                    <h3>
+                        Última Hora
+                    </h3>
+                    <div className="npugcontent">
+                        
+                        <div className="npugcard">
+                            <div className="npugcardcont">
+                                <span>Economía</span>
+                                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo dolore mollitia corrupti modi error repudiandae, aliquam voluptatibus velit quisquam perferendis.</span>
+                            </div>
+                            <div className="npugcardimg">
+                                <img src={Img1} alt="" width="20px" />
+                            </div>
+                        </div>
+                        <div className="npugcard">
+                            <div className="npugcardcont">
+                                <span>Economía</span>
+                                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo dolore mollitia corrupti modi error repudiandae, aliquam voluptatibus velit quisquam perferendis.</span>
+                            </div>
+                            <div className="npugcardimg">
+                                <img src={Img1} alt="" width="20px" />
+                            </div>
+                        </div>
+                        <div className="npugcard">
+                            <div className="npugcardcont">
+                                <span>Economía</span>
+                                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo dolore mollitia corrupti modi error repudiandae, aliquam voluptatibus velit quisquam perferendis.</span>
+                            </div>
+                            <div className="npugcardimg">
+                                <img src={Img1} alt="" width="20px" />
+                            </div>
+                        </div>
+                        <div className="npugcard">
+                            <div className="npugcardcont">
+                                <span>Economía</span>
+                                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo dolore mollitia corrupti modi error repudiandae, aliquam voluptatibus velit quisquam perferendis.</span>
+                            </div>
+                            <div className="npugcardimg">
+                                <img src={Img1} alt="" width="20px" />
+                            </div>
+                        </div>
+                        <div className="npugcard">
+                            <div className="npugcardcont">
+                                <span>Economía</span>
+                                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo dolore mollitia corrupti modi error repudiandae, aliquam voluptatibus velit quisquam perferendis.</span>
+                            </div>
+                            <div className="npugcardimg">
+                                <img src={Img1} alt="" width="20px" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
         </section>
 
     );

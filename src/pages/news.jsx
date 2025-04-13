@@ -12,7 +12,7 @@ const News = () => {
                     <Link to="/noticias/economia">Leer más</Link>
                 </div>
                 <div className="nlist-b">
-                    <div className="nlbc">
+                    <Link to="/noticia/noticia-pagina" className="nlbc">
                         <div className="nlbc-img">
                             <img src={IMG1} alt="" width="40px"/>
                         </div>
@@ -22,8 +22,8 @@ const News = () => {
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores praesentium nisi. Excepturi voluptates quidem quaerat, beatae libero repudiandae recusandae, mollitia aspernatur doloribus tempora molestiae nisi accusantium a? Incidunt reiciendis laborum unde minima, nobis quos a odit porro magni autem totam rerum exercitationem cupiditate qui. Esse quam perspiciatis magnam aperiam.</p>
                             <span className="nlbc-at">Por <b> Graciela Reyes </b> 20/08/2025 15:07</span>
                         </div>
-                    </div>
-                    <div className="nlbc">
+                    </Link>
+                    <Link to="/noticia/noticia-pagina" className="nlbc">
                         <div className="nlbc-img">
                             <img src={IMG1} alt="" width="40px"/>
                         </div>
@@ -33,8 +33,8 @@ const News = () => {
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores praesentium nisi. Excepturi voluptates quidem quaerat, beatae libero repudiandae recusandae, mollitia aspernatur doloribus tempora molestiae nisi accusantium a? Incidunt reiciendis laborum unde minima, nobis quos a odit porro magni autem totam rerum exercitationem cupiditate qui. Esse quam perspiciatis magnam aperiam.</p>
                             <span className="nlbc-at">Por <b> Graciela Reyes </b> 20/08/2025 15:07</span>
                         </div>
-                    </div>
-                    <div className="nlbc">
+                    </Link>
+                    <Link to="/noticia/noticia-pagina" className="nlbc">
                         <div className="nlbc-img">
                             <img src={IMG1} alt="" width="40px"/>
                         </div>
@@ -44,8 +44,8 @@ const News = () => {
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores praesentium nisi. Excepturi voluptates quidem quaerat, beatae libero repudiandae recusandae, mollitia aspernatur doloribus tempora molestiae nisi accusantium a? Incidunt reiciendis laborum unde minima, nobis quos a odit porro magni autem totam rerum exercitationem cupiditate qui. Esse quam perspiciatis magnam aperiam.</p>
                             <span className="nlbc-at">Por <b> Graciela Reyes </b> 20/08/2025 15:07</span>
                         </div>
-                    </div>
-                    <div className="nlbc">
+                    </Link>
+                    <Link to="/noticia/noticia-pagina" className="nlbc">
                         <div className="nlbc-img">
                             <img src={IMG1} alt="" width="40px"/>
                         </div>
@@ -55,8 +55,8 @@ const News = () => {
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores praesentium nisi. Excepturi voluptates quidem quaerat, beatae libero repudiandae recusandae, mollitia aspernatur doloribus tempora molestiae nisi accusantium a? Incidunt reiciendis laborum unde minima, nobis quos a odit porro magni autem totam rerum exercitationem cupiditate qui. Esse quam perspiciatis magnam aperiam.</p>
                             <span className="nlbc-at">Por <b> Graciela Reyes </b> 20/08/2025 15:07</span>
                         </div>
-                    </div>
-                    <div className="nlbc">
+                    </Link>
+                    <Link to="/noticia/noticia-pagina" className="nlbc">
                         <div className="nlbc-img">
                             <img src={IMG1} alt="" width="40px"/>
                         </div>
@@ -66,7 +66,7 @@ const News = () => {
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores praesentium nisi. Excepturi voluptates quidem quaerat, beatae libero repudiandae recusandae, mollitia aspernatur doloribus tempora molestiae nisi accusantium a? Incidunt reiciendis laborum unde minima, nobis quos a odit porro magni autem totam rerum exercitationem cupiditate qui. Esse quam perspiciatis magnam aperiam.</p>
                             <span className="nlbc-at">Por <b> Graciela Reyes </b> 20/08/2025 15:07</span>
                         </div>
-                    </div>
+                    </Link>
                 </div>
 
 
@@ -75,7 +75,7 @@ const News = () => {
                     <Link to="/noticias/politica">Leer más</Link>
                 </div>
                 <div className="nlist-b">
-                    <div className="nlbc">
+                    <Link to="/noticia/noticia-pagina" className="nlbc">
                         <div className="nlbc-img">
                             <img src={IMG2} alt="" width="40px"/>
                         </div>
@@ -85,8 +85,8 @@ const News = () => {
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores praesentium nisi. Excepturi voluptates quidem quaerat, beatae libero repudiandae recusandae, mollitia aspernatur doloribus tempora molestiae nisi accusantium a? Incidunt reiciendis laborum unde minima, nobis quos a odit porro magni autem totam rerum exercitationem cupiditate qui. Esse quam perspiciatis magnam aperiam.</p>
                             <span className="nlbc-at">Por <b> Graciela Reyes </b> 20/08/2025 15:07</span>
                         </div>
-                    </div>
-                    <div className="nlbc">
+                    </Link>
+                    <Link to="/noticia/noticia-pagina" className="nlbc">
                         <div className="nlbc-img">
                             <img src={IMG2} alt="" width="40px"/>
                         </div>
@@ -96,8 +96,8 @@ const News = () => {
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores praesentium nisi. Excepturi voluptates quidem quaerat, beatae libero repudiandae recusandae, mollitia aspernatur doloribus tempora molestiae nisi accusantium a? Incidunt reiciendis laborum unde minima, nobis quos a odit porro magni autem totam rerum exercitationem cupiditate qui. Esse quam perspiciatis magnam aperiam.</p>
                             <span className="nlbc-at">Por <b> Graciela Reyes </b> 20/08/2025 15:07</span>
                         </div>
-                    </div>
-                    <div className="nlbc">
+                    </Link>
+                    <Link to="/noticia/noticia-pagina" className="nlbc">
                         <div className="nlbc-img">
                             <img src={IMG2} alt="" width="40px"/>
                         </div>
@@ -107,8 +107,8 @@ const News = () => {
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores praesentium nisi. Excepturi voluptates quidem quaerat, beatae libero repudiandae recusandae, mollitia aspernatur doloribus tempora molestiae nisi accusantium a? Incidunt reiciendis laborum unde minima, nobis quos a odit porro magni autem totam rerum exercitationem cupiditate qui. Esse quam perspiciatis magnam aperiam.</p>
                             <span className="nlbc-at">Por <b> Graciela Reyes </b> 20/08/2025 15:07</span>
                         </div>
-                    </div>
-                    <div className="nlbc">
+                    </Link>
+                    <Link to="/noticia/noticia-pagina" className="nlbc">
                         <div className="nlbc-img">
                             <img src={IMG2} alt="" width="40px"/>
                         </div>
@@ -118,8 +118,8 @@ const News = () => {
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores praesentium nisi. Excepturi voluptates quidem quaerat, beatae libero repudiandae recusandae, mollitia aspernatur doloribus tempora molestiae nisi accusantium a? Incidunt reiciendis laborum unde minima, nobis quos a odit porro magni autem totam rerum exercitationem cupiditate qui. Esse quam perspiciatis magnam aperiam.</p>
                             <span className="nlbc-at">Por <b> Graciela Reyes </b> 20/08/2025 15:07</span>
                         </div>
-                    </div>
-                    <div className="nlbc">
+                    </Link>
+                    <Link to="/noticia/noticia-pagina" className="nlbc">
                         <div className="nlbc-img">
                             <img src={IMG2} alt="" width="40px"/>
                         </div>
@@ -129,7 +129,7 @@ const News = () => {
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere maiores praesentium nisi. Excepturi voluptates quidem quaerat, beatae libero repudiandae recusandae, mollitia aspernatur doloribus tempora molestiae nisi accusantium a? Incidunt reiciendis laborum unde minima, nobis quos a odit porro magni autem totam rerum exercitationem cupiditate qui. Esse quam perspiciatis magnam aperiam.</p>
                             <span className="nlbc-at">Por <b> Graciela Reyes </b> 20/08/2025 15:07</span>
                         </div>
-                    </div>
+                    </Link>
                 </div>
             </div>
             <div className="news-add">

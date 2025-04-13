@@ -8,7 +8,7 @@
 }
 
 .news-add{
-    background: rgb(255, 96, 96);
+    background: var(--primary-color-v1);
     width:100% ;
     height: 9rem;
 }
@@ -22,12 +22,12 @@
     flex-direction: column;
 }
 .nlist-h{
-    background-color: var(--primary-color-v1);
-    color: var(--white);
-    padding: 0.5rem 0.5rem;
+    color: var(--primary-color-v1);
+    
+    padding: 0rem 0rem;
     font-weight: 700;
-    border-radius: 5px;
     width: 100%;
+    border-bottom: 1px solid var(--primary-color-v1);
     display: flex;
     font-family: var(--regular);
     font-size: 0.8rem;
@@ -37,16 +37,18 @@
     text-transform: uppercase;
 }
 .nlist-h a{
-    background-color: var(--primary-color-v3);
     text-transform: uppercase;
-    padding: 0.2rem;
+    
     border-radius: 5px;
     font-size: 0.8rem;
     font-weight: 400;
-    color: var(--white);
+    color: var(--primary-color-v1);
     text-decoration: none;
     font-family: var(--regular);
 
+}
+.nlist-h a:hover{
+    color: var(--primary-color-v3);
 }
 .nlist-b{
     display: flex;
@@ -57,7 +59,7 @@
     margin-bottom: 1rem;
 }
 .nlbc{
-    
+    text-decoration: none;
     width: 100%;
     height: 30rem;
     display: flex;
@@ -160,7 +162,6 @@
     }
     
     .news-add{
-        background: rgb(255, 96, 96);
         width:100% ;
         height: 9rem;
     }
@@ -174,11 +175,7 @@
         flex-direction: column;
     }
     .nlist-h{
-        background-color: var(--primary-color-v1);
-        color: var(--white);
-        padding: 0.5rem 0.5rem;
         font-weight: 700;
-        border-radius: 5px;
         width: 100%;
         display: flex;
         font-family: var(--regular);
@@ -188,12 +185,8 @@
         flex-direction: row;
     }
     .nlist-h a{
-        background-color: var(--primary-color-v3);
-        padding: 0.2rem;
-        border-radius: 5px;
         font-size: 0.8rem;
         font-weight: 400;
-        color: var(--white);
         text-decoration: none;
         font-family: var(--regular);
     
@@ -313,7 +306,6 @@
     
     .news-add{
         transform: translateY(-0.5rem);
-        background: rgb(255, 96, 96);
         width:15rem ;
         height: 45em;
     }
@@ -327,11 +319,7 @@
         flex-direction: column;
     }
     .nlist-h{
-        background-color: var(--primary-color-v1);
-        color: var(--white);
-        padding: 0.5rem 0.5rem;
         font-weight: 700;
-        border-radius: 5px;
         width: 100%;
         display: flex;
         font-family: var(--regular);
@@ -341,12 +329,9 @@
         flex-direction: row;
     }
     .nlist-h a{
-        background-color: var(--primary-color-v3);
-        padding: 0.2rem;
         border-radius: 5px;
         font-size: 0.8rem;
         font-weight: 400;
-        color: var(--white);
         text-decoration: none;
         font-family: var(--regular);
     
@@ -464,7 +449,6 @@
     
     .news-add{
         transform: translateY(-1.1rem);
-        background: rgb(255, 96, 96);
         width:15rem ;
         height: 45em;
     }
@@ -478,11 +462,7 @@
         flex-direction: column;
     }
     .nlist-h{
-        background-color: var(--primary-color-v1);
-        color: var(--white);
-        padding: 0.5rem 0.5rem;
         font-weight: 700;
-        border-radius: 5px;
         width: 100%;
         display: flex;
         font-family: var(--regular);
@@ -492,12 +472,8 @@
         flex-direction: row;
     }
     .nlist-h a{
-        background-color: var(--primary-color-v3);
-        padding: 0.5rem;
-        border-radius: 5px;
         font-size: 0.9rem;
         font-weight: 400;
-        color: var(--white);
         text-decoration: none;
         font-family: var(--regular);
     
@@ -615,7 +591,6 @@
     
     .news-add{
         transform: translateY(-1.1rem);
-        background: rgb(255, 96, 96);
         width:15rem ;
         height: 45em;
     }
@@ -629,11 +604,6 @@
         flex-direction: column;
     }
     .nlist-h{
-        background-color: var(--primary-color-v1);
-        color: var(--white);
-        padding: 0.6rem 0.6rem;
-        font-weight: 700;
-        border-radius: 5px;
         width: 100%;
         display: flex;
         font-family: var(--regular);
@@ -643,12 +613,8 @@
         flex-direction: row;
     }
     .nlist-h a{
-        background-color: var(--primary-color-v3);
-        padding: 0.3rem;
-        border-radius: 5px;
         font-size: 1.1rem;
         font-weight: 400;
-        color: var(--white);
         text-decoration: none;
         font-family: var(--regular);
     
@@ -765,7 +731,6 @@
     
     .news-add{
         transform: translateY(-1.1rem);
-        background: rgb(255, 96, 96);
         width:15rem ;
         height: 45em;
     }
@@ -779,11 +744,6 @@
         flex-direction: column;
     }
     .nlist-h{
-        background-color: var(--primary-color-v1);
-        color: var(--white);
-        padding: 0.6rem 0.6rem;
-        font-weight: 700;
-        border-radius: 5px;
         width: 100%;
         display: flex;
         font-family: var(--regular);
@@ -793,12 +753,8 @@
         flex-direction: row;
     }
     .nlist-h a{
-        background-color: var(--primary-color-v3);
-        padding: 0.3rem;
-        border-radius: 5px;
         font-size: 1.1rem;
         font-weight: 400;
-        color: var(--white);
         text-decoration: none;
         font-family: var(--regular);
     
