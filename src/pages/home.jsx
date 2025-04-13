@@ -303,29 +303,33 @@ const Home = () => {
                         <img src={Politica} alt="" width="40px" />
                     </div>
                     <div className="n-card" id='ncard06'>
-                        <span className="cat">
-                            | Política
-                        </span>
-                        <span className="tit">
-                            Gobierno designó a Pedro Chira como presidente del Directorio de Perupetro.
-                        </span>
-                        <span className="dat">
-                            02/06/2024 16:42
-                        </span>
-                        <img src={Politica} alt="" width="40px" />
-                    </div>
+                        <div>
+                                <span className="cat">
+                                    | Política
+                                </span>
+                                <span className="tit">
+                                    Gobierno designó a Pedro Chira como presidente del Directorio de Perupetro.
+                                </span>
+                                <span className="dat">
+                                    02/06/2024 16:42
+                                </span>
+                            </div>
+                            <img src={Politica} alt="" width="40px" />
+                        </div>
                     <div className="n-card" id='ncard07'>
-                        <span className="cat">
-                            | Política
-                        </span>
-                        <span className="tit">
-                            Gobierno designó a Pedro Chira como presidente del Directorio de Perupetro.
-                        </span>
-                        <span className="dat">
-                            02/06/2024 16:42
-                        </span>
-                        <img src={Politica} alt="" width="40px" />
-                    </div>
+                        <div>
+                                <span className="cat">
+                                    | Política
+                                </span>
+                                <span className="tit">
+                                    Gobierno designó a Pedro Chira como presidente del Directorio de Perupetro.
+                                </span>
+                                <span className="dat">
+                                    02/06/2024 16:42
+                                </span>
+                            </div>
+                            <img src={Politica} alt="" width="40px" />
+                        </div>
                     <div className="n-tend" id='ntend'>
                         <span>En tendencia</span>
                     </div>

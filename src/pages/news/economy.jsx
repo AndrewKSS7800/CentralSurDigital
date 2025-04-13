@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Img1 from "../../assets/imgs/Economia.png"; // ajusta la ruta
-
+import { Link } from 'react-router-dom';
 const Economy = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const itemsPerPage = 10;
@@ -29,7 +29,7 @@ const Economy = () => {
                 <div className="newsbody">
                     <div className="newscontent">
                         {noticiasPagina.map((n) => (
-                            <div className="newscard" key={n.id}>
+                            <Link to="/noticia/noticia-pagina" className="newscard" key={n.id}>
                                 <div className="newsimg">
                                     <img src={n.img} alt="" width="100%" />
                                 </div>
@@ -40,7 +40,7 @@ const Economy = () => {
                                     <span className="newsdate">{n.fecha}</span>
                                     <span className="newsreporter">{n.reportero}</span>
                                 </div>
-                            </div>
+                            </Link>
                         ))}
                     </div>
 

@@ -9,7 +9,7 @@
     right: 0;
     position: absolute;
     width: 100%;
-    height:30rem;
+    height:36rem;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12),
     0 3px 1px -2px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -285,11 +285,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30rem;
-    flex-direction: column;
+    margin-top: 36rem;
+    flex-direction: column-reverse;
 }
 .add-h{
-    background-color: #212121;
+    background-color: var(--primary-color-v1);
     width: 100%;
     height: 10rem;
 }
@@ -308,7 +308,7 @@
 **/
 .n-card{
     padding-bottom: 1.3rem;
-    border-bottom: 2px solid var(--primary-color-v1);
+    border-bottom: 1px solid var(--primary-color-v1);
 }
 
 
@@ -387,8 +387,9 @@
     grid-area: tcol;
 }
 .n-container{
+    transform: translateY(-1rem);
     row-gap: 1rem;
-    padding-top: 1rem;
+    padding-top: 0rem;
     width: 100%;
     position: relative;
     display: grid;
@@ -432,7 +433,7 @@
     justify-content: left;
     align-items: center;
     width: 100%;
-    height: 8%;
+    height: 5%;
     font-family: var(--regular);
 } 
 
@@ -443,7 +444,7 @@
     width: 100%;
     font-family: var(--regular);
     font-weight: 700;
-    height: 20%;
+    height: 16%;
     overflow: hidden;
     text-align: justify;
     text-overflow: ellipsis;
@@ -451,7 +452,7 @@
     display: -webkit-box;
     -webkit-line-clamp: 3;     /* Número de líneas a mostrar */
     -webkit-box-orient: vertical;
-    line-height: 1.5em;
+    line-height: 1.3em;
     font-size: 1rem;
 } 
 #ncard01 .dat{
@@ -460,27 +461,27 @@
     justify-content: left;
     font-family: var(--regular);
     align-items: center;
-    height: 8%;
+    height: 5%;
     font-size: 0.8rem;
 } 
 #ncard01 img{
     object-fit: cover;
     object-position: center;
     width: 100%;
-    height: 39%;
+    height: 45%;
     border-radius: 5px;
 } 
 #ncard01 .par {
-    padding-top: 0.5rem;
+    padding-top: 0.4rem;
     width: 100%;              /* Ajusta según tu diseño */
-    height: 25%;             /* O max-height si es variable */
+    height: 29%;             /* O max-height si es variable */
     overflow: hidden;
     text-align: justify;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 4;     /* Número de líneas a mostrar */
+    -webkit-line-clamp: 6;     /* Número de líneas a mostrar */
     -webkit-box-orient: vertical;
-    line-height: 1.5em;
+    line-height: 1.3em;
     font-size: 0.8rem;
     font-family: var(--regular),sans-serif;
 }
@@ -493,21 +494,21 @@
     flex-direction: column;
 }
 #ncard02 div{
-    height: 50%;
+    height: 30%;
     display: flex;
     justify-content: center;
     justify-content: center;
     flex-direction: column;
 }
 #ncard03 div{
-    height: 50%;
+    height: 30%;
     display: flex;
     justify-content: center;
     justify-content: center;
     flex-direction: column;
 }
 #ncard04 div{
-    height: 50%;
+    height: 30%;
     display: flex;
     justify-content: center;
     justify-content: center;
@@ -521,21 +522,21 @@
     flex-direction: column;
 }
 #ncard08 div{
-    height: 40%;
+    height: 30%;
     display: flex;
     justify-content: center;
     justify-content: center;
     flex-direction: column;
 }
 #ncard09 div{
-    height: 40%;
+    height: 30%;
     display: flex;
     justify-content: center;
     justify-content: center;
     flex-direction: column;
 }
 #ncard10 div{
-    height: 40%;
+    height: 30%;
     display: flex;
     justify-content: center;
     justify-content: center;
@@ -553,7 +554,7 @@
     justify-content: left;
     align-items: center;
     width: 100%;
-    height: 15%;
+    height: 18%;
     font-family: var(--regular),sans-serif;
 }
 
@@ -569,15 +570,15 @@
     width: 100%;
     font-family: var(--regular),sans-serif;
     font-weight: 700;
-    height: 65%;
+    height:54%;
     overflow: hidden;
     text-align: justify;
     text-overflow: ellipsis;
     text-transform: uppercase;
     display: -webkit-box;
-    -webkit-line-clamp: 3;     /* Número de líneas a mostrar */
+    -webkit-line-clamp: 2;     /* Número de líneas a mostrar */
     -webkit-box-orient: vertical;
-    line-height: 1.6em;
+    line-height: 1.3em;
     font-size: 1rem;
 }
 
@@ -592,7 +593,7 @@
     justify-content: left;
     font-family: var(--regular),sans-serif;
     align-items: center;
-    height: 20%;
+    height: 18%;
     font-size: 0.8rem;
 }
 
@@ -605,7 +606,7 @@
     object-fit: cover;
     object-position: center;
     width: 100%;
-    height: 50%;
+    height: 70%;
     border-radius: 5px;
 }
 
@@ -676,7 +677,6 @@
 #ncard08{
     color: var(--primary-color-v1);
     grid-area: n08;
-    
 }
 #ncard09{
     grid-area: n09;
@@ -696,7 +696,7 @@
     justify-content: left;
     align-items: center;
     width: 100%;
-    height: 30%;
+    height: 35%;
     font-family: var(--regular),sans-serif;
 }
 
@@ -709,16 +709,17 @@
     width: 100%;
     font-family: var(--regular),sans-serif;
     font-weight: 700;
-    height: 70%;
+    height: 65%;
     overflow: hidden;
     text-align: justify;
+    overflow: hidden;
     text-overflow: ellipsis;
     text-transform: uppercase;
     display: -webkit-box;
-    -webkit-line-clamp: 3;     /* Número de líneas a mostrar */
+    -webkit-line-clamp: 2;     /* Número de líneas a mostrar */
     -webkit-box-orient: vertical;
-    line-height: 1.2em;
-    font-size: 0.8rem;
+    line-height: 1.25em;
+    font-size: 0.85rem;
 }
 
 #ncard08 img,
@@ -727,7 +728,7 @@
     object-fit: cover;
     object-position: center;
     width: 100%;
-    height: 60%;
+    height: 70%;
     border-radius: 5px;
 }
 
@@ -740,14 +741,14 @@
     grid-area: spcol;
     margin-top: 2rem;
     width: 100%;
-    height: 0.5rem;
+    height: 0.3rem;
 }
 .sp-colum::after{
     content: "";
     position: absolute;
     background-color: var(--primary-color-v1);
     width: calc(100% + 1rem + 1rem);
-    height: 0.5rem;
+    height: 0.3rem;
     transform: translateX(-1rem);
     
 }
@@ -847,7 +848,7 @@
     -webkit-box-orient: vertical;
     line-height: 1.4em;
     font-size: 0.7rem;
-    font-weight: 100;
+    font-weight: 300;
     overflow: hidden;
     color: var(--primary-color-v1);
 }
@@ -1174,13 +1175,11 @@
         justify-content: center;
         align-items:baseline;
         margin-top: 30rem;
-        flex-direction: row-reverse;
+        flex-direction: column-reverse;
     }
     .add-h{
-        background-color: #212121;
-        width: 10rem;
-        height: 40rem;
-        transform: translateY(-1.85rem);
+        width: 100%;
+        height: 10rem;
     }
     /**
     .n-container{
@@ -1197,7 +1196,7 @@
     **/
     .n-card{
         padding-bottom: 1.3rem;
-        border-bottom: 2px solid var(--primary-color-v1);
+        border-bottom: 1px solid var(--primary-color-v1);
     }
 
 
@@ -1325,13 +1324,13 @@
         width: 100%;
         font-family: var(--regular),sans-serif;
         font-weight: 700;
-        height: 20%;
+        height: 13%;
         overflow: hidden;
         text-align: justify;
         text-overflow: ellipsis;
         text-transform: uppercase;
         display: -webkit-box;
-        -webkit-line-clamp: 3;     /* Número de líneas a mostrar */
+        -webkit-line-clamp: 2;     /* Número de líneas a mostrar */
         -webkit-box-orient: vertical;
         line-height: 1.5em;
         font-size: 1rem;
@@ -1349,7 +1348,7 @@
         object-fit: cover;
         object-position: center;
         width: 100%;
-        height: 39%;
+        height: 46%;
         border-radius: 5px;
     } 
     #ncard01 .par {
@@ -1360,9 +1359,9 @@
         text-align: justify;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 4;     /* Número de líneas a mostrar */
+        -webkit-line-clamp: 5;     /* Número de líneas a mostrar */
         -webkit-box-orient: vertical;
-        line-height: 1.5em;
+        line-height: 1.35em;
         font-size: 0.8rem;
         font-family: var(--regular),sans-serif;
     }
@@ -1374,49 +1373,49 @@
         flex-direction: column;
     }
     #ncard02 div{
-        height: 50%;
+        height: 30%;
         display: flex;
         justify-content: center;
         justify-content: center;
         flex-direction: column;
     }
     #ncard03 div{
-        height: 50%;
+        height: 30%;
         display: flex;
         justify-content: center;
         justify-content: center;
         flex-direction: column;
     }
     #ncard04 div{
-        height: 50%;
+        height: 30%;
         display: flex;
         justify-content: center;
         justify-content: center;
         flex-direction: column;
     }
     #ncard05 div{
-        height: 50%;
+        height: 30%;
         display: flex;
         justify-content: center;
         justify-content: center;
         flex-direction: column;
     }
     #ncard08 div{
-        height: 40%;
+        height: 30%;
         display: flex;
         justify-content: center;
         justify-content: center;
         flex-direction: column;
     }
     #ncard09 div{
-        height: 40%;
+        height: 30%;
         display: flex;
         justify-content: center;
         justify-content: center;
         flex-direction: column;
     }
     #ncard10 div{
-        height: 40%;
+        height: 30%;
         display: flex;
         justify-content: center;
         justify-content: center;
@@ -1433,7 +1432,7 @@
         justify-content: left;
         align-items: center;
         width: 100%;
-        height: 15%;
+        height: 20%;
         font-family: var(--regular),sans-serif;
     }
     
@@ -1449,15 +1448,15 @@
         width: 100%;
         font-family: var(--regular),sans-serif;
         font-weight: 700;
-        height: 65%;
+        height: 55%;
         overflow: hidden;
         text-align: justify;
         text-overflow: ellipsis;
         text-transform: uppercase;
         display: -webkit-box;
-        -webkit-line-clamp: 3;     /* Número de líneas a mostrar */
+        -webkit-line-clamp: 2;     /* Número de líneas a mostrar */
         -webkit-box-orient: vertical;
-        line-height: 1.6em;
+        line-height: 1.3em;
         font-size: 1rem;
     }
     
@@ -1472,7 +1471,7 @@
         justify-content: left;
         font-family: var(--regular),sans-serif;
         align-items: center;
-        height: 20%;
+        height: 25%;
         font-size: 0.8rem;
     }
     
@@ -1485,7 +1484,7 @@
         object-fit: cover;
         object-position: center;
         width: 100%;
-        height: 50%;
+        height: 65%;
         border-radius: 5px;
     }
     
@@ -1581,13 +1580,13 @@
         width: 100%;
         font-family: var(--regular),sans-serif;
         font-weight: 700;
-        height: 70%;
+        height: 55%;
         overflow: hidden;
         text-align: justify;
         text-overflow: ellipsis;
         text-transform: uppercase;
         display: -webkit-box;
-        -webkit-line-clamp: 3;     /* Número de líneas a mostrar */
+        -webkit-line-clamp: 2;     /* Número de líneas a mostrar */
         -webkit-box-orient: vertical;
         line-height: 1.2em;
         font-size: 0.8rem;
@@ -1599,7 +1598,7 @@
         object-fit: cover;
         object-position: center;
         width: 100%;
-        height: 60%;
+        height: 70%;
         border-radius: 5px;
     }
 
@@ -1734,9 +1733,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: calc(100%);
+        width: calc(100% + 3rem + 3rem);
         height: 10rem;
-        transform: translateX(4rem);
+        transform: translateX(-3rem);
         object-fit: cover;
         object-position: center;
     }
@@ -1744,7 +1743,7 @@
     #bnx::before{
         z-index: 2;
         top: 0 ;
-        width: calc(100% + 100rem);
+        width: calc(100% + 3rem + 3rem);
         position: absolute;
         height: 10rem;
         content: "";
@@ -1753,7 +1752,7 @@
     #bny::before{
         z-index: 2;
         top: 0 ;
-        width: calc(100% + 100rem);
+        width: calc(100% + 3rem + 3rem);
         position: absolute;
         height: 10rem;
         content: "";
@@ -1762,7 +1761,7 @@
     #bnt::before{
         z-index: 2;
         top: 0 ;
-        width: calc(100% + 100rem);
+        width: calc(100% + 3rem + 3rem);
         position: absolute;
         height: 10rem;
         content: "";
@@ -1771,7 +1770,7 @@
     #bnf::before{
         z-index: 2;
         top: 0 ;
-        width: calc(100% + 100rem);
+        width: calc(100% + 3rem + 3rem);
         position: absolute;
         height: 10rem;
         content: "";
@@ -1780,27 +1779,27 @@
     #bni::before{
         z-index: 2;
         top: 0 ;
-        width: calc(100% + 100rem);
+        width: calc(100% + 3rem + 3rem);
         position: absolute;
         height: 10rem;
         content: "";
         background-color: #ff7a00;
     }
     .banner-r .b-img:nth-child(2){
-        transform: translatey(10rem)translateX(4rem);
+        transform: translatey(10rem)translateX(-3rem);
         height: 10rem;
     }
     .banner-r .b-img:nth-child(3){
         height: 10rem;
-        transform: translatey(20rem)translateX(4rem);
+        transform: translatey(20rem)translateX(-3rem);
     }
     .banner-r .b-img:nth-child(4){
         height: 10rem;
-        transform: translatey(30rem)translateX(4rem);
+        transform: translatey(30rem)translateX(-3rem);
     }
     .banner-r .b-img:nth-child(5){
         height: 10rem;
-        transform: translatey(40rem)translateX(4rem);
+        transform: translatey(40rem)translateX(-3rem);
     }
 }
 
@@ -2081,12 +2080,11 @@
         justify-content: center;
         align-items:baseline;
         margin-top: 23rem;
-        flex-direction: row-reverse;
+        flex-direction: column-reverse;
     }
     .add-h{
-        background-color: #212121;
-        width: 14rem;
-        height: 40rem;
+        width: 100%;
+        height: 15rem;
     }
     .cobesp{
         background-color: var(--gray-light);
@@ -2187,7 +2185,7 @@
     .n-card{
         padding-top: 1.3rem;
         padding-bottom: 1.3rem;
-        border-bottom: 2px solid var(--primary-color-v1);
+        border-bottom: 1px solid var(--primary-color-v1);
     }
     .n-container{
         padding-top: 3rem;
@@ -2212,7 +2210,7 @@
         "ws ws"
         "bnr bnr";
         grid-template-columns:50% 50%;
-        grid-template-rows: auto auto 25rem 18rem 18rem 18rem 18rem 18rem 18rem 4rem 13rem 13rem 13rem auto auto auto;
+        grid-template-rows: auto auto 25rem 13rem 13rem 13rem 11rem 11rem 11rem 4rem 10rem 10rem 10rem auto auto auto;
     }
     
     #ncard01{
@@ -2221,7 +2219,6 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        
     }
     #ncard01 .cat{
         font-size: 0.85rem;
@@ -2240,7 +2237,7 @@
         width: 100%;
         font-family: var(--regular),sans-serif;
         font-weight: 700;
-        height: 20%;
+        height: 14%;
         overflow: hidden;
         text-align: justify;
         text-overflow: ellipsis;
@@ -2264,7 +2261,7 @@
         object-fit: cover;
         object-position: center;
         width: 100%;
-        height: 39%;
+        height: 45%;
         border-radius: 5px;
     } 
     #ncard01 .par {
@@ -2275,9 +2272,9 @@
         text-align: justify;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 4;     /* Número de líneas a mostrar */
+        -webkit-line-clamp: 5;     /* Número de líneas a mostrar */
         -webkit-box-orient: vertical;
-        line-height: 1.5em;
+        line-height: 1.25em;
         font-size: 0.8rem;
         font-family: var(--regular),sans-serif;
     }
@@ -2286,31 +2283,32 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
+        flex-direction: row;
+        gap: 2rem;
     }
     #ncard02 div{
-        height: 50%;
+        height: 100%;
         display: flex;
         justify-content: center;
         justify-content: center;
         flex-direction: column;
     }
     #ncard03 div{
-        height: 50%;
+        height: 100%;
         display: flex;
         justify-content: center;
         justify-content: center;
         flex-direction: column;
     }
     #ncard04 div{
-        height: 50%;
+        height: 100%;
         display: flex;
         justify-content: center;
         justify-content: center;
         flex-direction: column;
     }
     #ncard05 div{
-        height: 50%;
+        height: 100%;
         display: flex;
         justify-content: center;
         justify-content: center;
@@ -2399,8 +2397,8 @@
     #ncard07 img{
         object-fit: cover;
         object-position: center;
-        width: 100%;
-        height: 55%;
+        width: 40%;
+        height: 100%;
         border-radius: 5px;
     }
     
@@ -2411,21 +2409,25 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
+        flex-direction: row;
+        gap: 1.5rem;
     }
     #ncard04{
         grid-area: n04;
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
+        gap: 1.5rem;
+        flex-direction: row;
     }
     #ncard05{
         grid-area: n05;
+        
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
+        gap: 1.5rem;
+        flex-direction: row-reverse;
     }
     
     
@@ -2435,7 +2437,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
+        gap: 1.5rem;
+        flex-direction: row-reverse;
     }
     
     #ncard07{
@@ -2443,7 +2446,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
+        gap: 1.5rem;
+        flex-direction: row-reverse;
     }
     
     #ntend{
@@ -2465,13 +2469,41 @@
     
     #ncard08{
         grid-area: n08;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        flex-direction: row;
         
+    }
+
+    #ncard08 div{
+        width: 60%;
+        height: 100%;
+    }
+    #ncard09 div{
+        width: 60%;
+        height: 100%;
+    }
+    #ncard10 div{
+        width: 60%;
+        height: 100%;
     }
     #ncard09{
         grid-area: n09;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        flex-direction: row;
     }
     #ncard10{
         grid-area: n10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        flex-direction: row;
     }
     
     
@@ -2496,7 +2528,7 @@
         width: 100%;
         font-family: var(--regular),sans-serif;
         font-weight: 700;
-        height: 70%;
+        height: 35%;
         overflow: hidden;
         text-align: justify;
         text-overflow: ellipsis;
@@ -2513,8 +2545,8 @@
     #ncard10 img{
         object-fit: cover;
         object-position: center;
-        width: 100%;
-        height: 60%;
+        width: 40%;
+        height: 100%;
         border-radius: 5px;
     }
 
@@ -2650,16 +2682,16 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: calc(100%);
+        width: calc(100% + 3rem + 3rem);
         height: 12rem;
-        transform: translateX(5.5rem);
+        transform: translateX(-3rem);
         object-fit: cover;
         object-position: center;
     }
     #bnx::before{
         z-index: 2;
         top: 0 ;
-        width: calc(100% + 100rem);
+        width: calc(100% + 3rem + 3rem);
         position: absolute;
         height: 12rem;
         content: "";
@@ -2668,7 +2700,7 @@
     #bny::before{
         z-index: 2;
         top: 0 ;
-        width: calc(100% + 100rem);
+        width: calc(100% + 3rem + 3rem);
         position: absolute;
         height: 12rem;
         content: "";
@@ -2677,7 +2709,7 @@
     #bnt::before{
         z-index: 2;
         top: 0 ;
-        width: calc(100% + 100rem);
+        width: calc(100% + 3rem + 3rem);
         position: absolute;
         height: 12rem;
         content: "";
@@ -2686,7 +2718,7 @@
     #bnf::before{
         z-index: 2;
         top: 0 ;
-        width: calc(100% + 100rem);
+        width: calc(100% + 3rem + 3rem);
         position: absolute;
         height: 12rem;
         content: "";
@@ -2695,27 +2727,27 @@
     #bni::before{
         z-index: 2;
         top: 0 ;
-        width: calc(100% + 100rem);
+        width: calc(100% + 3rem + 3rem);
         position: absolute;
         height: 12rem;
         content: "";
         background-color: #ff7a00;
     }
     .banner-r .b-img:nth-child(2){
-        transform: translatey(12rem)translateX(5.5rem);
+        transform: translatey(12rem)translateX(-3rem);
         height: 12rem;
     }
     .banner-r .b-img:nth-child(3){
         height: 12rem;
-        transform: translatey(24rem)translateX(5.5rem);
+        transform: translatey(24rem)translateX(-3rem);
     }
     .banner-r .b-img:nth-child(4){
         height: 12rem;
-        transform: translatey(36rem)translateX(5.5rem);
+        transform: translatey(36rem)translateX(-3rem);
     }
     .banner-r .b-img:nth-child(5){
         height: 12rem;
-        transform: translatey(48rem)translateX(5.5rem);
+        transform: translatey(48rem)translateX(-3rem);
     }
 }
 
@@ -3002,14 +3034,15 @@
         flex-direction: row-reverse;
     }
     .add-h{
-        width: 10rem;
+        width: 13rem;
+        transform: translateY(-2.9rem);
         height: 40rem;
     }
     
     .n-card{
         padding-top: 1.3rem;
         padding-bottom: 1.3rem;
-        border-bottom: 2px solid var(--primary-color-v1);
+        border-bottom: 1px solid var(--primary-color-v1);
     }
 
     .cobesp{
@@ -3072,7 +3105,7 @@
         z-index: 4;
     }
     .csconifr{
-        width: calc(32.9% - 0.5rem);
+        width: calc(49.9% - 0.5rem);
         aspect-ratio: 16 / 9;
         background-color: var(--gray);
         border-radius: 5px;
@@ -3115,7 +3148,7 @@
         "col col col"
         "ws ws ws"
         "bnr bnr bnr";
-        grid-template-columns:30% auto 40%;
+        grid-template-columns:27% auto 40%;
         grid-template-rows: auto auto 2rem 7rem 7rem 2rem 7rem 7rem 5rem 10rem 10rem 10rem auto auto auto;
     }
     
@@ -3145,15 +3178,15 @@
         width: 100%;
         font-family: var(--regular),sans-serif;
         font-weight: 700;
-        height: 10%;
+        height: 11%;
         overflow: hidden;
         text-align: justify;
         text-overflow: ellipsis;
         text-transform: uppercase;
         display: -webkit-box;
-        -webkit-line-clamp: 2;     /* Número de líneas a mostrar */
+        -webkit-line-clamp: 3;     /* Número de líneas a mostrar */
         -webkit-box-orient: vertical;
-        line-height: 1.5em;
+        line-height: 1.2em;
         font-size: 1.05rem;
     } 
     #ncard01 .dat{
@@ -3162,25 +3195,25 @@
         justify-content: left;
         font-family: var(--regular),sans-serif;
         align-items: center;
-        height: 10%;
+        height: 5%;
         font-size: 0.8rem;
     } 
     #ncard01 img{
         object-fit: cover;
         object-position: center;
         width: 100%;
-        height: 57%;
+        height: 49%;
         border-radius: 10px;
     } 
     #ncard01 .par {
         padding-top: 0.5rem;
         width: 100%;              /* Ajusta según tu diseño */
-        height: 18%;             /* O max-height si es variable */
+        height: 30%;             /* O max-height si es variable */
         overflow: hidden;
         text-align: justify;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 5;     /* Número de líneas a mostrar */
+        -webkit-line-clamp: 8;     /* Número de líneas a mostrar */
         -webkit-box-orient: vertical;
         line-height: 1.5em;
         font-size: 0.8rem;
@@ -3230,7 +3263,7 @@
         justify-content: left;
         align-items: center;
         width: 100%;
-        height: 15%;
+        height: 18%;
         font-family: var(--regular),sans-serif;
     }
     
@@ -3249,9 +3282,9 @@
         text-overflow: ellipsis;
         text-transform: uppercase;
         display: -webkit-box;
-        -webkit-line-clamp: 3;     /* Número de líneas a mostrar */
+        -webkit-line-clamp: 4;     /* Número de líneas a mostrar */
         -webkit-box-orient: vertical;
-        line-height: 1.6em;
+        line-height: 1.25em;
         font-size: 0.9rem;
     }
 
@@ -3276,7 +3309,10 @@
         font-size: 0.7rem;
     }
 
-    
+    #ncard06 div, #ncard07 div{
+        width: 100%;
+        height: 65%;
+    }
     #ncard06 .tit,
     #ncard07 .tit{
         display: flex;
@@ -3285,7 +3321,7 @@
         width: 100%;
         font-family: var(--regular),sans-serif;
         font-weight: 700;
-        height: 20%;
+        height: 50%;
         overflow: hidden;
         text-align: justify;
         text-overflow: ellipsis;
@@ -3293,7 +3329,7 @@
         display: -webkit-box;
         -webkit-line-clamp: 2;     /* Número de líneas a mostrar */
         -webkit-box-orient: vertical;
-        line-height: 1.6em;
+        line-height: 1.3em;
         font-size: 0.85rem;
     }
     
@@ -3396,9 +3432,9 @@
     
     
     #ncard06{
-        height: 100%;
         width: 100%;
         grid-area: n06;
+        gap: 0.5rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -3407,6 +3443,7 @@
     
     #ncard07{
         grid-area: n07;
+        gap: 0.5rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -3440,7 +3477,7 @@
         
     }
     #ncard08 div{
-        width: 75%;
+        width: 65%;
         height: 100%;
     }
     #ncard09{
@@ -3452,7 +3489,7 @@
         flex-direction: row;
     }
     #ncard09 div{
-        width: 75%;
+        width: 65%;
         height: 100%;
     }
     #ncard10{
@@ -3464,7 +3501,7 @@
         flex-direction: row;
     }
     #ncard10 div{
-        width: 75%;
+        width: 65%;
         height: 100%;
     }
     
@@ -3506,7 +3543,7 @@
     #ncard10 img{
         object-fit: cover;
         object-position: center;
-        width: 25%;
+        width: 35%;
         height: 100%;
         border-radius: 5px;
     }
@@ -4005,7 +4042,7 @@
     .n-card{
         padding-top: 1.3rem;
         padding-bottom: 1.3rem;
-        border-bottom: 2px solid var(--primary-color-v1);
+        border-bottom: 1px solid var(--primary-color-v1);
     }
 
     .cobesp{
@@ -4219,7 +4256,11 @@
         font-family: var(--regular),sans-serif;
     }
 
-    
+    #ncard06 div,#ncard07 div{
+        width: 100%;
+        height: 45%;
+    }
+
     #ncard06 .cat,
     #ncard07 .cat{
         font-size: 0.75rem;
@@ -4227,7 +4268,7 @@
         justify-content: left;
         align-items: center;
         width: 100%;
-        height: 15%;
+        height: 25%;
         font-family: var(--regular),sans-serif;
     }
     
@@ -4240,7 +4281,7 @@
         width: 100%;
         font-family: var(--regular),sans-serif;
         font-weight: 700;
-        height: 60%;
+        height: 70%;
         overflow: hidden;
         text-align: justify;
         text-overflow: ellipsis;
@@ -4282,7 +4323,7 @@
         width: 100%;
         font-family: var(--regular),sans-serif;
         font-weight: 700;
-        height: 20%;
+        height: 50%;
         overflow: hidden;
         text-align: justify;
         text-overflow: ellipsis;
@@ -4290,7 +4331,7 @@
         display: -webkit-box;
         -webkit-line-clamp: 2;     /* Número de líneas a mostrar */
         -webkit-box-orient: vertical;
-        line-height: 1.6em;
+        line-height: 1.25em;
         font-size: 0.85rem;
     }
     
@@ -4302,7 +4343,7 @@
         justify-content: left;
         font-family: var(--regular),sans-serif;
         align-items: center;
-        height: 20%;
+        height: 25%;
         font-size: 0.8rem;
     }
     
@@ -4326,7 +4367,7 @@
         justify-content: left;
         font-family: var(--regular),sans-serif;
         align-items: center;
-        height: 10%;
+        height: 15%;
         font-size: 0.7rem;
     }
     
@@ -4347,7 +4388,7 @@
         object-fit: cover;
         object-position: center;
         width: 100%;
-        height: 60%;
+        height: 55%;
         border-radius: 5px;
     }
     
@@ -4616,7 +4657,7 @@
         display: -webkit-box;
         -webkit-line-clamp: 3;     /* Número de líneas a mostrar */
         -webkit-box-orient: vertical;
-        line-height: 1.3em;
+        line-height: 1.32em;
         overflow: hidden;
     }
 
@@ -5000,6 +5041,7 @@
     .add-h{
         width: 15rem;
         height: 40rem;
+        
     }
     
     .n-card{
@@ -5642,7 +5684,7 @@
         align-items: center;
         width: calc(100%);
         height: 15rem;
-        transform: translateX(4.5rem);
+        transform: translateX(7rem);
         object-fit: cover;
         object-position: center;
     }
@@ -5692,19 +5734,19 @@
         background-color: #ff7a00;
     }
     .banner-r .b-img:nth-child(2){
-        transform: translatey(15rem)translateX(4.5rem);
+        transform: translatey(15rem)translateX(7rem);
         height: 15rem;
     }
     .banner-r .b-img:nth-child(3){
         height: 15rem;
-        transform: translatey(30rem)translateX(4.5rem);
+        transform: translatey(30rem)translateX(7rem);
     }
     .banner-r .b-img:nth-child(4){
         height: 15rem;
-        transform: translatey(45rem)translateX(4.5rem);
+        transform: translatey(45rem)translateX(7rem);
     }
     .banner-r .b-img:nth-child(5){
         height: 15rem;
-        transform: translatey(60rem)translateX(4.5rem);
+        transform: translatey(60rem)translateX(7rem);
     }
 }

@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-decoration: none;
 }
 
 .newstitle {
@@ -15,12 +16,14 @@
     font-weight: bold;
     color: var(--primary-color-v1);
     margin-bottom: 1rem;
+    text-decoration: none;
 }
 
 .newsbody {
     display: flex;
     flex-direction: column;
     gap: 4rem;
+    text-decoration: none;
 }
 
 .newscontent {
@@ -28,6 +31,7 @@
     flex-wrap: wrap;
     gap: 1.5rem;
     justify-content: center;
+    text-decoration: none;
 }
 
 .newscard {
@@ -39,6 +43,7 @@
     width: 100%;
     height: 23rem;
     overflow: hidden;
+    text-decoration: none;
 }
 
 .newsimg{
@@ -59,6 +64,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.2rem;
+    text-decoration: none;
 }
 
 .newstext h3 {

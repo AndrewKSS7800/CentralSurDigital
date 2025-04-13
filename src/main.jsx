@@ -11,6 +11,7 @@ import "./styles/home.css"
 import "./styles/about.css"
 import "./styles/news.css"
 import "./styles/news-cat.css"
+import "./styles/news-page.css"
 import App from './App.jsx'
 import { BrowserRouter } from "react-router-dom";
 

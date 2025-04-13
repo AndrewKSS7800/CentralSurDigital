@@ -202,8 +202,9 @@
 @media screen and (min-width: 768px) {
     .wordsearch-container {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        justify-content: center;
         gap: 1rem;
         overflow: hidden;
         border-radius: 10px;
@@ -211,7 +212,7 @@
     }
     
     .grid {
-        width: 100%;
+        width: 20rem;
         display: grid;
         grid-template-rows: repeat(15, 1fr);
         gap: 0px;
@@ -243,11 +244,14 @@
     }
     
     .wordlist {
-        width: 100%;
+        width: 6rem;
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: center;
         gap: 0.5rem;
+        
+        display: flex;
+        flex-direction: column;
     }
     
     .word {
@@ -256,6 +260,8 @@
         font-family: var(--regular);
         cursor: pointer;
         font-size: 0.75rem;
+        
+        
     }
     
     .word.found {
@@ -273,7 +279,8 @@
     }
 
     .score-time {
-        width: 100%;
+        width: 6rem;
+        flex-direction: column;
         display: flex;
         gap: 2rem;
         justify-content: space-between;
@@ -303,7 +310,7 @@
     }
     
     .grid {
-        width: 30rem;
+        width: 23rem;
         display: grid;
         grid-template-rows: repeat(15, 1fr);
         gap: 0px;
@@ -335,7 +342,7 @@
     }
     
     .wordlist {
-        width: 10rem;
+        width: 5rem;
         display: flex;
         flex-wrap: nowrap;
         align-items: baseline;
@@ -370,7 +377,7 @@
     }
 
     .score-time {
-        width: 10rem;
+        width: 5rem;
         display: flex;
         gap: 2rem;
         flex-direction: column;
@@ -409,7 +416,7 @@
     }
     
     .grid {
-        width: 40rem;
+        width: 30rem;
         display: grid;
         grid-template-rows: repeat(15, 1fr);
         gap: 0px;
@@ -441,7 +448,7 @@
     }
     
     .wordlist {
-        width: 15rem;
+        width: 8rem;
         display: flex;
         flex-wrap: nowrap;
         align-items: baseline;
@@ -476,7 +483,7 @@
     }
 
     .score-time {
-        width: 15rem;
+        width: 8rem;
         display: flex;
         gap: 2rem;
         flex-direction: column;
@@ -512,7 +519,7 @@
     }
     
     .grid {
-        width: 40rem;
+        width: 30rem;
         display: grid;
         grid-template-rows: repeat(15, 1fr);
         gap: 0px;
@@ -544,7 +551,7 @@
     }
     
     .wordlist {
-        width: 15rem;
+        width: 6rem;
         display: flex;
         flex-wrap: nowrap;
         align-items: baseline;
@@ -579,7 +586,7 @@
     }
 
     .score-time {
-        width: 15rem;
+        width: 6rem;
         display: flex;
         gap: 2rem;
         flex-direction: column;
