@@ -1,3 +1,34 @@
+.newscbanner{
+    width: 100%;
+    height: 8rem;
+    overflow: hidden;
+    margin-bottom: 0rem;
+}
+
+.newscbanner .nwbimg{
+    position: absolute;
+    transform: translateY(-1rem);
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 8rem;
+    overflow: hidden;
+}
+.newscbanner .nwbimg img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+.nwbimg::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: #00335254; /* azul con transparencia */
+    mix-blend-mode: multiply; /* mezcla el azul con la imagen */
+    pointer-events: none; /* no bloquea clics */
+}
 .newsb {
     width: 100%;
     display: flex;
@@ -145,7 +176,22 @@
     background-color: #194bd4;
 }
 @media screen and (min-width: 480px) {
+    .newscbanner{
+        width: 100%;
+        height: 8rem;
+        overflow: hidden;
+        margin-bottom: 0rem;
+    }
     
+    .newscbanner .nwbimg{
+        transform: translateY(-1rem);
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 8rem;
+        overflow: hidden;
+    }
     .newsb {
         width: 100%;
         display: flex;
@@ -284,7 +330,22 @@
 }
 
 @media screen and (min-width: 768px) {
+    .newscbanner{
+        width: 100%;
+        height: 10rem;
+        overflow: hidden;
+        margin-bottom: 0rem;
+    }
     
+    .newscbanner .nwbimg{
+        transform: translateY(-1rem);
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 10rem;
+        overflow: hidden;
+    }
     .newsb {
         width: 100%;
         display: flex;
@@ -426,7 +487,22 @@
 }
 
 @media screen and (min-width: 1024px) {
+    .newscbanner{
+        width: 100%;
+        height: 12rem;
+        overflow: hidden;
+        margin-bottom: 0rem;
+    }
     
+    .newscbanner .nwbimg{
+        transform: translateY(-3rem);
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 12rem;
+        overflow: hidden;
+    }
     .newsb {
         width: 100%;
         display: flex;
@@ -569,7 +645,22 @@
 }
 
 @media screen and (min-width: 1500px) {
+    .newscbanner{
+        width: 100%;
+        height: 13rem;
+        overflow: hidden;
+        margin-bottom: 0rem;
+    }
     
+    .newscbanner .nwbimg{
+        transform: translateY(-3rem);
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 13rem;
+        overflow: hidden;
+    }
     .newsb {
         width: 100%;
         display: flex;

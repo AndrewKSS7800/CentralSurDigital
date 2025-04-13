@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Img1 from "../../assets/imgs/ambiente.png"; // ajusta la ruta
 import { Link } from 'react-router-dom';
+import Banner from "../../assets/imgs/banner-ambiente.png"
 const Nature = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const itemsPerPage = 10;
@@ -24,6 +25,11 @@ const Nature = () => {
 
     return (
         <section>
+            <div className="newscbanner">
+                <div className="nwbimg">
+                    <img src={Banner} alt="" />
+                </div>
+            </div>
             <div className="newstitle">Ambiente</div>
             <div className="newsb">
                 <div className="newsbody">

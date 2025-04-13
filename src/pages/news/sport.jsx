@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Img1 from "../../assets/imgs/deporte-img.jpg"; // ajusta la ruta
 import { Link } from 'react-router-dom';
+import Banner from "../../assets/imgs/banner-deporte.png"
 const Sport = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const itemsPerPage = 10;
@@ -24,6 +25,11 @@ const Sport = () => {
 
     return (
         <section>
+            <div className="newscbanner">
+                <div className="nwbimg">
+                    <img src={Banner} alt="" />
+                </div>
+            </div>
             <div className="newstitle">Deporte</div>
             <div className="newsb">
                 <div className="newsbody">

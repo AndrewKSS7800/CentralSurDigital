@@ -1,5 +1,6 @@
 import { useState } from "react";
-import Img1 from "../../assets/imgs/tecnologia.png"; // ajusta la ruta
+import Img1 from "../../assets/imgs/tecnologia.png";
+import Banner from "../../assets/imgs/banner-tecnologia.png"// ajusta la ruta
 import { Link } from 'react-router-dom';
 const Technology = () => {
     const [currentPage, setCurrentPage] = useState(1);
@@ -24,6 +25,11 @@ const Technology = () => {
 
     return (
         <section>
+            <div className="newscbanner">
+                <div className="nwbimg">
+                    <img src={Banner} alt="" />
+                </div>
+            </div>
             <div className="newstitle">Tecnología</div>
             <div className="newsb">
                 <div className="newsbody">
