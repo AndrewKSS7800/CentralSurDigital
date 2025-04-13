@@ -5269,7 +5269,7 @@
         justify-content: left;
         align-items: center;
         width: 100%;
-        height: 15%;
+        height: 20%;
         font-family: var(--regular),sans-serif;
     }
     
@@ -5315,6 +5315,11 @@
         font-size: 0.7rem;
     }
 
+    #ncard06 div,
+    #ncard07 div{
+        width: 100%;
+        height: 30%;
+    }
     
     #ncard06 .tit,
     #ncard07 .tit{
@@ -5324,7 +5329,7 @@
         width: 100%;
         font-family: var(--regular),sans-serif;
         font-weight: 700;
-        height: 20%;
+        height: 50%;
         overflow: hidden;
         text-align: justify;
         text-overflow: ellipsis;
@@ -5332,7 +5337,7 @@
         display: -webkit-box;
         -webkit-line-clamp: 2;     /* Número de líneas a mostrar */
         -webkit-box-orient: vertical;
-        line-height: 1.6em;
+        line-height: 1.25em;
         font-size: 0.85rem;
     }
     
@@ -5368,7 +5373,7 @@
         justify-content: left;
         font-family: var(--regular),sans-serif;
         align-items: center;
-        height: 10%;
+        height: 20%;
         font-size: 0.7rem;
     }
     
@@ -5389,7 +5394,7 @@
         object-fit: cover;
         object-position: center;
         width: 100%;
-        height: 60%;
+        height: 70%;
         border-radius: 5px;
     }
     
