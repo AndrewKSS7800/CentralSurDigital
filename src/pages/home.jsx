@@ -289,7 +289,7 @@ const Home = () => {
                                 </span>
                                 <p className="par" dangerouslySetInnerHTML={{ __html: noticia.content.substring(0, 4000) + "..." }} />
                             </div>
-                            <img src={`/public/imgs/${noticia.img}.png`} alt="" width="40px" />
+                            <img src={`/imgs/${noticia.img}.png`} alt="" width="40px" />
                         </Link>
                     ))}
                 
