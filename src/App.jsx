@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./components/scrollToTop";
 import Home from './pages/home';
 import About from './pages/about';
 import News from './pages/news';
@@ -19,6 +20,7 @@ import Newspage from "./pages/news-page"
 const App = () => {
   return (
     <>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<><Header /><Home /><Footer /></>}/>
         <Route path="/sobre-nosotros" element={<><Header /><About /><Footer /></>}/>
@@ -33,7 +35,7 @@ const App = () => {
         <Route path="/noticias/tecnologia" element={<><Header /><Technology /><Footer /></>}/>
         <Route path="/noticias/columnas" element={<><Header /><Columns /><Footer /></>}/>
         <Route path="/contacto" element={<><Header /><Contact /><Footer /></>}/>
-        <Route path="/noticia/noticia-pagina" element={<><Header /><Newspage /><Footer /></>}/>
+        <Route path="/noticias/:id" element={<><Header /><Newspage /><Footer /></>}/>
         <Route path="*" element={<NotFound/>}/>
       </Routes>
     </>

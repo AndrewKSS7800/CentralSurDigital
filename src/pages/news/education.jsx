@@ -1,110 +1,138 @@
 import { useState } from "react";
+import NoticiasJson from '../../data/data.json'; // Ajusta esta ruta si es diferente
+import { useParams } from "react-router-dom";
 import Img1 from "../../assets/imgs/educacion1.jpg"; // ajusta la ruta
 import { Link } from 'react-router-dom';
 import Banner from "../../assets/imgs/banner-educacion.png"
 const Education = () => {
     const [currentPage, setCurrentPage] = useState(1);
-    const itemsPerPage = 10;
+    const itemsPerPage = 5;
 
-    // Simulación de datos (mock)
-    const mockNoticias = Array.from({ length: 45 }, (_, i) => ({
-        id: i + 1,
-        titulo: "Gobierno designó a Pedro Chira como presidente del Directorio de Perupetro.",
-        contenido: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate architecto libero in, laudantium iste perspiciatis consectetur. Libero quia nesciunt, eum inventore necessitatibus quis praesentium natus minima quasi illum blanditiis itaque assumenda laboriosam cupiditate numquam facilis recusandae quisquam totam, reiciendis aliquam quas asperiores soluta veniam. Officiis fugiat, alias culpa id animi quam nulla quidem fuga perferendis quod cumque delectus cupiditate aliquam ipsa nihil. Temporibus illum ullam ex, non sunt ratione voluptate omnis reiciendis rerum tempore esse exercitationem aliquid laudantium aut quod adipisci officia odit incidunt quaerat officiis possimus dignissimos iusto sint distinctio. Quaerat repellendus earum rem architecto esse aperiam cum molestiae!",
-        genero: `Noticia ${i + 1}`,
-        reportero: "Redacción Central Sur",
-        img: Img1,
-        fecha: "20/12/2024 17:29"
-    }));
+    const parseDate = (dateStr) => {
+        const meses = {
+            enero: 0,
+            febrero: 1,
+            marzo: 2,
+            abril: 3,
+            mayo: 4,
+            junio: 5,
+            julio: 6,
+            agosto: 7,
+            septiembre: 8,
+            octubre: 9,
+            noviembre: 10,
+            diciembre: 11,
+        };
 
-    const totalPages = Math.ceil(mockNoticias.length / itemsPerPage);
+        const match = dateStr.match(/(\d{1,2}) de (\w+) de (\d{4}), (\d{1,2}):(\d{2}) (a\.m\.|p\.m\.)/i);
+        if (!match) return new Date(0); // fallback en caso de error
+
+        let [_, day, monthName, year, hour, minutes, meridian] = match;
+        day = parseInt(day);
+        const month = meses[monthName.toLowerCase()];
+        year = parseInt(year);
+        hour = parseInt(hour);
+        minutes = parseInt(minutes);
+
+        if (meridian.toLowerCase() === "p.m." && hour !== 12) hour += 12;
+        if (meridian.toLowerCase() === "a.m." && hour === 12) hour = 0;
+
+        return new Date(year, month, day, hour, minutes);
+    };
+
+    
+    const noticiasPolitica = NoticiasJson
+        .filter((n) => n.category === "educación")
+        .sort((a, b) => parseDate(b.date) - parseDate(a.date)); // Más recientes primero
+
+    
+    const totalPages = Math.ceil(noticiasPolitica.length / itemsPerPage);
     const startIndex = (currentPage - 1) * itemsPerPage;
-    const noticiasPagina = mockNoticias.slice(startIndex, startIndex + itemsPerPage);
-
+    const noticiasPagina = noticiasPolitica.slice(startIndex, startIndex + itemsPerPage);
+    
     const changePage = (num) => setCurrentPage(num);
 
     return (
         <section>
-            <div className="newscbanner">
-                <div className="nwbimg">
-                    <img src={Banner} alt="" />
-                </div>
-            </div>
-            <div className="newstitle">Educación</div>
-            <div className="newsb">
-                <div className="newsbody">
-                    <div className="newscontent">
-                        {noticiasPagina.map((n) => (
-                            <Link to="/noticia/noticia-pagina" className="newscard" key={n.id}>
-                                <div className="newsimg">
-                                    <img src={n.img} alt="" width="100%" />
-                                </div>
-                                <div className="newstext">
-                                    <span className="newscategory">{n.genero}</span>
-                                    <h3>{n.titulo}</h3>
-                                    <p>{n.contenido}</p>
-                                    <span className="newsdate">{n.fecha}</span>
-                                    <span className="newsreporter">{n.reportero}</span>
-                                </div>
-                            </Link>
-                        ))}
+                    <div className="newscbanner">
+                        <div className="nwbimg">
+                            <img src={Banner} alt="" />
+                        </div>
                     </div>
-
-                    {/* Paginación numérica */}
-                    <div className="pagination">
-                        <button
-                            onClick={() => changePage(currentPage - 1)}
-                            disabled={currentPage === 1}
-                        >
-                            ◀
-                        </button>
-
-                        {currentPage > 2 && (
-                            <>
-                                <button onClick={() => changePage(1)} className={currentPage === 1 ? "active" : ""}>1</button>
-                                {currentPage > 3 && <span className="dots">...</span>}
-                            </>
-                        )}
-
-                        {Array.from({ length: totalPages }, (_, i) => i + 1)
-                            .filter((page) =>
-                                page === currentPage ||
-                                page === currentPage - 1 ||
-                                page === currentPage + 1
-                            )
-                            .map((page) => (
+                    <div className="newstitle">Educación</div>
+                    <div className="newsb">
+                        <div className="newsbody">
+                            <div className="newscontent">
+                                {noticiasPagina.map((n) => (
+                                    <Link to={`/noticias/${n.id}`} className="newscard" key={n.id}>
+                                        <div className="newsimg">
+                                            <img src={`/imgs/${n.img}.png`} alt="" width="100%" />
+                                        </div>
+                                        <div className="newstext">
+                                            <span className="newscategory">{n.category}</span>
+                                            <h3>{n.title}</h3>
+                                            <p dangerouslySetInnerHTML={{ __html: n.content.substring(0, 4000) + "..." }} />
+                                            <span className="newsdate">{n.date}</span>
+                                            <span className="newsreporter">{n.reporter}</span>
+                                        </div>
+                                    </Link>
+                                ))}
+                            </div>
+        
+                            {/* Paginación numérica */}
+                            <div className="pagination">
                                 <button
-                                    key={page}
-                                    className={currentPage === page ? "active" : ""}
-                                    onClick={() => changePage(page)}
+                                    onClick={() => changePage(currentPage - 1)}
+                                    disabled={currentPage === 1}
                                 >
-                                    {page}
+                                    ◀
                                 </button>
-                            ))}
-
-                        {currentPage < totalPages - 1 && (
-                            <>
-                                {currentPage < totalPages - 2 && <span className="dots">...</span>}
-                                <button onClick={() => changePage(totalPages)} className={currentPage === totalPages ? "active" : ""}>
-                                    {totalPages}
+        
+                                {currentPage > 2 && (
+                                    <>
+                                        <button onClick={() => changePage(1)} className={currentPage === 1 ? "active" : ""}>1</button>
+                                        {currentPage > 3 && <span className="dots">...</span>}
+                                    </>
+                                )}
+        
+                                {Array.from({ length: totalPages }, (_, i) => i + 1)
+                                    .filter((page) =>
+                                        page === currentPage ||
+                                        page === currentPage - 1 ||
+                                        page === currentPage + 1
+                                    )
+                                    .map((page) => (
+                                        <button
+                                            key={page}
+                                            className={currentPage === page ? "active" : ""}
+                                            onClick={() => changePage(page)}
+                                        >
+                                            {page}
+                                        </button>
+                                    ))}
+        
+                                {currentPage < totalPages - 1 && (
+                                    <>
+                                        {currentPage < totalPages - 2 && <span className="dots">...</span>}
+                                        <button onClick={() => changePage(totalPages)} className={currentPage === totalPages ? "active" : ""}>
+                                            {totalPages}
+                                        </button>
+                                    </>
+                                )}
+        
+                                <button
+                                    onClick={() => changePage(currentPage + 1)}
+                                    disabled={currentPage === totalPages}
+                                >
+                                    ▶
                                 </button>
-                            </>
-                        )}
-
-                        <button
-                            onClick={() => changePage(currentPage + 1)}
-                            disabled={currentPage === totalPages}
-                        >
-                            ▶
-                        </button>
+                            </div>
+                        </div>
+                        <div className="newsadd">
+                            anuncio
+                        </div>
                     </div>
-                </div>
-                <div className="newsadd">
-                    anuncio
-                </div>
-            </div>
-            
-        </section>
+                </section>
     );
 };
 

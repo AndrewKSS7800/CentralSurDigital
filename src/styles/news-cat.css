@@ -132,6 +132,7 @@
     font-family: var(--regular);
     font-size: 0.75rem;
     color: gray;
+    text-transform: capitalize;
 }
 
 .pagination {
@@ -173,7 +174,7 @@
     margin-top: 2rem;
     width: 100%;
     height: 12rem;
-    background-color: #194bd4;
+    background-color: var(--primary-color-v1);
 }
 @media screen and (min-width: 480px) {
     .newscbanner{
@@ -325,7 +326,6 @@
         margin-top: 2rem;
         width: 100%;
         height: 12rem;
-        background-color: #194bd4;
     }
 }
 
@@ -482,7 +482,6 @@
         margin-top: 0rem;
         width: 12rem;
         height: 40rem;
-        background-color: #194bd4;
     }
 }
 
@@ -640,7 +639,6 @@
         margin-top: 0rem;
         width: 12rem;
         height: 40rem;
-        background-color: #194bd4;
     }
 }
 
@@ -798,7 +796,6 @@
         margin-top: 0rem;
         width: 12rem;
         height: 40rem;
-        background-color: #194bd4;
     }
 }
 @media screen and (min-width: 1900px) {
@@ -940,6 +937,5 @@
         margin-top: 0rem;
         width: 12rem;
         height: 40rem;
-        background-color: #194bd4;
     }
 }

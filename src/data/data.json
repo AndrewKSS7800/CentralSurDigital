@@ -1,6 +1,194 @@
-{
-    "noticias":[
-        {"id":1, "titulo":"Noticia 01", "contenido":"contenido de la noticia 01", "genero":"economia", "reportero":"reportero"},
-        {"id":2, "titulo":"Noticia 02", "contenido":"contenido de la noticia 02", "genero":"politica", "reportero":"reportero"}
-    ]
-}
+[
+    {
+        "id":1, 
+        "date":"10 de abril de 2025, 10:00 a. m.",
+        "title":"Rolexgate: el escándalo que sacude la presidencia de Dina Boluarte", 
+        "content":"<b> ¿Qué es el caso Rolex y por qué ha generado tanto revuelo? </b> <br> A inicios de marzo de 2024, el programa La Encerrona reveló que la presidenta Dina Boluarte usaba relojes de la marca Rolex que no aparecían en su declaración jurada de bienes. Esto levantó sospechas sobre un posible caso de enriquecimiento ilícito, y generó una ola de críticas tanto desde el ámbito político como desde la ciudadanía. El caso ha sido bautizado como el 'Rolexgate', en alusión a escándalos similares en otros países. La controversia escaló rápidamente, y la Fiscalía de la Nación inició una investigación preliminar. Según los informes fiscales, la mandataria habría recibido tres relojes Rolex, además de joyas como aretes de oro con diamantes y una pulsera de alto valor, presuntamente como dádivas del gobernador regional de Ayacucho, Wilfredo Oscorima, quien es investigado por supuestamente ofrecer estos artículos a cambio de favores políticos.Boluarte ha declarado que estos objetos fueron préstamos personales, sin implicaciones indebidas, pero esta versión ha sido ampliamente cuestionada. De hecho, las explicaciones que ofreció ante la opinión pública han sido consideradas evasivas y poco convincentes. <br> <br> <b> Las repercusiones políticas: vacancia rechazada, pero el debate continúa </b> <br> Tras revelarse el caso, varios sectores del Congreso impulsaron mociones de vacancia presidencial por incapacidad moral. Aunque estas propuestas no prosperaron, el solo hecho de plantearlas refleja el impacto político que ha tenido el escándalo. El Congreso rechazó las mociones argumentando que no existían fundamentos suficientes y que la investigación debía seguir su curso legal. No obstante, esta decisión ha sido interpretada por buena parte de la población como una muestra de protección política hacia la jefa de Estado. <br> <br> <b>¿Puede la presidenta ser acusada constitucionalmente? </b> <br> A pesar de la denuncia presentada por la Fiscalía por el presunto delito de cohecho pasivo impropio, la Constitución del Perú limita el procesamiento de un presidente en funciones. Solo se le puede acusar por cuatro causales: traición a la patria, impedir elecciones, disolver el Congreso o evitar su funcionamiento.Esta barrera legal ha sido utilizada por la defensa de Boluarte, que también ha alegado que la Fiscalía cambió arbitrariamente los plazos de investigación, lo cual –según sus abogados– vulnera el debido proceso. Por ahora, la denuncia constitucional está en manos del Congreso, que debe decidir si se inicia un proceso de acusación o si se archiva el caso.", 
+        "category":"política", 
+        "img":"1",
+        "reporter":"Gilber Faustino",
+        "url-reporter":"https://www.facebook.com/gilber.faustino",
+        "tendency":"yes"
+    },
+    
+    {
+        "id":2, 
+        "date":"9 de abril de 2025, 09:00 a.m.​",
+        "title":"Fuerza Popular bajo la lupa: Fiscalía investiga presunta conducta antidemocrática", 
+        "content":"<b> Fiscalía abre investigación preliminar contra Fuerza Popular </b> <br> El 9 de abril de 2025, la Fiscalía de la Nación de Perú inició diligencias preliminares contra el partido político Fuerza Popular, liderado por Keiko Fujimori, por presunta conducta antidemocrática. Esta acción se basa en una denuncia presentada por la ciudadana Beatriz Cano, quien señala que el partido habría incurrido en acciones que atentan contra el orden democrático en tres casos emblemáticos: los 'Cócteles', los 'Mamanivideos' y las alegaciones de fraude electoral en 2021.<br> <br> <b> Proceso de investigación</b> <br> La fiscal de la Nación, Delia Espinoza, ha delegado la investigación al fiscal adjunto supremo Dante Pimentel Cruzado. Su labor consistirá en recopilar información detallada sobre los casos mencionados, incluyendo declaraciones públicas y publicaciones en redes sociales realizadas por Keiko Fujimori que podrían evidenciar una estrategia para desacreditar el sistema democrático. ​ <br> <br> <b>Reacciones y defensa de Fuerza Popular </b> <br> Ante estas diligencias, Keiko Fujimori ha acusado a la Fiscalía de actuar con motivaciones políticas, señalando que su partido es víctima de persecución. Por su parte, el secretario general de Fuerza Popular, Luis Galarreta, ha criticado la investigación y ha exigido una reforma del Ministerio Público, argumentando que se está utilizando la justicia con fines políticos.", 
+        "category":"política", 
+        "img":"2",
+        "reporter":"Gilber Faustino",
+        "url-reporter":"https://www.facebook.com/gilber.faustino",
+        "tendency":"no"
+    },
+
+    {
+        "id":3, 
+        "date":"24 de marzo de 2025, 10:00 a.m.​",
+        "title":"Crisis en el Ministerio del Interior: Congreso censura a Juan José Santiváñez por ineficacia frente a la inseguridad", 
+        "content":"El 21 de marzo de 2025, el Congreso de la República aprobó la censura del ministro del Interior, Juan José Santiváñez Antúnez, debido a su incapacidad para enfrentar la creciente ola de inseguridad ciudadana y su falta de liderazgo en el sector. <br> La votación en el Pleno resultó en 78 votos a favor, 20 abstenciones y 11 en contra. Esta medida obligó a Santiváñez a presentar su renuncia en un plazo máximo de 72 horas, según lo establece la ley peruana. <br> La censura se produjo en medio de una creciente preocupación por la inseguridad en el país. Uno de los eventos que intensificó esta preocupación fue el asesinato del cantante Paul Flores, líder del grupo Armonía 10, quien fue víctima de un ataque armado tras un concierto en Lima. Este hecho generó indignación pública y llevó a la presidenta Dina Boluarte a declarar el estado de emergencia en la capital y desplegar fuerzas militares para apoyar a la policía. <br> Durante su gestión, Santiváñez prometió implementar medidas de seguridad de emergencia y establecer un 'pacto de seguridad' para proteger judicialmente a los policías que actúen contra presuntos delincuentes. Sin embargo, estas iniciativas no lograron reducir la violencia, y su liderazgo fue cuestionado por diversos sectores políticos y sociales. <br> Tras la censura, la presidenta Boluarte aceptó la renuncia de Santiváñez el 24 de marzo de 2025 y nombró a su sucesor, convirtiéndose en el séptimo ministro del Interior en su gobierno. ​", 
+        "category":"política", 
+        "img":"3",
+        "reporter":"Gilber Faustino",
+        "url-reporter":"https://www.facebook.com/gilber.faustino",
+        "tendency":"no"
+    },
+
+    {
+        "id": 4, 
+        "date": "18 de abril de 2025, 10:00 a.m.", 
+        "title": "Fallece Wilson Aragón Ponce, fundador de Perú Moderno y creador de las frazadas Tigre", "content": "El 18 de abril de 2025, falleció en Lima Wilson Melecio Aragón Ponce a los 77 años. Reconocido empresario y político peruano, fue fundador de la empresa textil Santa Catalina S.A., productora de las populares 'frazadas Tigre', y líder del partido político Perú Moderno. Nacido en San Pablo, Canchis, Cusco, el 2 de agosto de 1947, Aragón se formó como ingeniero industrial y dirigió durante décadas la fábrica de tejidos Santa Catalina S.A., conocida por la producción y comercialización de las frazadas Tigre. Estas frazadas alcanzaron amplia distribución en el mercado nacional, con mayor demanda durante los meses de invierno. <br><br> En el ámbito político, Aragón incursionó como candidato a la alcaldía de Lima en las elecciones municipales de 2006 por el partido Renacimiento Andino, aunque no logró el cargo. En 2023, fundó el partido Perú Moderno, después de dos intentos fallidos de inscripción entre 2005-2008 y 2021-2022. <br><br> Bajo su liderazgo, Perú Moderno atrajo figuras como la exprocuradora Julia Príncipe y al empresario Carlos Añaños, fundador del Grupo AJE, quien se afilió en junio de 2024 como precandidato presidencial. Sin embargo, tensiones internas por el control de candidaturas y desacuerdos financieros llevaron a la salida de Añaños tres meses después. Según medios, la designación de Príncipe para supervisar candidatos generó roces con Aragón, quien insistía en imponer a colaboradores cercanos. <br><br> La noticia de su fallecimiento fue confirmada por el partido Perú Moderno mediante un comunicado en redes sociales, expresando condolencias a sus familiares y amigos.", 
+        "category": "política", 
+        "img": "4", 
+        "reporter": "Gilber Faustino", 
+        "url-reporter": "https://www.facebook.com/gilber.faustino", 
+        "tendency": "no" 
+    },
+
+    {
+        "id": 5,
+        "date": "16 de abril de 2025, 04:00 a.m.",
+        "title": "Nadine Heredia obtiene asilo en Brasil tras condena por lavado de activos",
+        "content": "La ex primera dama del Perú, Nadine Heredia, condenada a 15 años de prisión por lavado de activos relacionados con aportes ilícitos de Odebrecht y del gobierno venezolano a las campañas presidenciales de su esposo Ollanta Humala en 2006 y 2011, abandonó el país rumbo a Brasil tras recibir asilo político del gobierno de Luiz Inácio Lula da Silva. La salida se efectuó en la madrugada del 16 de abril de 2025, desde la embajada de Brasil en Lima, acompañada por su hijo menor y escoltada por autoridades peruanas hacia un vuelo oficial a Brasilia. El traslado fue coordinado entre ambos gobiernos y se realizó con un salvoconducto que evitó su detención. La decisión ha generado críticas por presuntas motivaciones políticas. Mientras tanto, Humala fue encarcelado en el penal de Barbadillo, compartiendo prisión con los expresidentes Alejandro Toledo y Pedro Castillo. El fiscal Rafael Vela afirmó que no hay persecución política en el caso, destacando que la sentencia demuestra que ni siquiera los expresidentes están por encima de la ley.",
+        "category": "política",
+        "img": "5",
+        "reporter": "Gilber Faustino",
+        "url-reporter": "https://www.facebook.com/gilber.faustino",
+        "tendency": "no"
+    },
+
+    {
+        "id": 6,
+        "date": "22 de abril de 2025, 10:00 a.m.",
+        "title": "Sesión de Concejo en San Juan de Miraflores: Vacancia de la alcaldesa Delia Castro y denuncias contra Dante Mendieta",
+        "content": "El 22 de abril de 2025, se llevó a cabo una Sesión de Concejo Extraordinaria en la Municipalidad de San Juan de Miraflores, generando gran expectativa debido a la situación de vacancia que pesa sobre la alcaldesa Delia Castro Pichihua. La controversia se intensificó tras la Resolución N° 0042-2025-JNE del Jurado Nacional de Elecciones, que declaró nulo el acuerdo que había rechazado el recurso de reconsideración de vacancia contra la alcaldesa. Por otro lado, se presentó una denuncia contra Dante Mendieta Flores, ex asesor y vocero de la gestión municipal, quien actualmente se desempeña como experto en procesos administrativos con un sueldo anual aproximado de S/.187,000, incluyendo aguinaldos y vacaciones. <br><br>La ciudadanía espera que las autoridades competentes investiguen a fondo estas situaciones para garantizar la transparencia y legalidad en la gestión municipal.",
+        "category": "política",
+        "img": "6",
+        "reporter": "Gilber Faustino",
+        "url-reporter": "https://www.facebook.com/gilber.faustino",
+        "tendency": "no"
+    },
+
+    {
+        "id": 7,
+        "date": "21 de abril de 2025, 6:30 p.m.",
+        "title": "Fallecimiento del Papa Francisco",
+        "content": "El Papa Francisco, el primer pontífice no europeo en casi 1,300 años, falleció el lunes a los 88 años de edad. No pudo resistir la neumonía severa que lo había postrado durante semanas. El anuncio del Vaticano se produjo menos de un día después de una aparición pública del Papa. El gobierno argentino decretó siete días de duelo por la muerte del Papa Francisco. Francisco (en latín: Franciscus PP.), de nombre secular Jorge Mario Bergoglio (Buenos Aires, 17 de diciembre de 1936 - Ciudad del Vaticano, 21 de abril de 2025), fue el 266.º Papa de la Iglesia católica. Como tal, fue el jefe de Estado y el octavo soberano de la Ciudad del Vaticano. Tras la renuncia de Benedicto XVI al pontificado, fue elegido el 13 de marzo de 2013 en la quinta votación efectuada durante el segundo día de cónclave. <br> <br> Su último pontificado estuvo en suelos peruanos entre el 18 y 21 de enero de 2018. En su recorrido por iglesias, calles e instituciones, compartió un mensaje para reflexionar sobre las problemáticas sociales y medioambientales.",
+        "category": "sociedad",
+        "img": "7",
+        "reporter": "Gilber Faustino",
+        "url-reporter": "https://www.facebook.com/gilber.faustino",
+        "tendency": "yes"
+    },
+    
+    {
+        "id":8,
+        "date": "13 de abril de 2025, 10:30 a.m.",
+        "title": "Hallan sin vida a joven desaparecida en vivienda abandonada de Villa María del Triunfo",
+        "content": "Mercedes Sánchez Querevalú, una joven de 19 años que llevaba desaparecida una semana, fue hallada sin vida el domingo 13 de abril en el interior de una vivienda abandonada ubicada en Villa María del Triunfo, Lima. La joven había salido de su domicilio con la intención de cobrar una deuda de S/.220 a Esteban Chicche Suyo, un mototaxista de 49 años que vivía contiguo al inmueble donde fue encontrado su cuerpo. <br> Según el testimonio de la madre de Mercedes, su hija había tenido varias conversaciones previas con Chicche para que le devolviera el dinero prestado. La última vez que se la vio con vida fue cuando se dirigía hacia su casa. Luego de no regresar ni contestar llamadas, su familia reportó la desaparición ante la Policía Nacional del Perú (PNP). <br> Durante varios días, la policía realizó búsquedas intensivas en las zonas aledañas sin obtener resultados. Sin embargo, fue una llamada anónima la que alertó a los agentes sobre un olor fétido que salía de una vivienda que había permanecido cerrada durante años, tras la muerte de su propietario. Al ingresar, los efectivos encontraron el cuerpo de la joven, ya en avanzado estado de descomposición. <br> Las primeras investigaciones revelaron que Esteban Chicche tenía acceso a la casa por un ingreso posterior a través de su vivienda, lo que levantó sospechas entre los investigadores. En un inicio, el sujeto negó haber tenido contacto reciente con Mercedes, pero días después cambió su versión y admitió haberla trasladado a un descampado, aunque afirmó no saber nada más sobre su paradero. Estas contradicciones lo convirtieron en el principal sospechoso del crimen. <br> Indignados por lo ocurrido, los vecinos y familiares de la joven acudieron a la casa de Chicche, lanzando piedras y exigiendo justicia. El sujeto fue detenido por la PNP mientras se realizan las diligencias correspondientes. Se espera el resultado de la necropsia para confirmar las causas exactas de la muerte. <br> El caso ha causado gran conmoción en la comunidad local, donde se exige una investigación exhaustiva y castigo ejemplar para el culpable. Organizaciones de derechos humanos y colectivos feministas han pedido que el caso sea abordado como un posible feminicidio, dada la naturaleza del crimen y las circunstancias en que fue cometido.",
+        "category": "sociedad",
+        "img": "8",
+        "reporter": "Gilber Faustino",
+        "url-reporter": "https://www.facebook.com/gilber.faustino",
+        "tendency": "no"
+    },
+    
+    
+    {
+        "id": 9,
+        "date": "14 de abril de 2025, 05:00 a.m.",
+        "title": "Dos cantantes asesinados tras presentación en discoteca Dembow de Villa María del Triunfo",
+        "content": "Un sangriento episodio de violencia sacudió la madrugada del lunes 14 de abril de 2025 al distrito de Villa María del Triunfo, luego de que dos jóvenes cantantes urbanos, identificados como 'Louis Producer' y '26is', fueran brutalmente asesinados tras culminar una presentación musical en la discoteca Dembow. El hecho ocurrió alrededor de las 5:00 a.m., en las inmediaciones del conocido boulevard de la Av. Salvador Allende, a escasas dos cuadras de la comisaría del Cercado de VMT. <br> Testigos del hecho relataron que las víctimas fueron emboscadas al salir del local nocturno, recibiendo una ráfaga de más de veinte disparos por parte de sujetos armados que se dieron a la fuga inmediatamente después del ataque. Varios asistentes intentaron brindar ayuda, pero ambos artistas ya no presentaban signos vitales. Además, otras personas resultaron heridas durante el tiroteo y fueron trasladadas a centros de salud cercanos. <br> La Policía Nacional del Perú maneja la hipótesis de un posible ajuste de cuentas entre bandas criminales que se disputan el control de extorsiones en la zona. Los agentes indicaron que los asesinatos estarían ligados a una reciente declaración de 'guerra' entre grupos rivales del Callao y ciudadanos extranjeros, especialmente de nacionalidad venezolana, por el dominio del cobro de cupos en Lima y el primer puerto. <br> Un joven de 18 años fue detenido en Santa Anita dos días después del crimen y se encuentra bajo investigación como presunto implicado. Asimismo, los vecinos exigen a las autoridades municipales y policiales una intervención urgente para cerrar definitivamente el boulevard, denunciando que cada fin de semana ocurren hechos de violencia, consumo de alcohol, drogas y prostitución sin control alguno. <br> El hecho ha generado conmoción en la comunidad artística urbana, quienes a través de redes sociales piden justicia y mayor seguridad para los jóvenes talentos que intentan abrirse camino en medio de una ciudad golpeada por la criminalidad.",
+        "category": "sociedad",
+        "img": "9",
+        "reporter": "Redacción Central",
+        "url-reporter": "https://www.facebook.com/gilber.faustino",
+        "tendency": "no"
+    },
+    
+    {
+        "id": 10,
+        "date": "14 de abril de 2025, 09:00 a.m.",
+        "title": "Gobierno del Perú declara Duelo Nacional por la muerte de Mario Vargas Llosa",
+        "content": "El Gobierno del Perú declaró Duelo Nacional este lunes 14 de abril de 2025, con motivo del fallecimiento del escritor Mario Vargas Llosa, Premio Nobel de Literatura. A través del Decreto Supremo Nº 047-2025-PCM, firmado por la presidenta Dina Boluarte y miembros del Gabinete Ministerial, se dispuso el izamiento del Pabellón Nacional a media asta en todo el país y en las representaciones diplomáticas del Perú en el extranjero, como muestra de reconocimiento al destacado intelectual peruano. <br> Vargas Llosa falleció la noche del domingo 13 de abril en Lima, a los 89 años de edad. Nacido en Arequipa el 28 de marzo de 1936, fue uno de los escritores más influyentes de la literatura en español del siglo XX. Su obra, que abarcó novelas, ensayos y artículos periodísticos, lo llevó a recibir múltiples premios, entre ellos el Nobel de Literatura en 2010, el Premio Cervantes en 1994 y el Premio Príncipe de Asturias en 1986. <br> El Decreto resalta su trascendencia internacional y el impacto de su legado literario: “Su obra ha contribuido a que la literatura y la cultura peruana sean reconocidas a nivel mundial, fortaleciendo la imagen del Perú internacionalmente”. Diversos líderes internacionales y figuras públicas han expresado su pesar por la pérdida. Pedro Sánchez, presidente del Gobierno de España, lo calificó como un 'maestro universal de la palabra'. <br> Los restos del escritor fueron incinerados en una ceremonia privada en Lima, y entregados a sus hijos. En distintos puntos del país y del mundo se vienen realizando homenajes, y sus libros han tenido un notable repunte en ventas, especialmente durante las celebraciones del Día del Libro en lugares como Ibiza, España. <br> La comunidad literaria internacional y el pueblo peruano lamentan profundamente su partida, reconociendo en él a un símbolo eterno de la cultura nacional.",
+        "category": "cultura",
+        "img": "10",
+        "reporter": "Gilber Faustino",
+        "url-reporter": "https://www.facebook.com/gilber.faustino",
+        "tendency": "yes"
+    },
+    
+    {
+        "id": 11,
+        "date": "14 de abril de 2025, 06:00 p.m.",
+        "title": "Explosión en el Mercado Cooperativo de Ciudad de Dios en San Juan de Miraflores deja heridos",
+        "content": "En horas de la tarde de este lunes 14 de abril de 2025, se produjo una explosión al interior del 'Mercado Cooperativo de Ciudad de Dios', ubicado en el distrito de San Juan de Miraflores. El incidente dejó varios heridos como resultado de la ola expansiva generada por la explosión. <br> De acuerdo con testigos, el suceso ocurrió en la parte de talleres del mercado, donde un puesto cerrado explotó debido a la acumulación de gas helio. La explosión causó que la puerta del puesto fuera disparada hacia el puesto de enfrente, provocando daños materiales. Afortunadamente, la rápida reacción del personal del mercado permitió controlar el incendio antes de la llegada de los bomberos, evitando una tragedia mayor. <br> Hasta el momento, se ha confirmado que solo una persona resultó herida, producto del impacto del vidrio de una de las vitrinas afectadas. La policía y los bomberos se encuentran investigando las causas del incidente, aunque las primeras versiones apuntan a un accidente relacionado con el mal manejo del gas.  <br> Las autoridades locales han instado a los comerciantes y clientes a tomar precauciones adicionales en la manipulación de sustancias inflamables para evitar futuros incidentes. Además, se ha anunciado un refuerzo de seguridad en la zona. El mercado, que es uno de los más concurridos de la zona sur de Lima, había estado funcionando con normalidad hasta el momento de la explosión. Se registraron importantes pérdidas materiales, pero afortunadamente no se reportaron víctimas fatales.",
+        "category": "sociedad",
+        "img": "11",
+        "reporter": "Gilber Faustino",
+        "url-reporter": "https://www.facebook.com/gilber.faustino",
+        "tendency": "no"
+    },
+    
+    {
+        "id": 12,
+        "date": "17 de marzo de 2025, 08:00 a.m.",
+        "title": "Inicio del Año Escolar 2025 en Lima Metropolitana",
+        "content": "Más de un millón de estudiantes de colegios públicos de Lima Metropolitana regresaron a las aulas el lunes 17 de marzo de 2025, dando inicio oficial al año escolar 2025. A nivel nacional, se estima que más de 6.2 millones de estudiantes volvieron a clases en alrededor de 53,000 instituciones educativas de educación básica regular, alternativa y especial. El Ministerio de Educación (Minedu) aseguró que el 100% del material educativo fue distribuido oportunamente a través de las 26 Direcciones Regionales de Educación (DRE) y Unidades de Gestión Educativa Local (UGEL), lo que permitió un inicio ordenado en la mayoría de regiones del país. Además, en el marco de la mejora de la infraestructura educativa, se inauguraron 132 nuevos centros educativos en diversas regiones, permitiendo el acceso a ambientes más adecuados para el aprendizaje de más de 80,000 escolares. Estas obras fueron ejecutadas por el Programa Nacional de Infraestructura Educativa (PRONIED), la Autoridad Nacional de Infraestructura (ANIN) y el programa Reconstrucción con Cambios. <br> Pese a las dificultades ocasionadas por fenómenos climáticos en varias zonas del país —como lluvias intensas e inundaciones— el ministro de Educación, Morgan Quero, garantizó que se habían tomado medidas preventivas para evitar retrasos en el calendario escolar. En Lima Metropolitana, se reportó una alta asistencia estudiantil en los principales distritos como San Juan de Lurigancho, Villa El Salvador, Ate y Comas, donde también se reforzaron los programas de alimentación escolar y apoyo psicológico.<br> El Minedu reiteró su compromiso con el derecho a una educación de calidad y señaló que este año se priorizarán políticas de recuperación de aprendizajes, fortalecimiento de la formación docente y mejora de los entornos escolares con enfoque en la seguridad y el bienestar del estudiante.",
+        "category": "educación",
+        "img": "12",
+        "reporter": "Gilber Faustino",
+        "url-reporter": "https://www.facebook.com/gilber.faustino",
+        "tendency": "no"
+    },
+    
+    {
+        "id": 13,
+        "date": "09 de abril de 2025, 06:00 p.m.",
+        "title": "Clases virtuales en Lima y Callao por paro de transportistas",
+        "content": "Ante el anuncio del paro nacional indefinido de transportistas programado para el jueves 10 de abril, la Dirección Regional de Educación del Callao (DREC), en coordinación con la Dirección Regional de Educación de Lima Metropolitana (DRELM) y el Ministerio de Educación (Minedu), decidió implementar clases virtuales en todas las instituciones educativas públicas y privadas de Lima y Callao. Esta medida busca garantizar la seguridad de estudiantes, docentes y personal administrativo ante posibles bloqueos de vías y restricciones de movilidad. <br> El comunicado oficial señala que las clases se desarrollarán en el mismo horario regular, a través de plataformas virtuales previamente utilizadas por las escuelas, como Google Meet, Zoom y otras plataformas educativas. Se exhortó a las instituciones a mantener la comunicación con los padres de familia para asegurar la continuidad del servicio educativo durante la jornada de protesta. <br> Esta decisión fue tomada luego de que diversos gremios de transporte anunciaron su participación en la protesta, exigiendo la revisión de tarifas de combustible, peajes, y la formalización de sus servicios. Las autoridades educativas subrayaron que, aunque no se reportaron amenazas directas a los centros escolares, se anticiparon a posibles dificultades logísticas que afecten el desplazamiento seguro de los alumnos. <br> Por otro lado, se recomendó a los directores de las instituciones educativas activar sus planes de contingencia y garantizar que los docentes adapten sus sesiones al formato remoto. Asimismo, se hizo un llamado a la calma y colaboración de toda la comunidad educativa, recordando que esta medida es temporal y que se informará oportunamente sobre el retorno a la presencialidad según evolucione la situación.",
+        "category": "educación",
+        "img": "13",
+        "reporter": "Gilber Faustino",
+        "url-reporter": "https://www.facebook.com/gilber.faustino",
+        "tendency": "yes"
+    },
+    
+    {
+        "id": 14,
+        "date": "15 de marzo de 2025, 01:00 p.m.",
+        "title": "Festival Plástico Circular 2025 en Barranco: Acción ciudadana contra la contaminación",
+        "content": "El 15 de marzo de 2025, el Parque Municipal de Barranco fue escenario del Festival Plástico Circular 2025, una iniciativa organizada por la Plataforma Nacional de Acción sobre Plásticos del Perú (NPAP Perú) con el objetivo de sensibilizar a la ciudadanía sobre la creciente contaminación por plásticos en el país. Según datos del Ministerio del Ambiente, Perú genera más de un millón de toneladas de residuos plásticos anualmente, siendo Lima Metropolitana y el Callao responsables de aproximadamente la mitad de esta cifra. <br> El festival ofreció una variedad de actividades educativas y culturales, incluyendo talleres de creación de personajes con materiales reciclados, elaboración de totebags con bolsas reutilizadas, intervenciones artísticas en vivo y proyecciones de documentales. Destacó la participación del artista Richard Miñano, quien realizó una obra en vivo utilizando materiales reciclados. El evento culminó con la presentación musical de la banda Olaya Sound System, promoviendo un mensaje de conciencia ambiental y acción colectiva.",
+        "category": "ambiente",
+        "img": "14",
+        "reporter": "Gilber Faustino",
+        "url-reporter": "https://www.facebook.com/gilber.faustino",
+        "tendency": "no"
+    },
+
+    {
+        "id": 15,
+        "date": "23 de enero de 2025, 03:00 p.m.",
+        "title": "San Borja es reconocido como el distrito más sostenible del Perú por WWF",
+        "content": "El Fondo Mundial para la Naturaleza (WWF) ha reconocido a San Borja como el distrito más sostenible del Perú, superando a otros distritos limeños como Miraflores y San Isidro. Este reconocimiento se debe a las políticas implementadas por el distrito enfocadas en la reducción de emisiones de carbono, el impulso de la movilidad sostenible y la promoción de espacios verdes. San Borja representará al Perú en el Desafío de Ciudades de WWF 2024, consolidándose como un modelo de sostenibilidad y calidad de vida.",
+        "category": "ambiente",
+        "img": "15",
+        "reporter": "Gilber Faustino",
+        "url-reporter": "https://www.facebook.com/gilber.faustino",
+        "tendency": "yes"
+    },
+
+    {
+        "id": 16,
+        "date": "17 de marzo de 2025, 07:15 a.m.",
+        "title": "Gobierno decreta estado de emergencia en Lima y Callao por incremento de la criminalidad",
+        "content": "El 17 de marzo de 2025, el Gobierno peruano oficializó el estado de emergencia en Lima Metropolitana y la Provincia Constitucional del Callao, mediante el Decreto Supremo N° 035-2025-PCM. Esta medida, con una duración de 30 días, se implementó tras el asesinato del cantante de cumbia Paul Flores, integrante de la orquesta Armonía 10, en un atentado vinculado a extorsiones. El estado de emergencia permite la intervención de las Fuerzas Armadas en apoyo a la Policía Nacional del Perú (PNP) para combatir el crimen organizado. Asimismo, se restringen ciertos derechos constitucionales, como la libertad de tránsito, la inviolabilidad del domicilio y la libertad de reunión, conforme a lo establecido en la Constitución Política del Perú. La medida busca reforzar la seguridad ciudadana y enfrentar la creciente ola de delincuencia en la capital y el primer puerto del país.",
+        "category": "política",
+        "img": "16",
+        "reporter": "Gilber Faustino",
+        "url-reporter": "https://www.facebook.com/gilber.faustino",
+        "tendency": "no"
+    }
+    
+]
