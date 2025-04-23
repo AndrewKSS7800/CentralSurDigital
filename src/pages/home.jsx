@@ -307,7 +307,7 @@ const Home = () => {
                                     {noticia.title}
                                 </span>
                             </div>
-                            <img src={`/public/imgs/${noticia.img}.png`} alt="" width="40px" />
+                            <img src={`/imgs/${noticia.img}.png`} alt="" width="40px" />
                         </Link>
                     ))}
 
