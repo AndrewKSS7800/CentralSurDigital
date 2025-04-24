@@ -27,7 +27,7 @@ const Newspage = () =>{
                 <title>{noticia.title}</title>
                 <meta property="og:title" content={noticia.title} />
                 <meta property="og:description" content={noticia.content.substring(0, 150)} />
-                <meta property="og:image" content={`/imgs/${noticia.img}.png`} />
+                <meta property="og:image" content={`https://centralsurdigital.netlify.app/imgs/${noticia.img}.png`} />
 
                 <meta property="og:url" content={`https://centralsurdigital.netlify.app/noticias/${noticia.id}`} />
                 <meta property="og:type" content="article" />
@@ -36,7 +36,7 @@ const Newspage = () =>{
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content={noticia.title} />
                 <meta name="twitter:description" content={noticia.content.substring(0, 150)} />
-                <meta name="twitter:image" content={`/imgs/${noticia.img}.png`} />
+                <meta name="twitter:image" content={`https://centralsurdigital.netlify.app/imgs/${noticia.img}.png`} />
 
             </Helmet>
             <div className="npback">
