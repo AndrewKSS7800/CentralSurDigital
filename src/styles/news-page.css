@@ -183,6 +183,37 @@
     white-space: pre-line;
 
 }
+
+.npshare {
+    margin-top: 20px;
+}
+
+.npshare-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.share-btn {
+    padding: 8px 12px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.share-btn.facebook {
+    background-color: #3b5998;
+}
+
+.share-btn.twitter {
+    background-color: #1da1f2;
+}
+
+.share-btn.whatsapp {
+    background-color: #25d366;
+}
+
 .nprelevante{
     grid-area: r;
     display: flex;
