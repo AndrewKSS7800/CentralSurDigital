@@ -415,11 +415,19 @@ a{
     "ws ws"
     "bnr bnr";
     grid-template-columns:50% 50%;
-    grid-template-rows: auto auto 25rem 18rem 18rem 18rem 18rem 18rem 18rem 4rem 13rem 13rem 13rem auto auto auto;
+    grid-template-rows: auto auto 30rem 23rem 23rem 23rem 23rem 23rem 23rem 4rem 20rem 20rem 20rem auto auto auto;
 }
 
 .wsch{
     grid-area: ws;
+}
+.n-card{
+    gap: 0.5rem;
+}
+.n-card div{
+    gap: 0.3rem;
+    display: flex;
+    flex-direction: column;
 }
 #ncard01{
     grid-area: n01;
@@ -431,6 +439,7 @@ a{
     
 }
 #ncard01 div{
+    
     width: 100%;
     height: 50%;
 }
@@ -460,7 +469,7 @@ a{
     display: -webkit-box;
     -webkit-line-clamp: 3;     /* Número de líneas a mostrar */
     -webkit-box-orient: vertical;
-    line-height: 1.2em;
+    line-height: 1.3em;
     font-size: 1rem;
 } 
 #ncard01 .dat{
@@ -487,9 +496,9 @@ a{
     text-align: justify;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 5;     /* Número de líneas a mostrar */
+    -webkit-line-clamp: 6;     /* Número de líneas a mostrar */
     -webkit-box-orient: vertical;
-    line-height: 1.33em;
+    line-height: 1.3em;
     font-size: 0.8rem;
     font-family: var(--regular),sans-serif;
 }
@@ -516,28 +525,28 @@ a{
     display: none;
 }
 #ncard02 div{
-    height: 30%;
+    height: 25%;
     display: flex;
     justify-content: center;
     justify-content: center;
     flex-direction: column;
 }
 #ncard03 div{
-    height: 30%;
+    height: 25%;
     display: flex;
     justify-content: center;
     justify-content: center;
     flex-direction: column;
 }
 #ncard04 div{
-    height: 30%;
+    height: 25%;
     display: flex;
     justify-content: center;
     justify-content: center;
     flex-direction: column;
 }
 #ncard05 div{
-    height: 50%;
+    height: 25%;
     display: flex;
     justify-content: center;
     justify-content: center;
@@ -545,6 +554,7 @@ a{
 }
 #ncard08 div{
     height: 30%;
+    gap: 0.5rem;
     display: flex;
     justify-content: center;
     justify-content: center;
@@ -552,6 +562,7 @@ a{
 }
 #ncard09 div{
     height: 30%;
+    gap: 0.5rem;
     display: flex;
     justify-content: center;
     justify-content: center;
@@ -559,6 +570,7 @@ a{
 }
 #ncard10 div{
     height: 30%;
+    gap: 0.5rem;
     display: flex;
     justify-content: center;
     justify-content: center;
@@ -600,7 +612,7 @@ a{
     display: -webkit-box;
     -webkit-line-clamp: 2;     /* Número de líneas a mostrar */
     -webkit-box-orient: vertical;
-    line-height: 1.3em;
+    line-height: 1.4em;
     font-size: 1rem;
 }
 
@@ -628,7 +640,7 @@ a{
     object-fit: cover;
     object-position: center;
     width: 100%;
-    height: 70%;
+    height: 75%;
     border-radius: 5px;
 }
 
@@ -699,13 +711,24 @@ a{
 #ncard08{
     color: var(--primary-color-v1);
     grid-area: n08;
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.5rem;
 }
 #ncard09{
     grid-area: n09;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
     color: var(--primary-color-v1);
 }
 #ncard10{
     grid-area: n10;
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.5rem;
     color: var(--primary-color-v1);
 }
 
@@ -738,9 +761,9 @@ a{
     text-overflow: ellipsis;
     text-transform: uppercase;
     display: -webkit-box;
-    -webkit-line-clamp: 2;     /* Número de líneas a mostrar */
+    -webkit-line-clamp: 3;     /* Número de líneas a mostrar */
     -webkit-box-orient: vertical;
-    line-height: 1.25em;
+    line-height: 1.3em;
     font-size: 0.85rem;
 }
 
@@ -1318,7 +1341,7 @@ a{
         "ws ws"
         "bnr bnr";
         grid-template-columns:50% 50%;
-        grid-template-rows: auto auto 25rem 18rem 18rem 18rem 18rem 18rem 18rem 4rem 13rem 13rem 13rem auto auto auto;
+        grid-template-rows: auto auto 30rem 22rem 22rem 22rem 22rem 22rem 22rem 4rem 19rem 19rem 19rem auto auto auto;
     }
     
     #ncard01{
@@ -1387,7 +1410,7 @@ a{
         display: -webkit-box;
         -webkit-line-clamp: 4;     /* Número de líneas a mostrar */
         -webkit-box-orient: vertical;
-        line-height: 1.28em;
+        line-height: 1.38em;
         font-size: 0.8rem;
         font-family: var(--regular),sans-serif;
     }
@@ -1399,49 +1422,49 @@ a{
         flex-direction: column;
     }
     #ncard02 div{
-        height: 30%;
+        height: 25%;
         display: flex;
         justify-content: center;
         justify-content: center;
         flex-direction: column;
     }
     #ncard03 div{
-        height: 30%;
+        height: 25%;
         display: flex;
         justify-content: center;
         justify-content: center;
         flex-direction: column;
     }
     #ncard04 div{
-        height: 30%;
+        height: 25%;
         display: flex;
         justify-content: center;
         justify-content: center;
         flex-direction: column;
     }
     #ncard05 div{
-        height: 30%;
+        height: 25%;
         display: flex;
         justify-content: center;
         justify-content: center;
         flex-direction: column;
     }
     #ncard08 div{
-        height: 30%;
+        height: 25%;
         display: flex;
         justify-content: center;
         justify-content: center;
         flex-direction: column;
     }
     #ncard09 div{
-        height: 30%;
+        height: 25%;
         display: flex;
         justify-content: center;
         justify-content: center;
         flex-direction: column;
     }
     #ncard10 div{
-        height: 30%;
+        height: 25%;
         display: flex;
         justify-content: center;
         justify-content: center;
@@ -1510,7 +1533,7 @@ a{
         object-fit: cover;
         object-position: center;
         width: 100%;
-        height: 65%;
+        height: 75%;
         border-radius: 5px;
     }
     
@@ -1576,6 +1599,7 @@ a{
     #ncard08{
         grid-area: n08;
         
+        
     }
     #ncard09{
         grid-area: n09;
@@ -1614,7 +1638,7 @@ a{
         display: -webkit-box;
         -webkit-line-clamp: 2;     /* Número de líneas a mostrar */
         -webkit-box-orient: vertical;
-        line-height: 1.2em;
+        line-height: 1.3em;
         font-size: 0.8rem;
     }
     
@@ -1624,7 +1648,7 @@ a{
         object-fit: cover;
         object-position: center;
         width: 100%;
-        height: 70%;
+        height: 75%;
         border-radius: 5px;
     }
 
@@ -2209,7 +2233,7 @@ a{
     }
     **/
     .n-card{
-        padding-top: 1.3rem;
+        padding-top: 0;
         padding-bottom: 1.3rem;
         border-bottom: 1px solid var(--primary-color-v1);
     }
@@ -2236,7 +2260,7 @@ a{
         "ws ws"
         "bnr bnr";
         grid-template-columns:50% 50%;
-        grid-template-rows: auto auto 25rem 13rem 13rem 13rem 11rem 11rem 11rem 4rem 10rem 10rem 10rem auto auto auto;
+        grid-template-rows: auto auto 35rem 8.5rem 8.5rem 8.5rem 8.5rem 8.5rem 8.5rem 4rem 8rem 8rem 8rem auto auto auto;
     }
     
     #ncard01{
@@ -2248,7 +2272,7 @@ a{
     }
     #ncard01 div{
         width: auto;
-        height: auto;
+        height: 40%;
     }
     #ncard01 .cat{
         font-size: 0.85rem;
@@ -2267,7 +2291,7 @@ a{
         width: 100%;
         font-family: var(--regular),sans-serif;
         font-weight: 700;
-        height: 30%;
+        height: 20%;
         overflow: hidden;
         text-align: justify;
         text-overflow: ellipsis;
@@ -2275,7 +2299,7 @@ a{
         display: -webkit-box;
         -webkit-line-clamp:2;     /* Número de líneas a mostrar */
         -webkit-box-orient: vertical;
-        line-height: 1.35em;
+        line-height: 1.33em;
         font-size: 1rem;
     } 
     #ncard01 .dat{
@@ -2291,20 +2315,20 @@ a{
         object-fit: cover;
         object-position: center;
         width: 100%;
-        height: 55%;
+        height: 60%;
         border-radius: 5px;
     } 
     #ncard01 .par {
         padding-top: 0.5rem;
         width: 100%;              /* Ajusta según tu diseño */
-        height: 50%;             /* O max-height si es variable */
+        height: 60%;             /* O max-height si es variable */
         overflow: hidden;
         text-align: justify;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 4;     /* Número de líneas a mostrar */
+        -webkit-line-clamp: 6;     /* Número de líneas a mostrar */
         -webkit-box-orient: vertical;
-        line-height: 1.32em;
+        line-height: 1.35em;
         font-size: 0.8rem;
         font-family: var(--regular),sans-serif;
     }
@@ -2314,7 +2338,7 @@ a{
         justify-content: center;
         align-items: center;
         flex-direction: row;
-        gap: 2rem;
+        gap: 1.5rem;
     }
     #ncard02 div{
         height: 100%;
@@ -2338,6 +2362,20 @@ a{
         flex-direction: column;
     }
     #ncard05 div{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #ncard06 div{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #ncard07 div{
         height: 100%;
         display: flex;
         justify-content: center;
@@ -2400,7 +2438,7 @@ a{
         display: -webkit-box;
         -webkit-line-clamp: 3;     /* Número de líneas a mostrar */
         -webkit-box-orient: vertical;
-        line-height: 1.6em;
+        line-height: 1.38em;
         font-size: 1rem;
     }
     
@@ -2427,7 +2465,7 @@ a{
     #ncard07 img{
         object-fit: cover;
         object-position: center;
-        width: 12rem;
+        max-width: 10rem;
         height: 100%;
         border-radius: 5px;
     }
@@ -2479,7 +2517,9 @@ a{
         gap: 1.5rem;
         flex-direction: row-reverse;
     }
-    
+    #ncard07 div{
+        width: 100%;
+    }
     #ntend{
         display: flex;
         justify-content: center;
@@ -2508,15 +2548,15 @@ a{
     }
 
     #ncard08 div{
-        width: 60%;
+        width:100%;
         height: 100%;
     }
     #ncard09 div{
-        width: 60%;
+        width: 100%;
         height: 100%;
     }
     #ncard10 div{
-        width: 60%;
+        width: 100%;
         height: 100%;
     }
     #ncard09{
@@ -2545,7 +2585,7 @@ a{
         justify-content: left;
         align-items: center;
         width: 100%;
-        height: 30%;
+        height: 20%;
         font-family: var(--regular),sans-serif;
     }
     
@@ -2558,16 +2598,16 @@ a{
         width: 100%;
         font-family: var(--regular),sans-serif;
         font-weight: 700;
-        height: 35%;
+        height: 80%;
         overflow: hidden;
         text-align: justify;
         text-overflow: ellipsis;
         text-transform: uppercase;
         display: -webkit-box;
-        -webkit-line-clamp: 3;     /* Número de líneas a mostrar */
+        -webkit-line-clamp: 4;     /* Número de líneas a mostrar */
         -webkit-box-orient: vertical;
-        line-height: 1.2em;
-        font-size: 0.8rem;
+        line-height: 1.3em;
+        font-size: 0.95rem;
     }
     
     #ncard08 img,
@@ -2575,7 +2615,7 @@ a{
     #ncard10 img{
         object-fit: cover;
         object-position: center;
-        width: 40%;
+        max-width: 10rem;
         height: 100%;
         border-radius: 5px;
     }
@@ -3074,7 +3114,9 @@ a{
         padding-bottom: 1.3rem;
         border-bottom: 1px solid var(--primary-color-v1);
     }
-
+    #ncard01{
+        padding-top: 0;
+    }
     .cobesp{
         background-color: var(--gray-light);
         grid-area: cosp;
@@ -3178,8 +3220,8 @@ a{
         "col col col"
         "ws ws ws"
         "bnr bnr bnr";
-        grid-template-columns:27% auto 40%;
-        grid-template-rows: auto auto 2rem 7rem 7rem 2rem 7rem 7rem 5rem 10rem 10rem 10rem auto auto auto;
+        grid-template-columns:30% auto 30%;
+        grid-template-rows: auto auto 2rem 8rem 8rem 2rem 8rem 8rem 5rem 10rem 10rem 10rem auto auto auto;
     }
     
     .wsch{
@@ -3192,6 +3234,8 @@ a{
         display: flex;
         justify-content: center;
         align-items: center;
+        
+        padding-top: 1.3rem;
         flex-direction: column;
     }
     #ncard01 .cat{
@@ -3211,15 +3255,15 @@ a{
         width: 100%;
         font-family: var(--regular),sans-serif;
         font-weight: 700;
-        height: 30%;
+        height: 20%;
         overflow: hidden;
         text-align: justify;
         text-overflow: ellipsis;
         text-transform: uppercase;
         display: -webkit-box;
-        -webkit-line-clamp: 3;     /* Número de líneas a mostrar */
+        -webkit-line-clamp: 2;     /* Número de líneas a mostrar */
         -webkit-box-orient: vertical;
-        line-height: 1.25em;
+        line-height: 1.3em;
         font-size: 1.05rem;
     } 
     #ncard01 .dat{
@@ -3233,26 +3277,26 @@ a{
     } 
     #ncard01 div{
         width: 100%;
-        height: 40%;
+        height: 35%;
     }
     #ncard01 img{
         object-fit: cover;
         object-position: center;
         width: 100%;
-        height: 50%;
+        height: 65%;
         border-radius: 10px;
     } 
     #ncard01 .par {
         padding-top: 0.5rem;
         width: 100%;              /* Ajusta según tu diseño */
-        height: 50%;             /* O max-height si es variable */
+        height: 60%;             /* O max-height si es variable */
         overflow: hidden;
         text-align: justify;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 5;     /* Número de líneas a mostrar */
+        -webkit-line-clamp: 6;     /* Número de líneas a mostrar */
         -webkit-box-orient: vertical;
-        line-height: 1.53em;
+        line-height: 1.5em;
         font-size: 0.8rem;
         font-family: var(--regular),sans-serif;
     }
@@ -3265,7 +3309,7 @@ a{
         flex-direction: row-reverse;
     }
     #ncard02 div{
-        width: 65%;
+        width: 100%;
         height: 100%;
     }
     
@@ -3319,10 +3363,10 @@ a{
         text-overflow: ellipsis;
         text-transform: uppercase;
         display: -webkit-box;
-        -webkit-line-clamp: 4;     /* Número de líneas a mostrar */
+        -webkit-line-clamp: 3;     /* Número de líneas a mostrar */
         -webkit-box-orient: vertical;
-        line-height: 1.25em;
-        font-size: 0.9rem;
+        line-height: 1.38em;
+        font-size: 0.95rem;
     }
 
     
@@ -3342,13 +3386,13 @@ a{
         display: -webkit-box;
         -webkit-line-clamp: 4;     /* Número de líneas a mostrar */
         -webkit-box-orient: vertical;
-        line-height: 1.55em;
+        line-height: 1.4em;
         font-size: 0.7rem;
     }
 
     #ncard06 div, #ncard07 div{
         width: 100%;
-        height: 65%;
+        height: 30%;
     }
     #ncard06 .tit,
     #ncard07 .tit{
@@ -3407,12 +3451,19 @@ a{
     }
     
     #ncard02 img,
-    #ncard03 img,
+    #ncard03 img{
+        object-fit: cover;
+        object-position: center;
+        max-width: 10rem;
+        height: 100%;
+        border-radius: 5px;
+    }
+
     #ncard04 img,
     #ncard05 img{
         object-fit: cover;
         object-position: center;
-        width: 35%;
+        max-width: 35%;
         height: 100%;
         border-radius: 5px;
     }
@@ -3422,8 +3473,8 @@ a{
     #ncard07 img{
         object-fit: cover;
         object-position: center;
-        width: 100%;
-        height: 60%;
+        max-width: 100%;
+        height: 70%;
         border-radius: 5px;
     }
     
@@ -3439,7 +3490,7 @@ a{
         flex-direction: row-reverse;
     }
     #ncard03 div{
-        width: 65%;
+        width: 100%;
         height: 100%;
     }
     #ncard04{
@@ -3470,6 +3521,7 @@ a{
     
     #ncard06{
         width: 100%;
+        padding-top: 1.3rem;
         grid-area: n06;
         gap: 0.5rem;
         display: flex;
@@ -3479,6 +3531,7 @@ a{
     }
     
     #ncard07{
+        width: 100%;
         grid-area: n07;
         gap: 0.5rem;
         display: flex;
@@ -3486,7 +3539,9 @@ a{
         align-items: center;
         flex-direction: column-reverse;
     }
-    
+    #ncard07 div{
+        width: 100%;
+    }
     #ntend{
         display: flex;
         justify-content: center;
@@ -3514,8 +3569,9 @@ a{
         
     }
     #ncard08 div{
-        width: 65%;
+        width: 100%;
         height: 100%;
+        overflow: hidden;
     }
     #ncard09{
         grid-area: n09;
@@ -3526,8 +3582,9 @@ a{
         flex-direction: row;
     }
     #ncard09 div{
-        width: 65%;
+        width: 100%;
         height: 100%;
+        overflow: hidden;
     }
     #ncard10{
         gap: 1rem;
@@ -3538,7 +3595,8 @@ a{
         flex-direction: row;
     }
     #ncard10 div{
-        width: 65%;
+        width:100%;
+        overflow: hidden;
         height: 100%;
     }
     
@@ -3550,7 +3608,7 @@ a{
         justify-content: left;
         align-items: center;
         width: 100%;
-        height: 40%;
+        height: 20%;
         font-family: var(--regular),sans-serif;
     }
     
@@ -3563,13 +3621,13 @@ a{
         width: 100%;
         font-family: var(--regular),sans-serif;
         font-weight: 700;
-        height: 60%;
+        height: 80%;
         overflow: hidden;
         text-align: left;
         text-overflow: ellipsis;
         text-transform: uppercase;
         display: -webkit-box;
-        -webkit-line-clamp: 4;     /* Número de líneas a mostrar */
+        -webkit-line-clamp: 5;     /* Número de líneas a mostrar */
         -webkit-box-orient: vertical;
         line-height: 1.4em;
         font-size: 0.8rem;
@@ -3578,9 +3636,10 @@ a{
     #ncard08 img,
     #ncard09 img,
     #ncard10 img{
+        overflow: hidden;
         object-fit: cover;
         object-position: center;
-        width: 35%;
+        max-width: 4rem;
         height: 100%;
         border-radius: 5px;
     }
@@ -4186,13 +4245,14 @@ a{
         "col col col"
         "ws ws ws"
         "bnr bnr bnr";
-        grid-template-columns:30% auto 40%;
-        grid-template-rows: auto auto 2rem 7rem 7rem 2rem 7rem 7rem 5rem 10rem 10rem 10rem auto auto auto; 
+        grid-template-columns:30% auto 30%;
+        grid-template-rows: auto auto 2rem 8rem 8rem 2rem 8rem 8rem 5rem 10rem 10rem 10rem auto auto auto; 
     }
     
 
     
     #ncard01{
+        padding-top: 1.5rem;
         grid-area: n01;
         display: flex;
         justify-content: center;
@@ -4201,7 +4261,7 @@ a{
     }
     #ncard01 div{
         width: 100%;
-        height: 45%;
+        height: 35%;
     }
     #ncard01 .cat{
         font-size: 0.9rem;
@@ -4220,13 +4280,13 @@ a{
         width: 100%;
         font-family: var(--regular),sans-serif;
         font-weight: 700;
-        height: 30%;
+        height: 25%;
         overflow: hidden;
         text-align: justify;
         text-overflow: ellipsis;
         text-transform: uppercase;
         display: -webkit-box;
-        -webkit-line-clamp: 3;     /* Número de líneas a mostrar */
+        -webkit-line-clamp: 2;     /* Número de líneas a mostrar */
         -webkit-box-orient: vertical;
         line-height: 1.25em;
         font-size: 1.2rem;
@@ -4244,18 +4304,18 @@ a{
         object-fit: cover;
         object-position: center;
         width: 100%;
-        height: 55%;
+        height: 65%;
         border-radius: 10px;
     } 
     #ncard01 .par {
         padding-top: 0.5rem;
         width: 100%;              /* Ajusta según tu diseño */
-        height: 50%;             /* O max-height si es variable */
+        height: 55%;             /* O max-height si es variable */
         overflow: hidden;
         text-align: justify;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 6;     /* Número de líneas a mostrar */
+        -webkit-line-clamp: 5;     /* Número de líneas a mostrar */
         -webkit-box-orient: vertical;
         line-height: 1.25em;
         font-size: 0.95rem;
@@ -4270,7 +4330,7 @@ a{
         flex-direction: row-reverse;
     }
     #ncard02 div{
-        width: 65%;
+        width: 100%;
         height: 100%;
     }
     
@@ -4299,7 +4359,7 @@ a{
 
     #ncard06 div,#ncard07 div{
         width: 100%;
-        height: 45%;
+        height: 30%;
     }
 
     #ncard06 .cat,
@@ -4351,7 +4411,7 @@ a{
         display: -webkit-box;
         -webkit-line-clamp: 4;     /* Número de líneas a mostrar */
         -webkit-box-orient: vertical;
-        line-height: 1.6em;
+        line-height: 1.45em;
         font-size: 0.7rem;
     }
 
@@ -4418,10 +4478,20 @@ a{
     #ncard05 img{
         object-fit: cover;
         object-position: center;
+        width: 12rem;
+        height: 100%;
+        border-radius: 5px;
+    }
+
+    #ncard04 img,
+    #ncard05 img{
+        object-fit: cover;
+        object-position: center;
         width: 35%;
         height: 100%;
         border-radius: 5px;
     }
+
 
     
     #ncard06 img,
@@ -4429,7 +4499,7 @@ a{
         object-fit: cover;
         object-position: center;
         width: 100%;
-        height: 55%;
+        height: 70%;
         border-radius: 5px;
     }
     
@@ -4445,7 +4515,7 @@ a{
         flex-direction: row-reverse;
     }
     #ncard03 div{
-        width: 65%;
+        width: 100%;
         height: 100%;
     }
     #ncard04{
@@ -4519,7 +4589,7 @@ a{
         
     }
     #ncard08 div{
-        width: 75%;
+        width: 100%;
         height: 100%;
     }
     #ncard09{
@@ -4531,7 +4601,7 @@ a{
         flex-direction: row;
     }
     #ncard09 div{
-        width: 75%;
+        width: 100%;
         height: 100%;
     }
     #ncard10{
@@ -4543,7 +4613,7 @@ a{
         flex-direction: row;
     }
     #ncard10 div{
-        width: 75%;
+        width: 100%;
         height: 100%;
     }
     
@@ -4555,7 +4625,7 @@ a{
         justify-content: left;
         align-items: center;
         width: 100%;
-        height: 40%;
+        height: 20%;
         font-family: var(--regular),sans-serif;
     }
     
@@ -4568,13 +4638,13 @@ a{
         width: 100%;
         font-family: var(--regular),sans-serif;
         font-weight: 700;
-        height: 60%;
+        height: 80%;
         overflow: hidden;
         text-align: left;
         text-overflow: ellipsis;
         text-transform: uppercase;
         display: -webkit-box;
-        -webkit-line-clamp: 4;     /* Número de líneas a mostrar */
+        -webkit-line-clamp: 5;     /* Número de líneas a mostrar */
         -webkit-box-orient: vertical;
         line-height: 1.4em;
         font-size: 0.8rem;
@@ -4585,7 +4655,7 @@ a{
     #ncard10 img{
         object-fit: cover;
         object-position: center;
-        width: 25%;
+        max-width: 6rem;
         height: 100%;
         border-radius: 5px;
     }
@@ -5195,8 +5265,8 @@ a{
         "col col col"
         "ws ws ws"
         "bnr bnr bnr";
-        grid-template-columns:30% auto 40%;
-        grid-template-rows: auto auto 2rem 7rem 7rem 2rem 7rem 7rem 5rem 10rem 10rem 10rem auto auto auto;
+        grid-template-columns:30% auto 30%;
+        grid-template-rows: auto auto 2rem 8rem 8rem 2rem 8rem 8rem 5rem 10rem 10rem 10rem auto auto auto;
     }
     
 
@@ -5210,7 +5280,7 @@ a{
     }
     #ncard01 div{
         width: 100%;
-        height: 45%;
+        height: 40%;
     }
     #ncard01 .cat{
         font-size: 0.9rem;
@@ -5229,13 +5299,13 @@ a{
         width: 100%;
         font-family: var(--regular),sans-serif;
         font-weight: 700;
-        height: 30%;
+        height: 20%;
         overflow: hidden;
         text-align: justify;
         text-overflow: ellipsis;
         text-transform: uppercase;
         display: -webkit-box;
-        -webkit-line-clamp: 3;     /* Número de líneas a mostrar */
+        -webkit-line-clamp: 2;     /* Número de líneas a mostrar */
         -webkit-box-orient: vertical;
         line-height: 1.3em;
         font-size: 1.2rem;
@@ -5253,7 +5323,7 @@ a{
         object-fit: cover;
         object-position: center;
         width: 100%;
-        height: 55%;
+        height: 60%;
         border-radius: 10px;
     } 
     #ncard01 .par {
@@ -5279,7 +5349,7 @@ a{
         flex-direction: row-reverse;
     }
     #ncard02 div{
-        width: 65%;
+        width: 100%;
         height: 100%;
     }
     
@@ -5335,7 +5405,7 @@ a{
         display: -webkit-box;
         -webkit-line-clamp: 3;     /* Número de líneas a mostrar */
         -webkit-box-orient: vertical;
-        line-height: 1.6em;
+        line-height: 1.55em;
         font-size: 0.9rem;
     }
 
@@ -5356,7 +5426,7 @@ a{
         display: -webkit-box;
         -webkit-line-clamp: 4;     /* Número de líneas a mostrar */
         -webkit-box-orient: vertical;
-        line-height: 1.6em;
+        line-height: 1.4em;
         font-size: 0.7rem;
     }
 
@@ -5423,7 +5493,14 @@ a{
     }
     
     #ncard02 img,
-    #ncard03 img,
+    #ncard03 img{
+        object-fit: cover;
+        object-position: center;
+        width: 12rem;
+        height: 100%;
+        border-radius: 5px;
+    }
+
     #ncard04 img,
     #ncard05 img{
         object-fit: cover;
@@ -5455,7 +5532,7 @@ a{
         flex-direction: row-reverse;
     }
     #ncard03 div{
-        width: 65%;
+        width: 100%;
         height: 100%;
     }
     #ncard04{
@@ -5529,7 +5606,7 @@ a{
         
     }
     #ncard08 div{
-        width: 75%;
+        width: 100%;
         height: 100%;
     }
     #ncard09{
@@ -5541,7 +5618,7 @@ a{
         flex-direction: row;
     }
     #ncard09 div{
-        width: 75%;
+        width: 100%;
         height: 100%;
     }
     #ncard10{
@@ -5553,7 +5630,7 @@ a{
         flex-direction: row;
     }
     #ncard10 div{
-        width: 75%;
+        width: 100%;
         height: 100%;
     }
     
@@ -5565,7 +5642,7 @@ a{
         justify-content: left;
         align-items: center;
         width: 100%;
-        height: 40%;
+        height: 20%;
         font-family: var(--regular),sans-serif;
     }
     
@@ -5578,13 +5655,13 @@ a{
         width: 100%;
         font-family: var(--regular),sans-serif;
         font-weight: 700;
-        height: 60%;
+        height: 80%;
         overflow: hidden;
         text-align: left;
         text-overflow: ellipsis;
         text-transform: uppercase;
         display: -webkit-box;
-        -webkit-line-clamp: 4;     /* Número de líneas a mostrar */
+        -webkit-line-clamp: 5;     /* Número de líneas a mostrar */
         -webkit-box-orient: vertical;
         line-height: 1.4em;
         font-size: 0.8rem;
@@ -5595,7 +5672,7 @@ a{
     #ncard10 img{
         object-fit: cover;
         object-position: center;
-        width: 25%;
+        max-width: 7rem;
         height: 100%;
         border-radius: 5px;
     }

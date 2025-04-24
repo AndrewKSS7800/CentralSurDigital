@@ -189,6 +189,78 @@
         "reporter": "Gilber Faustino",
         "url-reporter": "https://www.facebook.com/gilber.faustino",
         "tendency": "no"
+    },
+    
+    {
+        "id": 17,
+        "date": "24 de abril de 2025, 09:00 a.m.",
+        "title": "Panorama tecnológico en Lima desde marzo de 2025: Avances en IA, 5G y eventos clave",
+        "content": "Desde el 1 de marzo de 2025, Lima ha sido testigo de significativos avances en el ámbito tecnológico. A continuación, se detallan los eventos y desarrollos más relevantes: <br> <b>1. Crecimiento del uso de la Inteligencia Artificial (IA):</b> Un estudio reciente reveló que el 57% de los trabajadores peruanos emplea la IA en sus tareas laborales diarias, y el 99% considera que esta tecnología es útil o muy útil. Este aumento refleja una tendencia hacia la adopción de herramientas digitales en diversos sectores productivos. <br> <b>2. Aprobación del reglamento para el despliegue de tecnología 5G: </b> El 27 de marzo, se publicó el Decreto Supremo N° 004-2025-MTC, que aprueba el reglamento del Decreto Legislativo N° 1627. Esta normativa tiene como objetivo promover el despliegue de servicios públicos de telecomunicaciones mediante tecnología de quinta generación (5G) o superior, lo que representa un paso importante hacia la modernización de las comunicaciones en el país. <br> <b>3. Transformación digital en el sector retail: </b> Las empresas del sector retail en Perú están acelerando su transformación digital mediante la implementación de tecnologías como la inteligencia artificial y la analítica avanzada. Esta evolución responde a la necesidad de adaptarse a consumidores cada vez más digitales y exigentes. <br> <b>4. Semana de la Innovación 2025: </b> El Consejo Nacional de Ciencia, Tecnología e Innovación Tecnológica (Concytec) organizó la Semana de la Innovación 2025, un evento que incluyó exhibiciones de tecnologías, talleres gratuitos y otras actividades destinadas a fomentar la innovación en el país. <br> <b>5. Congreso Internacional de Innovación Tecnológica (CIIT Latam Congress 2025): </b> Los días 27 y 28 de marzo se llevó a cabo en Lima el CIIT Latam Congress 2025, un evento que reunió a expertos en minería, energía e industria para discutir las últimas tendencias en innovación tecnológica. <br> <b>6. Implementación de la Tarjeta Interoperable de Transporte (TIT): </b> La Autoridad de Transporte Urbano para Lima y Callao (ATU) anunció la implementación progresiva de la TIT, una tarjeta de pago electrónico sin contacto que permitirá a los usuarios acceder a diversos servicios de transporte público en la ciudad. <br> <b>7. Importación de equipos tecnológicos: </b> Durante el primer trimestre de 2025, la importación de equipos tecnológicos en Perú creció un 10%, reflejando el dinamismo del mercado tecnológico y la creciente demanda de dispositivos avanzados. <br> <b>8. RootsTech 2025 en Lima: </b> Por primera vez, el evento internacional RootsTech, centrado en genealogía y tecnología, se realizó en Lima los días 7 y 8 de marzo. Más de 1,500 personas participaron en actividades destinadas a explorar su historia familiar y fortalecer lazos con sus antepasados. <br> <br> Estos eventos y desarrollos destacan el impulso que Lima está dando al ámbito tecnológico, posicionándose como un centro de innovación en la región.",
+        "category": "tecnología",
+        "img": "17",
+        "reporter": "Gilber Faustino",
+        "url-reporter": "https://www.facebook.com/gilber.faustino",
+        "tendency": "no"
+    },
+
+    {
+        "id": 18,
+        "date": "23 de abril de 2025, 11:00 a.m.",
+        "title": "SITDEF 2025: Lima será sede de la feria internacional de defensa y tecnología",
+        "content": "Del 24 al 27 de abril, Lima acogerá el Salón Internacional de Tecnología para la Defensa y Prevención de Desastres (SITDEF 2025) en el Cuartel General del Ejército del Perú, conocido como el 'Pentagonito', ubicado en San Borja. Este evento reunirá a delegaciones de más de 20 países, incluyendo a Estados Unidos, Rusia, China, Francia, Corea del Sur, Turquía, Alemania, Italia, India y Reino Unido. Empresas de renombre como Google, Cisco y Amazon Web Services presentarán sus últimas innovaciones en ciberseguridad, inteligencia artificial y soluciones de software para contextos de emergencia. Organizado conjuntamente por el Ministerio de Defensa y las Fuerzas Armadas del Perú, el SITDEF 2025 busca fortalecer la cooperación internacional en tecnología de defensa y gestión de riesgos, ofreciendo al público la oportunidad de conocer de cerca los avances tecnológicos en estos campos.",
+        "category": "tecnología",
+        "img": "18",
+        "reporter": "Gilber Faustino",
+        "url-reporter": "https://www.facebook.com/gilber.faustino",
+        "tendency": "yes"
+    },
+
+    {
+        "id": 19,
+        "date": "27 de marzo de 2025, 11:00 a.m.",
+        "title": "Congreso Internacional de Innovación Tecnológica - CIIT Latam Congress 2025",
+        "content": "El 27 y 28 de marzo se llevó a cabo en el Country Club Lima Hotel el CIIT Latam Congress 2025, uno de los eventos más destacados en minería, energía e industria en Latinoamérica. Esta séptima edición del congreso reunió a expertos y líderes del sector para discutir las últimas tendencias e innovaciones tecnológicas que están transformando estas industrias clave. Durante el evento, se presentaron casos de éxito, soluciones tecnológicas avanzadas y se fomentó el intercambio de conocimientos entre los participantes, consolidando a Lima como un hub importante para la innovación tecnológica en la región.",
+        "category": "tecnología",
+        "img": "19",
+        "reporter": "Gilber Faustino",
+        "url-reporter": "https://www.facebook.com/gilber.faustino",
+        "tendency": "no"
+    },
+
+    {
+        "id": 20,
+        "date": "22 de abril de 2025, 09:00 a.m.",
+        "title": "Cumbre APTC 2025 inicia en Lima con foco en conectividad y transformación digital",
+        "content": "Desde el 22 hasta el 24 de abril, el Centro de Convenciones de Lima se convirtió en el epicentro del intercambio tecnológico y de conocimientos con la realización de la Cumbre APTC 2025, organizada por la Asociación Peruana de Telecomunicaciones (APTC). Este evento reunió a líderes de la industria, reguladores y expertos para discutir las tendencias emergentes en conectividad, transformación digital y el futuro de las telecomunicaciones en el Perú. Las sesiones académicas y paneles abordaron temas como la expansión de la infraestructura 5G, la digitalización de servicios y la inclusión tecnológica, destacando la importancia de la colaboración público-privada para impulsar el desarrollo del sector.",
+        "category": "tecnología",
+        "img": "20",
+        "reporter": "Gilber Faustino",
+        "url-reporter": "https://www.facebook.com/gilber.faustino",
+        "tendency": "no"
+    },
+
+    {
+        "id": 21,
+        "date": "28 de marzo de 2025, 08:00 a.m.",
+        "title": "El retail peruano acelera su transformación con tecnología e inteligencia artificial",
+        "content": "El sector retail en Perú está experimentando una transformación significativa impulsada por la adopción de tecnologías avanzadas y soluciones de inteligencia artificial. Según la Cámara de Comercio de Lima (CCL), se espera que el Producto Interno Bruto (PIB) crezca un 2,8% en 2025, con el comercio como uno de los principales impulsores. Empresas como Teamcore están liderando esta evolución, implementando plataformas que integran datos, equipos y flujos de trabajo para optimizar operaciones y mejorar la experiencia del cliente. Innovaciones como la realidad aumentada y la realidad virtual están permitiendo a los consumidores interactuar con productos de manera más inmersiva, mientras que la inteligencia artificial ayuda a las empresas a anticipar demandas y personalizar ofertas, resultando en un aumento de ventas de entre 3% y 5% anual.",
+        "category": "tecnología",
+        "img": "21",
+        "reporter": "Gilber Faustino",
+        "url-reporter": "https://www.facebook.com/gilber.faustino",
+        "tendency": "no"
+    },
+
+    {
+        "id": 22,
+        "date": "24 de abril de 2025, 09:00 a.m.",
+        "title": "Panorama social en Lima desde marzo de 2025: Seguridad, cultura y eventos destacados",
+        "content": "Desde el 1 de marzo de 2025, Lima ha sido escenario de diversos acontecimientos que han marcado la agenda social de la ciudad. A continuación, se detallan los eventos y desarrollos más relevantes: <br> <b>1. Fuga en el penal de Lurigancho:</b> El 21 de abril, John Kennedy Javier Sebastián, preso desde agosto de 2023 por robo, logró escapar del penal de Lurigancho. La fuga fue grabada por vecinos y provocó la destitución del director del penal y el reemplazo del personal de seguridad. Este incidente resalta la crisis del sistema penitenciario en Perú. <br> <b>2. Encuentro de la princesa Leonor con la familia de Vargas Llosa: </b> El 22 de abril, la princesa Leonor de Asturias se reunió en El Callao con Gonzalo y Morgana Vargas Llosa, hijos del recientemente fallecido escritor Mario Vargas Llosa, así como con Patricia Llosa, ex esposa del Nobel de Literatura. El encuentro tuvo lugar a bordo del buque escuela Juan Sebastián Elcano. <br> <b>3. Paro de transportistas en Lima y Callao:</b> El 10 de abril, más de 20,000 unidades de transporte público se plegaron a una paralización en protesta por la inseguridad y la falta de acción gubernamental. La marcha llegó al Centro de Lima, donde se registraron enfrentamientos con la policía y un herido. <br> <b>4. Estado de emergencia en Lima Metropolitana y Callao:</b> El 17 de marzo, el Gobierno de Perú informó que declararía el estado de emergencia en Lima Metropolitana y el Callao debido a la creciente ola de violencia criminal. <br> <b>5. Semana de la Innovación 2025:</b> El Consejo Nacional de Ciencia, Tecnología e Innovación Tecnológica (Concytec) organizó la Semana de la Innovación 2025, un evento que incluyó exhibiciones de tecnologías, talleres gratuitos y otras actividades destinadas a fomentar la innovación en el país. <br> <br> Estos eventos y desarrollos destacan la dinámica social de Lima en los últimos meses, reflejando tanto desafíos en seguridad y gobernabilidad como avances en cultura e innovación.",
+        "category": "sociedad",
+        "img": "22",
+        "reporter": "Gilber Faustino",
+        "url-reporter": "https://www.facebook.com/gilber.faustino",
+        "tendency": "yes"
     }
     
 ]
