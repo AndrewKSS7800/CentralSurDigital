@@ -1,4 +1,4 @@
 /* /index.html 200
 # Redirigir bots a Prerender
-/*  https://service.prerender.io/https://centralsurdigital.netlify.app/:splat  200
+/* https://service.prerender.io/https://centralsurdigital.netlify.app/:splat 200!
   User-Agent=Googlebot|Yahoo! Slurp|bingbot|facebookexternalhit|twitterbot|rogerbot|linkedinbot|embedly|quora link preview|showyoubot|outbrain|pinterest|slackbot|vkShare|W3C_Validator|redditbot|Applebot|WhatsApp  Replace
