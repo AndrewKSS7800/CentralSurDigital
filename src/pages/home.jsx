@@ -379,22 +379,22 @@ const Home = () => {
                     </div>
 
                     <div className="banner-r">
-                        <div className='b-img' id='bnx'>
+                        <a href="https://x.com/centralsur_d" target='_blank' className='b-img' id='bnx'>
                             <img src={BannerX} alt="" />
-                        </div>
-                        <div className='b-img' id='bny'> 
+                        </a>
+                        <a href="https://www.youtube.com/@CentralSurDigital/videos" target='_blank' className='b-img' id='bny'> 
                             <img src={BannerYoutube} alt="" />
-                        </div>
+                        </a>
                         
-                        <div className='b-img' id='bni'>
+                        <a href="https://www.instagram.com/centralsurdigital/" target='_blank' className='b-img' id='bni'>
                             <img src={BannerInstagram} alt="" />
-                        </div>
-                        <div className='b-img' id='bnt'>
+                        </a>
+                        <a href="https://www.tiktok.com/@centralsurdigital"  target='_blank' className='b-img' id='bnt'>
                             <img src={BannerTiktok} alt="" />
-                        </div>
-                        <div className='b-img' id='bnf'>
+                        </a>
+                        <a href="https://web.facebook.com/profile.php?id=61575278335998" target='_blank' className='b-img' id='bnf'>
                             <img src={BannerFacebook} alt="" />
-                        </div>
+                        </a>
                     </div>
                 </div>
                 

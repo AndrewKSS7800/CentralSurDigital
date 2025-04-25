@@ -136,33 +136,70 @@
 }
 
 .pagination {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     display: flex;
     justify-content: center;
-    gap: 0.35rem;
+    gap: 0.5rem;
+    align-items: center;
+    border-top: 1px solid var(--primary-color-v3);
+    border-bottom: 1px solid var(--primary-color-v3);
 }
-
-.pagination button {
-
-    padding: 0.45rem 0.3rem;
-    color: var(--primary-color-v3);
+.pagination button:nth-child(1){
     border: none;
+    font-size: 1.5rem;
+    padding-right: 0.4rem;
+}
+.pagination button:last-child{
+    border: none;
+    font-size: 1.5rem;
+    padding-left: 0.4rem;
+}
+.pagination button:hover:nth-child(1){
+    background-color: transparent;
+}
+.pagination button:hover:last-child{
+    background-color: transparent;
+}
+.pagination button:hover{
+    color: var(--primary-color-v1);
+    transition: 0.5s ease-in-out;
+    font-weight: bold;
+    background-color: var(--gray-light);
+}
+.pagination button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    width: 1.7rem;
+    height: 1.7rem;
+    color: var(--primary-color-v3);
+    aspect-ratio: 1/1;
     cursor: pointer;
     background-color: var(--white);
 }
 
 .pagination button.active {
-    color: var(--primary-color-v1);
+    background-color: var(--primary-color-v1);
+    width: 1.9rem;
+    height: 1.9rem;
+    color: var(--white);
     font-size: 1.05rem;
     font-weight: bold;
+    border: 2px solid var(--primary-color-v1);
 }
 
 .pagination button:disabled {
+    border: none;
     color: var(--gray-light);
     cursor: not-allowed;
 }
 
 .pagination .dots {
-    padding: 0.3rem 0.05rem;
+    padding: 0.3rem 0.3rem;
     color: var(--primary-color-v3);
     font-weight: bold;
     display: flex;
@@ -294,12 +331,10 @@
     .pagination {
         display: flex;
         justify-content: center;
-        gap: 0.35rem;
+        gap: 1rem;
     }
     
     .pagination button {
-        font-size: 1rem;
-        padding: 0.7rem 0.55rem;
         color: var(--primary-color-v3);
         border: none;
         cursor: pointer;
@@ -307,9 +342,11 @@
     }
     
     .pagination button.active {
-        color: var(--primary-color-v1);
-        font-size: 1.15rem;
+        color: var(--white);
         font-weight: bold;
+        width: 2.1rem;
+        height: 2.1rem;
+        font-size: 1.15rem;
     }
     
     .pagination button:disabled {
@@ -317,7 +354,7 @@
     }
     
     .pagination .dots {
-        padding: 0.3rem 0.05rem;
+        padding: 0.3rem 0.3rem;
         color: var(--primary-color-v3);
         font-weight: bold;
     }
@@ -449,7 +486,7 @@
     .pagination {
         display: flex;
         justify-content: center;
-        gap: 0.35rem;
+        
     }
     
     .pagination button {
@@ -462,8 +499,10 @@
     }
     
     .pagination button.active {
-        color: var(--primary-color-v1);
-        font-size: 1.15rem;
+        color: var(--white);
+        width: 1.9rem;
+        height: 1.9rem;
+        font-size: 1.05rem;
         font-weight: bold;
     }
     
@@ -605,11 +644,11 @@
     .pagination {
         display: flex;
         justify-content: center;
-        gap: 0.35rem;
+        gap: 1.5rem;
     }
     
     .pagination button {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         padding: 1rem 1rem;
         color: var(--primary-color-v3);
         border: none;
@@ -619,8 +658,10 @@
     
     
     .pagination button.active {
-        color: var(--primary-color-v1);
-        font-size: 1.3rem;
+        width: 1.9rem;
+        height: 1.9rem;
+        color: var(--white);
+        font-size: 1.4rem;
         font-weight: bold;
     }
     
@@ -762,11 +803,11 @@
     .pagination {
         display: flex;
         justify-content: center;
-        gap: 0.35rem;
+        gap: 2rem;
     }
     
     .pagination button {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         padding: 1rem 1rem;
         color: var(--primary-color-v3);
         border: none;
@@ -776,8 +817,10 @@
     
     
     .pagination button.active {
-        color: var(--primary-color-v1);
-        font-size: 1.35rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        color: var(--white);
+        font-size: 1.6rem;
         font-weight: bold;
     }
     
@@ -903,11 +946,11 @@
     .pagination {
         display: flex;
         justify-content: center;
-        gap: 0.35rem;
+        gap: 2.5rem;
     }
     
     .pagination button {
-        font-size: 1.25rem;
+        font-size: 1.7rem;
         padding: 1rem 1rem;
         color: var(--primary-color-v3);
         border: none;
@@ -917,8 +960,10 @@
     
     
     .pagination button.active {
-        color: var(--primary-color-v1);
-        font-size: 1.35rem;
+        width: 3rem;
+        height: 3rem;
+        color: var(--white);
+        font-size: 1.8rem;
         font-weight: bold;
     }
     
