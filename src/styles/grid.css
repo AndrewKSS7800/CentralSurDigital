@@ -9,15 +9,26 @@ html, body, #root{
     "section"
     "footer";
     grid-template-columns: 100%;
-    grid-template-rows: 4.5rem auto 22rem;
+    grid-template-rows: 6.5rem auto 22rem;
 }
 header{
     display: grid;
     grid-area: header;
     grid-template-areas:
+    "bheader bheader"
     "head nav-ico";
     grid-template-columns: auto 5rem;
-    grid-template-rows: 4.5rem;
+    grid-template-rows: 2rem 4.5rem;
+}
+.bheader{
+    background-color: var(--gray-dark);
+    grid-area: bheader;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    font-family: var(--regular);
 }
 .header{
     grid-area: head;
@@ -61,16 +72,17 @@ footer{
         "section"
         "footer";
         grid-template-columns: 100%;
-        grid-template-rows: 6.5rem auto 24rem;
+        grid-template-rows: 8.5rem auto 24rem;
     }
     header{
         display: grid;
         grid-area: header;
         grid-template-areas:
+        "bheader"
         "head"
         "nav";
         grid-template-columns: 100%;
-        grid-template-rows: 4.5rem 2rem;
+        grid-template-rows:2rem 4.5rem 2rem;
     }
     .header{
         grid-area: head;
@@ -114,16 +126,17 @@ footer{
         "section"
         "footer";
         grid-template-columns: 100%;
-        grid-template-rows: 8rem auto 14rem;
+        grid-template-rows: 10rem auto 14rem;
     }
     header{
         display: grid;
         grid-area: header;
         grid-template-areas:
+        "bheader"
         "head"
         "nav";
         grid-template-columns: 100%;
-        grid-template-rows: 6rem 2rem;
+        grid-template-rows:2rem  6rem 2rem;
     }
     .header{
         grid-area: head;
@@ -168,16 +181,17 @@ footer{
         "section"
         "footer";
         grid-template-columns: 100%;
-        grid-template-rows: 9rem auto 16rem;
+        grid-template-rows: 11.2rem auto 16rem;
     }
     header{
         display: grid;
         grid-area: header;
         grid-template-areas:
+        "bheader"
         "head"
         "nav";
         grid-template-columns: 100%;
-        grid-template-rows: 6.5rem 2.5rem;
+        grid-template-rows:2.2rem  6.5rem 2.5rem;
     }
     .header{
         grid-area: head;
@@ -222,16 +236,17 @@ footer{
         "section"
         "footer";
         grid-template-columns: 100%;
-        grid-template-rows: 11rem auto 16rem;
+        grid-template-rows: 13.5rem auto 16rem;
     }
     header{
         display: grid;
         grid-area: header;
         grid-template-areas:
+        "bheader"
         "head"
         "nav";
         grid-template-columns: 100%;
-        grid-template-rows: 8rem 3rem;
+        grid-template-rows:2.5rem 8rem 3rem;
     }
     .header{
         grid-area: head;
@@ -275,16 +290,17 @@ footer{
         "section"
         "footer";
         grid-template-columns: 100%;
-        grid-template-rows: 11.5rem auto 16rem;
+        grid-template-rows: 14.5rem auto 16rem;
     }
     header{
         display: grid;
         grid-area: header;
         grid-template-areas:
+        "bheader"
         "head"
         "nav";
         grid-template-columns: 100%;
-        grid-template-rows: 8rem 3.5rem;
+        grid-template-rows:3rem 8rem 3.5rem;
     }
     .header{
         grid-area: head;

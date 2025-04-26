@@ -5,6 +5,7 @@
     --primary-color-v3:#1291df;
     --primary-color-v4:#5eb6ce;
     --white:#fcf7f7;
+    --gray-dark:#232323;
     --gray-light:#e2dfdf;
     --gray:#494949;
     --black:#0f0f0f;
@@ -37,7 +38,17 @@
     src: url('./assets/fonts/Open_Sans/static/OpenSans-SemiBold.ttf') format('truetype');
 
 }
-
+.bheader{
+    padding-left: var(--pad-01);
+    padding-top: 0.5rem;
+    padding-right: var(--pad-01);
+    padding-bottom: 0.5rem;
+    overflow: hidden;
+    
+}
+.bheader span{
+    height: 30px;
+}
 section{
     padding-left: var(--pad-01);
     padding-top: var(--pad-01);
@@ -47,6 +58,10 @@ section{
 }
 /* Móviles (hasta 480px) */
 @media screen and (min-width: 480px) {
+    .bheader{
+        padding-left: var(--pad-02);
+        padding-right: var(--pad-02);
+    }
     section{
         padding-left: var(--pad-02);
         padding-top: var(--pad-01);
@@ -58,6 +73,10 @@ section{
 
 /* Tablets en vertical (481px - 768px) */
 @media screen and (min-width: 768px) {
+    .bheader{
+        padding-left: var(--pad-03);
+        padding-right: var(--pad-03);
+    }
     section{
         padding-left: var(--pad-03);
         padding-top: var(--pad-01);
@@ -69,6 +88,10 @@ section{
 
 /* Laptops y Tablets en horizontal (769px - 1024px) */
 @media screen and (min-width: 1024px) {
+    .bheader{
+        padding-left: var(--pad-03);
+        padding-right: var(--pad-03);
+    }
     section{
         padding-left: var(--pad-03);
         padding-top: var(--pad-02);
@@ -80,6 +103,10 @@ section{
 
 /* Escritorios grandes (1025px en adelante) */
 @media screen and (min-width: 1500px) {
+    .bheader{
+        padding-left: var(--pad-04);
+        padding-right: var(--pad-04);
+    }
     section{
         padding-left: var(--pad-04);
         padding-top: var(--pad-02);
@@ -89,6 +116,10 @@ section{
     
 }
 @media screen and (min-width: 1900px) {
+    .bheader{
+        padding-left: var(--pad-05);
+        padding-right: var(--pad-05);
+    }
     section{
         padding-left: var(--pad-05);
         padding-top: var(--pad-02);

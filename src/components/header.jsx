@@ -1,8 +1,70 @@
 import Navbar from "./navbar";
 import Logo from "../assets/imgs/Logo.png";
+import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import NoticiasJson from '../data/data.json'; // Ajusta esta ruta si es diferente
+import { useParams } from "react-router-dom";
 const Header = () => {
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const parseDate = (dateStr) => {
+        const meses = {
+            enero: 0,
+            febrero: 1,
+            marzo: 2,
+            abril: 3,
+            mayo: 4,
+            junio: 5,
+            julio: 6,
+            agosto: 7,
+            septiembre: 8,
+            octubre: 9,
+            noviembre: 10,
+            diciembre: 11,
+        };
+
+        const match = dateStr.match(/(\d{1,2}) de (\w+) de (\d{4}), (\d{1,2}):(\d{2}) (a\.m\.|p\.m\.)/i);
+        if (!match) return new Date(0); // fallback en caso de error
+
+        let [_, day, monthName, year, hour, minutes, meridian] = match;
+        day = parseInt(day);
+        const month = meses[monthName.toLowerCase()];
+        year = parseInt(year);
+        hour = parseInt(hour);
+        minutes = parseInt(minutes);
+
+        if (meridian.toLowerCase() === "p.m." && hour !== 12) hour += 12;
+        if (meridian.toLowerCase() === "a.m." && hour === 12) hour = 0;
+
+        return new Date(year, month, day, hour, minutes);
+    };
+
+    
+    const noticiasPolitica = NoticiasJson
+        .sort((a, b) => parseDate(b.date) - parseDate(a.date)); // Más recientes primero
+
+    const noticiasTop10 = noticiasPolitica.slice(0, 10);
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % noticiasTop10.length);
+        }, 8000); // cambia cada 8 segundos (puedes ajustar el tiempo)
+    
+        return () => clearInterval(interval); // Limpia el intervalo cuando se destruye el componente
+      }, [noticiasTop10.length]); // cambia cada 8 segundos (puedes ajustar el tiempo)
     return (
         <header>
+            <div className="bheader">
+                <div className="bhtitle">
+                    <span>Actualidad:</span>
+                </div>
+                <div className="bhactnot">
+                    <div className="bhc">
+                    {noticiasTop10.length > 0 && (
+                    <Link to={`/noticias/${noticiasTop10[currentIndex].id}-${noticiasTop10[currentIndex].title.replace(/\s+/g, '-').toLowerCase()}`} key={currentIndex} className="fade">{noticiasTop10[currentIndex].title}</Link>
+                )}
+                    </div>
+                
+                </div>
+            </div>
             <div className="header">
                 <div className="logo">
                     <img src={Logo} alt="logo" className="logo-img"/>

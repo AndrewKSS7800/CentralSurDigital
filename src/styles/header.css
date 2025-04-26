@@ -1,5 +1,90 @@
 
-
+.bheader{
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    gap: 1.5rem;
+}
+.bheader a{
+    text-decoration: none;
+    color: var(--white);
+}
+.bheader a:hover{
+    text-decoration: none;
+    color: var(--gray-light);
+}
+.bhactnot{
+    display: flex;
+    justify-content: left;
+    align-items:baseline;
+    width: 100%;
+    height: 0.8rem;
+    overflow: hidden;
+}
+.bhtitle{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    font-weight: bold;
+    z-index:1;
+    color: var(--white);
+}
+.bhtitle span{
+    height: 1rem;
+    line-height: 0;
+    z-index: 8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bhtitle::before{
+    content: "";
+    display: flex;
+    clip-path: polygon(0% 0%, 87% 0%,100% 100%, 0% 100%);
+    z-index: 4;
+    position: absolute;
+    transform: translateX(-0.3rem);
+    width: calc(100% + 1.5rem + 1.5rem);
+    height: calc(100% + 0.6rem + 0.6rem);
+    background-color: var(--primary-color-v1);
+}
+.bheader .bhc{
+    display: flex;
+    max-width: 100%;
+}
+.fade {
+    align-items: center;
+    display: inline-block;
+    font-size: 0.6rem;
+    opacity: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;     /* Número de líneas a mostrar */
+    -webkit-box-orient: vertical;
+    
+    animation: fadeInOut 8s ease-in-out forwards;
+  }
+  
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+      transform: translateY(20%);
+    }
+    20% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    80% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-20%);
+    }
+  }
 .logo{
     margin-left: var(--pad-01);
     display: flex;
@@ -162,7 +247,65 @@ nav ul li label a{
 
 @media screen and (min-width: 480px) {
 
-    
+    .bheader{
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+        gap: 1.8rem;
+    }
+    .bhactnot{
+        display: flex;
+        justify-content: left;
+        align-items:baseline;
+        width: 100%;
+        height: 0.8rem;
+        overflow: hidden;
+    }
+    .bhtitle{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 0.6rem;
+        font-weight: bold;
+        z-index:1;
+        color: var(--white);
+    }
+    .bhtitle span{
+        height: 1rem;
+        line-height: 0;
+        z-index: 8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bhtitle::before{
+        content: "";
+        display: flex;
+        clip-path: polygon(0% 0%, 87% 0%,100% 100%, 0% 100%);
+        z-index: 4;
+        position: absolute;
+        transform: translateX(-0.9rem);
+        width: calc(100% + 3rem + 1.5rem);
+        height: calc(100% + 0.6rem + 0.6rem);
+        background-color: var(--primary-color-v1);
+    }
+    .bheader .bhc{
+        display: flex;
+        max-width: 100%;
+    }
+    .fade {
+        align-items: center;
+        display: inline-block;
+        font-size: 0.6rem;
+        opacity: 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;     /* Número de líneas a mostrar */
+        -webkit-box-orient: vertical;
+        
+        animation: fadeInOut 8s ease-in-out forwards;
+      }
     .logo{
         margin-left: var(--pad-02);
         display: flex;
@@ -409,6 +552,65 @@ nav ul li label a{
 }
 
 @media screen and (min-width: 768px) {
+    .bheader{
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+        gap: 2rem;
+    }
+    .bhactnot{
+        display: flex;
+        justify-content: left;
+        align-items:baseline;
+        width: 100%;
+        height: 1rem;
+        overflow: hidden;
+    }
+    .bhtitle{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        font-weight: bold;
+        z-index:1;
+        color: var(--white);
+    }
+    .bhtitle span{
+        height: 1rem;
+        line-height: 0;
+        z-index: 8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bhtitle::before{
+        content: "";
+        display: flex;
+        clip-path: polygon(0% 0%, 90% 0%,100% 100%, 0% 100%);
+        z-index: 4;
+        position: absolute;
+        transform: translateX(-2.5rem);
+        width: calc(100% + 6rem + 2rem);
+        height: calc(100% + 0.6rem + 0.6rem);
+        background-color: var(--primary-color-v1);
+    }
+    .bheader .bhc{
+        display: flex;
+        max-width: 100%;
+    }
+    .fade {
+        align-items: center;
+        display: inline-block;
+        font-size: 0.7rem;
+        opacity: 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;     /* Número de líneas a mostrar */
+        -webkit-box-orient: vertical;
+        
+        animation: fadeInOut 8s ease-in-out forwards;
+      }
     .logo{
         margin-left: var(--pad-03);
         display: flex;
@@ -758,6 +960,65 @@ nav ul li label a{
 }
 
 @media screen and (min-width: 1500px) {
+    .bheader{
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+        gap: 3rem;
+    }
+    .bhactnot{
+        display: flex;
+        justify-content: left;
+        align-items:baseline;
+        width: 100%;
+        height: 1.2rem;
+        overflow: hidden;
+    }
+    .bhtitle{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 0.85rem;
+        font-weight: bold;
+        z-index:1;
+        color: var(--white);
+    }
+    .bhtitle span{
+        height: 1rem;
+        line-height: 0;
+        z-index: 8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bhtitle::before{
+        content: "";
+        display: flex;
+        clip-path: polygon(0% 0%, 92% 0%,100% 100%, 0% 100%);
+        z-index: 4;
+        position: absolute;
+        transform: translateX(-4rem);
+        width: calc(100% + 10rem + 2rem);
+        height: calc(100% + 0.8rem + 0.8rem);
+        background-color: var(--primary-color-v1);
+    }
+    .bheader .bhc{
+        display: flex;
+        max-width: 100%;
+    }
+    .fade {
+        align-items: center;
+        display: inline-block;
+        font-size: 0.85rem;
+        opacity: 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;     /* Número de líneas a mostrar */
+        -webkit-box-orient: vertical;
+        
+        animation: fadeInOut 8s ease-in-out forwards;
+      }
     .logo{
         margin-left: var(--pad-04);
         display: flex;
@@ -912,6 +1173,65 @@ nav ul li label a{
     
 }
 @media screen and (min-width: 1900px) {
+    .bheader{
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+        gap: 3rem;
+    }
+    .bhactnot{
+        display: flex;
+        justify-content: left;
+        align-items:baseline;
+        width: 100%;
+        height: 1.2rem;
+        overflow: hidden;
+    }
+    .bhtitle{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 0.85rem;
+        font-weight: bold;
+        z-index:1;
+        color: var(--white);
+    }
+    .bhtitle span{
+        height: 1rem;
+        line-height: 0;
+        z-index: 8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bhtitle::before{
+        content: "";
+        display: flex;
+        clip-path: polygon(0% 0%, 94% 0%,100% 100%, 0% 100%);
+        z-index: 4;
+        position: absolute;
+        transform: translateX(-9.5rem);
+        width: calc(100% + 20rem + 4rem);
+        height: calc(100% + 1rem + 1rem);
+        background-color: var(--primary-color-v1);
+    }
+    .bheader .bhc{
+        display: flex;
+        max-width: 100%;
+    }
+    .fade {
+        align-items: center;
+        display: inline-block;
+        font-size: 0.85rem;
+        opacity: 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;     /* Número de líneas a mostrar */
+        -webkit-box-orient: vertical;
+        
+        animation: fadeInOut 8s ease-in-out forwards;
+      }
     .logo{
         margin-left: var(--pad-05);
         display: flex;
