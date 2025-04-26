@@ -64,7 +64,7 @@ const Policy = () => {
                 <div className="newsbody">
                     <div className="newscontent">
                         {noticiasPagina.map((n) => (
-                            <Link to={`/noticias/${n.id}`} className="newscard" key={n.id}>
+                            <Link to={`/noticias/${n.id}-${n.title.replace(/\s+/g, '-').toLowerCase()}`} className="newscard" key={n.id}>
                                 <div className="newsimg">
                                     <img src={`/imgs/${n.img}.png`} alt="" width="100%" />
                                 </div>

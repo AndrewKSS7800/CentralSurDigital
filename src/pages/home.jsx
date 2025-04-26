@@ -276,7 +276,7 @@ const Home = () => {
                             <Link to="/noticias">Leer más</Link>
                     </div>
                     {noticiasActuales.slice(0, 7).map((noticia, index) => (
-                        <Link to={`/noticias/${noticia.id}`} className="n-card" id={`ncard${String(index + 1).padStart(2, '0')}`} key={index}>
+                        <Link to={`/noticias/${noticia.id}-${noticia.title.replace(/\s+/g, '-').toLowerCase()}`} className="n-card" id={`ncard${String(index + 1).padStart(2, '0')}`} key={index}>
                             <div>
                                 <span className="cat">
                                     | {noticia.category.charAt(0).toUpperCase() + noticia.category.slice(1)}
@@ -298,7 +298,7 @@ const Home = () => {
                         <span>En tendencia</span>
                     </div>
                     {noticiasTendencia.slice(0, 3).map((noticia, index) => (
-                        <Link to={`/noticias/${noticia.id}`}  className="n-card" id={`ncard${String(index + 8).padStart(2, '0')}`} key={index}>
+                        <Link to={`/noticias/${noticia.id}-${noticia.title.replace(/\s+/g, '-').toLowerCase()}`}  className="n-card" id={`ncard${String(index + 8).padStart(2, '0')}`} key={index}>
                             <div>
                                 <span className="cat">
                                     | {noticia.category.charAt(0).toUpperCase() + noticia.category.slice(1)}

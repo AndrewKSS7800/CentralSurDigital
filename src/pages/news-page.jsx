@@ -13,8 +13,13 @@ const Newspage = () =>{
     const currentUrl = window.location.href;
 
     const { id } = useParams();
-    const noticia = noticias.find(n => n.id == parseInt(id));
-    console.log("ID de la URL:", id);
+
+    // Extraer solo el ID numérico de la parte que viene en la URL
+    const idSolo = parseInt(id.split('-')[0]);
+
+    const noticia = noticias.find(n => n.id === idSolo);
+
+    console.log("ID de la URL:", idSolo);
     console.log("Noticia encontrada:", noticia);
     if (!noticia) {
     return <div>Noticia no encontrada</div>;
