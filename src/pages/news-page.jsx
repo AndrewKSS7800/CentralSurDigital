@@ -157,10 +157,10 @@ const Newspage = () =>{
             </div>
             <div className="npcontent02">
                 <div className="npadd-1">
-                    Anuncio
+                <span className='add-span'>Publicidad</span>
                 </div>
                 <div className="npadd-2">
-                    Anuncio
+                <span className='add-span'>Publicidad</span>
                 </div>
                 <div className="npultcat">
                     <h3>Lo último en economía</h3>

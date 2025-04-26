@@ -304,9 +304,19 @@
 
 .npadd-1{
     grid-area: ad1;
+    display: flex;
+    justify-content:baseline;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.5rem;
     background-color: var(--primary-color-v1);
 }
 .npadd-2{
+    display: flex;
+    justify-content:baseline;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.5rem;
     grid-area: ad2;
     background-color: var(--primary-color-v1);
 }

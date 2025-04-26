@@ -194,15 +194,17 @@ nav .l-menu-btn-close{
 }
 .nav-close{
     width: auto;
-    min-height: 6.3vh;
+    margin-top: 3.2rem;
+    min-height: 5.8vh;
     aspect-ratio: 1/1;
     cursor: pointer;
 }
 nav ul{
-    
+    gap: 1rem;
+    padding: 1rem 0;
     list-style: none;
     width: 100%;
-    min-height: 75vh;
+    min-height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -420,6 +422,7 @@ nav ul li label a{
         cursor: pointer;
     }
     nav ul{
+        padding: 0 0;
         list-style: none;
         width: 100%;
         min-height: 100%;

@@ -129,7 +129,7 @@ const Technology = () => {
                             </div>
                         </div>
                         <div className="newsadd">
-                            anuncio
+                        <span className='add-span'>Publicidad</span>
                         </div>
                     </div>
                     

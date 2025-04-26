@@ -133,7 +133,7 @@ const News = () => {
                 </div>
             </div>
             <div className="news-add">
-                anuncio
+            <span className='add-span'>Publicidad</span>
             </div>
         </section>
     );

@@ -192,7 +192,7 @@ const Home = () => {
             </div>
             <div className="news-h">
                 <div className="add-h">
-                    anuncio
+                <span className='add-span'>Publicidad</span>
                 </div>
                 <div className="n-container">
                     <div className="cobesp">

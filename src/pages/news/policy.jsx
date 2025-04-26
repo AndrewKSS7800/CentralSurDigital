@@ -129,8 +129,7 @@ const Policy = () => {
                     </div>
                 </div>
                 <div className="newsadd">
-                    anuncio
-                </div>
+                <span className='add-span'>Publicidad</span>                </div>
             </div>
             
         </section>
