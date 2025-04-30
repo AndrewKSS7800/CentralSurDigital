@@ -522,6 +522,7 @@ nav ul li label a{
         transform: translateY(-20%);
         transition: max-height 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
         z-index: 1;
+        padding: var(--pad-01) var(--pad-02);
         pointer-events: none; /* ← importante para que no se dispare accidentalmente */
     }
     
@@ -534,7 +535,7 @@ nav ul li label a{
     }
 
     .sub-menu-not li{
-        width: 33%;
+        width: 30%;
     }
     .sub-menu-not li label{
         width: 100%;
@@ -776,7 +777,7 @@ nav ul li label a{
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-    
+        padding: var(--pad-01) var(--pad-03);
         max-height: 0;
         overflow: hidden;
         opacity: 0;
@@ -795,7 +796,7 @@ nav ul li label a{
     }
 
     .sub-menu-not li{
-        width: 33%;
+        width: 30%;
     }
     .sub-menu-not li label{
         width: 100%;
