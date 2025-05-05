@@ -16,7 +16,9 @@ import Nature from "./pages/news/nature";
 import Sport from "./pages/news/sport";
 import Technology from "./pages/news/technology";
 import Columns from "./pages/news/columns";
-import Newspage from "./pages/news-page"
+import Newspage from "./pages/news-page";
+import Transport from "./pages/news/transport";
+import Health from "./pages/news/health";
 const App = () => {
   return (
     <>
@@ -33,6 +35,8 @@ const App = () => {
         <Route path="/noticias/ambiente" element={<><Header /><Nature /><Footer /></>}/>
         <Route path="/noticias/deporte" element={<><Header /><Sport /><Footer /></>}/>
         <Route path="/noticias/tecnologia" element={<><Header /><Technology /><Footer /></>}/>
+        <Route path="/noticias/transporte" element={<><Header /><Transport /><Footer /></>}/>
+        <Route path="/noticias/salud" element={<><Header /><Health /><Footer /></>}/>
         <Route path="/noticias/columnas" element={<><Header /><Columns /><Footer /></>}/>
         <Route path="/contacto" element={<><Header /><Contact /><Footer /></>}/>
         <Route path="/noticias/:id" element={<><Header /><Newspage /><Footer /></>}/>

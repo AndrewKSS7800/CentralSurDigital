@@ -103,6 +103,7 @@
 }
 .nlbc .nlbc-content span:nth-child(1){
     overflow: hidden;
+    text-transform: capitalize;
     height: 10%;
     width: 100%;
     padding: 0.2rem 0rem;

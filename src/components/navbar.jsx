@@ -117,6 +117,18 @@ const Navbar = () => {
                                 </label>
                                 
                             </li>
+                            <li>
+                                <label htmlFor="menu-btn">
+                                    <Link to="/noticias/transporte">Transporte</Link>
+                                </label>
+                                
+                            </li>
+                            <li>
+                                <label htmlFor="menu-btn">
+                                    <Link to="/noticias/salud">Salud</Link>
+                                </label>
+                                
+                            </li>
                         </ul>
                     </label>
                 </li>
