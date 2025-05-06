@@ -933,7 +933,7 @@ a{
     justify-content: center;
     align-items: center;
 }
-.banner-r .b-img img{
+.banner-r .b-img img{    
     height: 100%;
     object-fit: cover;
     object-position: center;

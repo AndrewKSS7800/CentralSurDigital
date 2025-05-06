@@ -1,3 +1,4 @@
+
 .contact{
     display: flex;
     width: 100%;
@@ -79,6 +80,7 @@
     row-gap: 1rem;
 }
 .ccont{
+    
     border-radius: 0.5rem;
     border: 5px solid var(--gray-light);
     width: 100%;
@@ -101,12 +103,30 @@
     fill: var(--primary-color-v1);
 }
 .ccont span{
-    padding: 0.5rem;
     width: 100%;
+    padding: 0.5rem;
     font-weight: 700;
     color: var(--primary-color-v1);
     font-size: 0.8rem;
-    font-family: var(--regular),sans-serif;
+    font-family: var(--regular), sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+}
+.ccont:hover{
+    background: var(--primary-color-v1);
+    transition: 0.5s ease-in-out;
+    border: 5px solid var(--primary-color-v1);
+    box-shadow: 0px 0px 10px var(--primary-color-v1); 
+}
+.ccont:hover i .c-icon{
+    fill:var(--gray-light);
+    transition: 0.5s ease-in-out;
+}
+.ccont:hover span{
+    color:var(--gray-light);
+    transition: 0.5s ease-in-out;
 }
 .cform{
     width: 100%;
@@ -163,6 +183,12 @@
     border-bottom: 1px solid var(--white);
     color: var(--white);
 }
+
+.cform label input:-webkit-autofill {
+    box-shadow: 0 0 0 1000px var(--primary-color-v3) inset !important;
+    -webkit-text-fill-color: #fff !important;
+    transition: background-color 5000s ease-in-out 0s;
+  }
 .cform label span{
     display: flex;
     justify-content: left;
@@ -708,6 +734,14 @@ input{
         justify-content: center;
         align-items: center;
         flex-direction: column;
+    }
+    .ccont:hover span{
+        opacity: 0;
+        transition: 0.5s ease-in-out;
+    }
+    .ccont:hover .c-icon{
+        transform: translateY(30%);
+        width:190%;
     }
     .ccont i{
         display: flex;

@@ -18,12 +18,17 @@ const Contact = () => {
         .then(
             (result) => {
             console.log("Correo enviado con éxito:", result.text);
-            alert("✅ Mensaje enviado correctamente");
             form.current.reset(); // limpia el formulario
+            emailjs.sendForm('service_zy5cxfp', 'template_x8bp0sc', form.current, 'rwNkNHXEs8wtNWtMf')
+            .then(() => {
+            alert("Gracias por escribirnos. Le hemos enviado un correo de confirmación.");
+            })
+            .catch((error) => {
+            console.error('Error al enviar respuesta automática:', error);
+            });
             },
             (error) => {
             console.log("Error:", error.text);
-            alert("❌ Error al enviar mensaje");
             }
         );
     };
@@ -100,6 +105,7 @@ const Contact = () => {
                     </button>
                 </form>
             </div>
+            
         </section>
     );
 };
