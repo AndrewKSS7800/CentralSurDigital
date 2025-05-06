@@ -51,15 +51,6 @@ const Navbar = () => {
                         <ul className="sub-menu-not">
                             <li>
                                 <label htmlFor="menu-btn">
-                                    <Link to="/noticias/columnas">
-                                    Columnistas 
-                                    </Link>
-                                    
-                                </label>
-                                
-                            </li>
-                            <li>
-                                <label htmlFor="menu-btn">
                                     <Link to="/noticias/politica">
                                     Política
                                     </Link>

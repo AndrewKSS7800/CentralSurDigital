@@ -18,7 +18,30 @@ import BannerInstagram from "../assets/imgs/Banner-instagram.png";
 
 
 const Home = () => {
-    const palabras = ["PERU", "NADINE", "NOTICIA", "POLITICA", "REPORTE", "REGION", "SUR", "ANDES"];
+    const todasLasPalabras = [
+        "PERU", "NADINE", "NOTICIA", "POLITICA", "REPORTE", "REGION", "SUR", "ANDES",
+        "ECONOMIA", "LIMA", "CULTURA", "HISTORIA", "AMAZONAS", "INCA", "CONGRESO",
+        "SALUD", "EDUCACION", "MINERIA", "PUNO", "CUSCO", "EXPORTACION", "AGRICULTURA",
+        "VIAJE", "GASTRONOMIA", "PUEBLO", "URBANISMO", "SEGURIDAD", "CIUDAD", "TURISMO",
+        "TRADICION", "HEROE", "SOL", "MAR", "CORDILLERA", "NEVADO", "FIESTA", "FOLCLORE",
+        "MUSEO", "ARTESANIA", "ARTISTA", "MONEDA", "BANCO", "VALLE", "CIELO", "QUIPU",
+        "ORO", "PLATA", "FERIA", "HUACA", "TEMPLO"
+    ];
+    function obtenerPalabrasAleatorias(lista, cantidad) {
+        const copia = [...lista];
+        const seleccionadas = [];
+      
+        while (seleccionadas.length < cantidad && copia.length > 0) {
+          const idx = Math.floor(Math.random() * copia.length);
+          seleccionadas.push(copia.splice(idx, 1)[0]);
+        }
+      
+        return seleccionadas;
+      }
+
+      
+    const palabras = obtenerPalabrasAleatorias(todasLasPalabras, 8);
+
 
     const parseDate = (dateStr) => {
         const meses = {
@@ -62,6 +85,11 @@ const Home = () => {
     .filter((n) => n.category === "política")
     .sort((a, b) => parseDate(b.date) - parseDate(a.date))
     .slice(0, 7);
+
+    const noticiasSalud = NoticiasJson
+    .filter((n) => n.category === "salud")
+    .sort((a, b) => parseDate(b.date) - parseDate(a.date))
+    .slice(0, 4);
     
     return (
         <section className="home">
@@ -316,58 +344,24 @@ const Home = () => {
                     <div className="col">
                         <div className="sp-colum"></div>
                         <div className="t-colum">
-                            <span>Columnistas</span>
-                            <Link to="/noticias/columnas">Leer más</Link>
+                            <span>Salud</span>
+                            <Link to="/noticias/salud">Leer más</Link>
                         </div>
                         <div className="colum-n">
-                            <div className="colum-n-g">
+                        {noticiasSalud.map((n) => (
+                            <Link to={`/noticias/${n.id}-${n.title.replace(/\s+/g, '-').toLowerCase()}`} key={n.id} className="colum-n-g">
                                 <div>
                                     <span className='c-t'>
-                                        El gobierno del peru en estado de emergencia ante el covid 19.
+                                        {n.title}
                                     </span>
                                     <span className="c-a">
-                                        Por Graciela Reyes 
+                                        Por {n.reporter} 
                                     </span>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, natus sunt provident ullam dignissimos suscipit error? Magni eveniet quisquam natus. Quas, quaerat. Excepturi sint provident tempora rem, ipsum sequi? Quae, iure optio? Voluptatum minus ab dolore fugit mollitia consequatur earum libero blanditiis id, excepturi maiores ipsam iste. Dignissimos, id aliquid!</p>
+                                    <p dangerouslySetInnerHTML={{ __html: n.content.substring(0, 4000) + "..." }} />
                                 </div>
-                                <img src={Ambiente} alt="" width="30px" />
-                            </div>
-                            <div className="colum-n-g">
-                                <div>
-                                    <span className='c-t'>
-                                        El gobierno del peru en estado de emergencia ante el covid 19.
-                                    </span>
-                                    <span className="c-a">
-                                        Por Graciela Reyes 
-                                    </span>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, natus sunt provident ullam dignissimos suscipit error? Magni eveniet quisquam natus. Quas, quaerat. Excepturi sint provident tempora rem, ipsum sequi? Quae, iure optio? Voluptatum minus ab dolore fugit mollitia consequatur earum libero blanditiis id, excepturi maiores ipsam iste. Dignissimos, id aliquid!</p>
-                                </div>
-                                <img src={Ambiente} alt="" width="30px" />
-                            </div>
-                            <div className="colum-n-g">
-                                <div>
-                                    <span className='c-t'>
-                                        El gobierno del peru en estado de emergencia ante el covid 19.
-                                    </span>
-                                    <span className="c-a">
-                                        Por Graciela Reyes 
-                                    </span>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, natus sunt provident ullam dignissimos suscipit error? Magni eveniet quisquam natus. Quas, quaerat. Excepturi sint provident tempora rem, ipsum sequi? Quae, iure optio? Voluptatum minus ab dolore fugit mollitia consequatur earum libero blanditiis id, excepturi maiores ipsam iste. Dignissimos, id aliquid!</p>
-                                </div>
-                                <img src={Ambiente} alt="" width="30px" />
-                            </div>
-                            <div className="colum-n-g">
-                                <div>
-                                    <span className='c-t'>
-                                        El gobierno del peru en estado de emergencia ante el covid 19.
-                                    </span>
-                                    <span className="c-a">
-                                        Por Graciela Reyes 
-                                    </span>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, natus sunt provident ullam dignissimos suscipit error? Magni eveniet quisquam natus. Quas, quaerat. Excepturi sint provident tempora rem, ipsum sequi? Quae, iure optio? Voluptatum minus ab dolore fugit mollitia consequatur earum libero blanditiis id, excepturi maiores ipsam iste. Dignissimos, id aliquid!</p>
-                                </div>
-                                <img src={Ambiente} alt="" width="30px" />
-                            </div>
+                                <img src={`/imgs/${n.img}.png`} alt="" width="100%" />
+                            </Link>
+                        ))}
                         </div>
                         <div className="sp-colum"></div>
                     </div>

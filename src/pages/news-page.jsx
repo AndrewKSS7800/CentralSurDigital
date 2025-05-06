@@ -77,7 +77,6 @@ const Newspage = () =>{
 
         <section className="news-page">
             <Helmet>
-                <title>{noticia.title}</title>
                 <meta property="og:title" content={noticia.title} />
                 <meta property="og:description" content={noticia.content.substring(0, 150)} />
                 <meta property="og:image" content={`https://centralsurdigital.netlify.app/imgs/${noticia.img}.png`} />
