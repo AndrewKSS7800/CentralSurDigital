@@ -764,7 +764,6 @@ a{
 #ncard08 .cat,
 #ncard09 .cat,
 #ncard10 .cat{
-    background-color: red;
     font-size: 0.75rem;
     display: flex;
     justify-content: left;
@@ -777,7 +776,6 @@ a{
 #ncard08 .tit,
 #ncard09 .tit,
 #ncard10 .tit{
-    background-color: aqua;
     display: flex;
     justify-content: left;
     align-items: center;
