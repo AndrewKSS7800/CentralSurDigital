@@ -3,7 +3,7 @@ import NoticiasJson from '../../data/data.json'; // Ajusta esta ruta si es difer
 import { useParams } from "react-router-dom";
 import Img1 from "../../assets/imgs/ambiente.png"; // ajusta la ruta
 import { Link } from 'react-router-dom';
-import Banner from "../../assets/imgs/banner-ambiente.png"
+import Banner from "/banners/banner-ambiente.png"
 const Nature = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const itemsPerPage = 5;

@@ -82,7 +82,6 @@ const Home = () => {
     .slice(0, 3);
 
     const noticiasActuales = NoticiasJson
-    .filter((n) => n.category === "política")
     .sort((a, b) => parseDate(b.date) - parseDate(a.date))
     .slice(0, 7);
 

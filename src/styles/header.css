@@ -194,14 +194,14 @@ nav .l-menu-btn-close{
 }
 .nav-close{
     width: auto;
-    margin-top: 3.2rem;
+    margin-top: 3rem;
     min-height: 5.8vh;
     aspect-ratio: 1/1;
     cursor: pointer;
 }
 nav ul{
-    gap: 1rem;
-    padding: 1rem 0;
+    gap: 1.5rem;
+    padding: 3rem 0;
     list-style: none;
     width: 100%;
     min-height: auto;

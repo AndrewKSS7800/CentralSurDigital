@@ -2,7 +2,7 @@ import { useState } from "react";
 import NoticiasJson from '../../data/data.json'; // Ajusta esta ruta si es diferente
 import { useParams } from "react-router-dom";
 import Img1 from "../../assets/imgs/banner-transito.png";
-import Banner from "../../assets/imgs/banner-tecnologia.png"// ajusta la ruta
+import Banner from "/banners/banner-transito.png"// ajusta la ruta
 import { Link } from 'react-router-dom';
 const Transport = () => {
     const [currentPage, setCurrentPage] = useState(1);

@@ -3,7 +3,7 @@ import NoticiasJson from '../../data/data.json'; // Ajusta esta ruta si es difer
 import { useParams } from "react-router-dom";
 import Img1 from "../../assets/imgs/politica.jpg"; // ajusta la ruta
 import { Link } from 'react-router-dom';
-import Banner from "../../assets/imgs/banner-politica.png"
+import Banner from "/banners/banner-politica.png"
 const Policy = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const itemsPerPage = 5;

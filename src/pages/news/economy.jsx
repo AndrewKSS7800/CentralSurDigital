@@ -3,7 +3,7 @@ import NoticiasJson from '../../data/data.json'; // Ajusta esta ruta si es difer
 import { useParams } from "react-router-dom";
 import Img1 from "../../assets/imgs/Economia.png"; // ajusta la ruta
 import { Link } from 'react-router-dom';
-import Banner from "../../assets/imgs/banner-economia.png"
+import Banner from "/banners/banner-economia.png"
 const Economy = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const itemsPerPage = 5;
