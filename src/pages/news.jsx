@@ -97,7 +97,7 @@ const News = () => {
                     {Politica.slice(0, 5).map((n) => (
                         <Link to={`/noticias/${n.id}-${slugify(n.title)}`} className="nlbc" key={n.id}>
                             <div className="nlbc-img">
-                                <img src={`/imgs/${n.img}.png`} alt="" width="40px"/>
+                                <img src={`/imgs/${n.img}.png`} loading="lazy" alt="" width="40px"/>
                             </div>
                             <div className="nlbc-content">
                                 <span>{n.category}</span>
@@ -118,7 +118,7 @@ const News = () => {
                     {Economía.slice(0, 5).map((n) => (
                         <Link to={`/noticias/${n.id}-${slugify(n.title)}`} className="nlbc" key={n.id}>
                             <div className="nlbc-img">
-                                <img src={`/imgs/${n.img}.png`} alt="" width="40px"/>
+                                <img src={`/imgs/${n.img}.png`} loading="lazy" alt="" width="40px"/>
                             </div>
                             <div className="nlbc-content">
                                 <span>{n.category}</span>
@@ -140,7 +140,7 @@ const News = () => {
                     {Salud.slice(0, 5).map((n) => (
                         <Link to={`/noticias/${n.id}-${slugify(n.title)}`} className="nlbc" key={n.id}>
                             <div className="nlbc-img">
-                                <img src={`/imgs/${n.img}.png`} alt="" width="40px"/>
+                                <img src={`/imgs/${n.img}.png`} loading="lazy" alt="" width="40px"/>
                             </div>
                             <div className="nlbc-content">
                                 <span>{n.category}</span>
@@ -161,7 +161,7 @@ const News = () => {
                     {Sociedad.slice(0, 5).map((n) => (
                         <Link to={`/noticias/${n.id}-${slugify(n.title)}`} className="nlbc" key={n.id}>
                             <div className="nlbc-img">
-                                <img src={`/imgs/${n.img}.png`} alt="" width="40px"/>
+                                <img src={`/imgs/${n.img}.png`} loading="lazy" alt="" width="40px"/>
                             </div>
                             <div className="nlbc-content">
                                 <span>{n.category}</span>
@@ -183,7 +183,7 @@ const News = () => {
                     {Deporte.slice(0, 5).map((n) => (
                         <Link to={`/noticias/${n.id}-${slugify(n.title)}`} className="nlbc" key={n.id}>
                             <div className="nlbc-img">
-                                <img src={`/imgs/${n.img}.png`} alt="" width="40px"/>
+                                <img src={`/imgs/${n.img}.png`} loading="lazy" alt="" width="40px"/>
                             </div>
                             <div className="nlbc-content">
                                 <span>{n.category}</span>
@@ -204,7 +204,7 @@ const News = () => {
                     {Transporte.slice(0, 5).map((n) => (
                         <Link to={`/noticias/${n.id}-${slugify(n.title)}`} className="nlbc" key={n.id}>
                             <div className="nlbc-img">
-                                <img src={`/imgs/${n.img}.png`} alt="" width="40px"/>
+                                <img src={`/imgs/${n.img}.png`} loading="lazy" alt="" width="40px"/>
                             </div>
                             <div className="nlbc-content">
                                 <span>{n.category}</span>
@@ -225,7 +225,7 @@ const News = () => {
                     {Tecnología.slice(0, 5).map((n) => (
                         <Link to={`/noticias/${n.id}-${slugify(n.title)}`} className="nlbc" key={n.id}>
                             <div className="nlbc-img">
-                                <img src={`/imgs/${n.img}.png`} alt="" width="40px"/>
+                                <img src={`/imgs/${n.img}.png`} loading="lazy" alt="" width="40px"/>
                             </div>
                             <div className="nlbc-content">
                                 <span>{n.category}</span>
@@ -247,7 +247,7 @@ const News = () => {
                     {Educación.slice(0, 5).map((n) => (
                         <Link to={`/noticias/${n.id}-${slugify(n.title)}`} className="nlbc" key={n.id}>
                             <div className="nlbc-img">
-                                <img src={`/imgs/${n.img}.png`} alt="" width="40px"/>
+                                <img src={`/imgs/${n.img}.png`} loading="lazy" alt="" width="40px"/>
                             </div>
                             <div className="nlbc-content">
                                 <span>{n.category}</span>
@@ -269,7 +269,7 @@ const News = () => {
                     {Cultura.slice(0, 5).map((n) => (
                         <Link to={`/noticias/${n.id}-${slugify(n.title)}`} className="nlbc" key={n.id}>
                             <div className="nlbc-img">
-                                <img src={`/imgs/${n.img}.png`} alt="" width="40px"/>
+                                <img src={`/imgs/${n.img}.png`} loading="lazy" alt="" width="40px"/>
                             </div>
                             <div className="nlbc-content">
                                 <span>{n.category}</span>
@@ -290,7 +290,7 @@ const News = () => {
                     {Ambiente.slice(0, 5).map((n) => (
                         <Link to={`/noticias/${n.id}-${slugify(n.title)}`} className="nlbc" key={n.id}>
                             <div className="nlbc-img">
-                                <img src={`/imgs/${n.img}.png`} alt="" width="40px"/>
+                                <img src={`/imgs/${n.img}.png`} loading="lazy" alt="" width="40px"/>
                             </div>
                             <div className="nlbc-content">
                                 <span>{n.category}</span>

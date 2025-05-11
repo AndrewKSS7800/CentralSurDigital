@@ -65,7 +65,7 @@ const Economy = () => {
         <section>
             <div className="newscbanner">
                 <div className="nwbimg">
-                    <img src={Banner} alt="" />
+                    <img src={Banner} alt="" loading="lazy" />
                 </div>
             </div>
             <div className="newstitle">Economía</div>
@@ -75,7 +75,7 @@ const Economy = () => {
                         {noticiasPagina.map((n) => (
                             <Link to={`/noticias/${n.id}-${slugify(n.title)}`} className="newscard" key={n.id}>
                             <div className="newsimg">
-                                <img src={`/imgs/${n.img}.png`} alt="" width="100%" />
+                                <img src={`/imgs/${n.img}.png`} alt="" loading="lazy" width="100%" />
                             </div>
                             <div className="newstext">
                                 <span className="newscategory">{n.category}</span>

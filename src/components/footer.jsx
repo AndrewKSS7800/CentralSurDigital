@@ -7,7 +7,7 @@ const Footer = () =>{
             <span className="lf"></span>
             <div className="footer">
                 <div className="flogo">
-                    <img src={Logocsd} alt="Logo" />
+                    <img src={Logocsd} alt="Logo" loading="lazy" />
                 </div>
                 <div className="flinks">
                     <ul>

@@ -59,7 +59,7 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className="cimg">
-                    <img src={IMGCONTACT} alt="" />
+                    <img src={IMGCONTACT} alt="" loading="lazy"/>
                 </div>
             </div>
             <div className="ccon">

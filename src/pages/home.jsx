@@ -129,7 +129,7 @@ const Home = () => {
                     
                     <li className="slide">
                         <div className='slide-bac-img'>
-                            <img src={Deporte}  alt="" />
+                            <img src={Deporte} loading="lazy" alt="" />
                         </div>
                         
                         <div className="slide-content">
@@ -141,7 +141,7 @@ const Home = () => {
                     </li>
                     <li className="slide">
                         <div className='slide-bac-img'>
-                            <img src={Economia}  alt="" />
+                            <img src={Economia} loading="lazy" alt="" />
                         </div>
                         
                         <div className="slide-content">
@@ -153,7 +153,7 @@ const Home = () => {
                     </li>
                     <li className="slide">
                         <div className='slide-bac-img'>
-                            <img src={Cultura}  alt="" />
+                            <img src={Cultura} loading="lazy" alt="" />
                         </div>
                         
                         <div className="slide-content">
@@ -165,7 +165,7 @@ const Home = () => {
                     </li>
                     <li className="slide">
                         <div className='slide-bac-img'>
-                            <img src={Tecnologia}  alt="" />
+                            <img src={Tecnologia} loading="lazy" alt="" />
                         </div>
                         
                         <div className="slide-content">
@@ -178,7 +178,7 @@ const Home = () => {
                     </li>
                     <li className="slide">
                         <div className='slide-bac-img'>
-                            <img src={Ambiente}  alt="" />
+                            <img src={Ambiente} loading="lazy" alt="" />
                         </div>
                         
                         <div className="slide-content">
@@ -190,7 +190,7 @@ const Home = () => {
                     </li>
                     <li className="slide">
                         <div className='slide-bac-img'>
-                            <img src={Educacion}  alt="" />
+                            <img src={Educacion} loading="lazy" alt="" />
                         </div>
                         
                         <div className="slide-content">
@@ -202,7 +202,7 @@ const Home = () => {
                     </li>
                     <li className="slide">
                         <div className='slide-bac-img'>
-                            <img src={Sociedad}  alt="" />
+                            <img src={Sociedad} loading="lazy" alt="" />
                         </div>
                         
                         <div className="slide-content">
@@ -214,7 +214,7 @@ const Home = () => {
                     </li>
                     <li className="slide">
                         <div className='slide-bac-img'>
-                            <img src={Politica}  alt="" />
+                            <img src={Politica} loading="lazy" alt="" />
                         </div>
                         
                         <div className="slide-content">
@@ -248,6 +248,7 @@ const Home = () => {
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 referrerPolicy="strict-origin-when-cross-origin"
                                 allowFullScreen
+                                loading="lazy"
                                 ></iframe>
                             </div>
                             <div className="csconifr">
@@ -260,6 +261,7 @@ const Home = () => {
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 referrerPolicy="strict-origin-when-cross-origin"
                                 allowFullScreen
+                                loading="lazy"
                                 ></iframe>
 
                             </div>
@@ -273,6 +275,7 @@ const Home = () => {
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 referrerPolicy="strict-origin-when-cross-origin"
                                 allowFullScreen
+                                loading="lazy"
                                 ></iframe>
                             </div>
                             <div className="csconifr">
@@ -285,6 +288,7 @@ const Home = () => {
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 referrerPolicy="strict-origin-when-cross-origin"
                                 allowFullScreen
+                                loading="lazy"
                                 ></iframe>
                             </div>
                             <div className="csconifr">
@@ -297,6 +301,7 @@ const Home = () => {
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 referrerPolicy="strict-origin-when-cross-origin"
                                 allowFullScreen
+                                loading="lazy"
                                 ></iframe>
                             </div>
                             <div className="csconifr">
@@ -309,6 +314,7 @@ const Home = () => {
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 referrerPolicy="strict-origin-when-cross-origin"
                                 allowFullScreen
+                                loading="lazy"
                                 ></iframe>
                             </div>
                     
@@ -333,7 +339,7 @@ const Home = () => {
                                 </span>
                                 <p className="par" dangerouslySetInnerHTML={{ __html: noticia.content.substring(0, 4000) + "..." }} />
                             </div>
-                            <img src={`/imgs/${noticia.img}.png`} alt="" width="40px" />
+                            <img src={`/imgs/${noticia.img}.png`} loading="lazy" alt="" width="40px" />
                         </Link>
                     ))}
                 
@@ -351,7 +357,7 @@ const Home = () => {
                                     {noticia.title}
                                 </span>
                             </div>
-                            <img src={`/imgs/${noticia.img}.png`} alt="" width="40px" />
+                            <img src={`/imgs/${noticia.img}.png`} loading="lazy" alt="" width="40px" />
                         </Link>
                     ))}
 
@@ -375,7 +381,7 @@ const Home = () => {
                                     </span>
                                     <p dangerouslySetInnerHTML={{ __html: n.content.substring(0, 4000) + "..." }} />
                                 </div>
-                                <img src={`/imgs/${n.img}.png`} alt="" width="100%" />
+                                <img src={`/imgs/${n.img}.png`} loading="lazy" alt="" width="100%" />
                             </Link>
                         ))}
                         </div>
@@ -390,20 +396,20 @@ const Home = () => {
 
                     <div className="banner-r">
                         <a href="https://x.com/centralsur_d" target='_blank' className='b-img' id='bnx'>
-                            <img src={BannerX} alt="" />
+                            <img loading="lazy" src={BannerX} alt="" />
                         </a>
                         <a href="https://www.youtube.com/@CentralSurDigital/videos" target='_blank' className='b-img' id='bny'> 
-                            <img src={BannerYoutube} alt="" />
+                            <img loading="lazy" src={BannerYoutube} alt="" />
                         </a>
                         
                         <a href="https://www.instagram.com/centralsurdigital/" target='_blank' className='b-img' id='bni'>
-                            <img src={BannerInstagram} alt="" />
+                            <img loading="lazy" src={BannerInstagram} alt="" />
                         </a>
                         <a href="https://www.tiktok.com/@centralsurdigital"  target='_blank' className='b-img' id='bnt'>
-                            <img src={BannerTiktok} alt="" />
+                            <img loading="lazy" src={BannerTiktok} alt="" />
                         </a>
                         <a href="https://web.facebook.com/profile.php?id=61575278335998" target='_blank' className='b-img' id='bnf'>
-                            <img src={BannerFacebook} alt="" />
+                            <img loading="lazy" src={BannerFacebook} alt="" />
                         </a>
                     </div>
                 </div>

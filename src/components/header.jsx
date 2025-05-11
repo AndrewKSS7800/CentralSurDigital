@@ -77,7 +77,7 @@ const Header = () => {
             </div>
             <div className="header">
                 <Link to="/" className="logo">
-                    <img src={Logo} alt="logo" className="logo-img"/>
+                    <img src={Logo} alt="logo" className="logo-img" loading="lazy"/>
                 </Link>
                 <Link to="/" className="name"><span>Central Sur Digital</span>
                 <span>Noticias</span></Link>

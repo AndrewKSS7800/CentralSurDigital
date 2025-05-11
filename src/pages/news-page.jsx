@@ -113,11 +113,11 @@ const Newspage = () =>{
             </div>
             <div className="npcontent01">
                 <div className="npimg">
-                    <img src={`/imgs/${noticia.img}.png`} alt="" width="100%" />
+                    <img src={`/imgs/${noticia.img}.png`} loading="lazy" alt="" width="100%" />
                 </div>
                 <a href={noticia["url-reporter"]} className="npescritor" target="_blank">
                     <div className="npesimg">
-                        <img src={Img2} alt=""  width="30px"/>
+                        <img src={Img2} alt="" loading="lazy" width="30px"/>
                     </div>
                     <div className="npescon">
                         <span>Por {noticia.reporter}</span>
@@ -170,7 +170,7 @@ const Newspage = () =>{
                                 <span>{n.title}</span>
                             </div>
                             <div className="nprimg">
-                                <img src={`/imgs/${n.img}.png`} alt="" width="20px"/>
+                                <img src={`/imgs/${n.img}.png`}  loading="lazy" alt="" width="20px"/>
                             </div>
                         </Link>
                     ))}
@@ -207,7 +207,7 @@ const Newspage = () =>{
                                 <span>{n.title}</span>                            
                             </div>
                             <div className="npugcardimg">
-                                <img src={`/imgs/${n.img}.png`} alt="" width="20px" />
+                                <img src={`/imgs/${n.img}.png`} loading="lazy" alt="" width="20px" />
                             </div>
                         </Link>
                         ))}

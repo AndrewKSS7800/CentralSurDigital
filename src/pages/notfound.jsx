@@ -8,6 +8,7 @@ const NotFound = () => {
                 src="/Logo.png" 
                 alt="Logo de la empresa"
                 className="logonf"
+                loading="lazy"
             />
             <h1>😵 ¡Error 404!</h1>
             <p>La página que buscas no existe o ha sido eliminada.</p>

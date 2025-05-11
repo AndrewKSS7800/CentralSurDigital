@@ -39,7 +39,7 @@ const About = () =>{
               </p>
             </div>
             <div className="chimg">
-              <img src={Img3} alt="" width="50px"/>
+              <img src={Img3} alt="" loading="lazy" width="50px"/>
             </div>
             
           </div>
