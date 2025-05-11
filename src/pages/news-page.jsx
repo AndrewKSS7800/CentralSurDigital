@@ -91,6 +91,10 @@ const Newspage = () =>{
                 <meta property="og:description" content={noticia.content.substring(0, 150)} />
                 <meta property="og:image" content={`https://centralsurdigital.netlify.app/imgs/${noticia.img}.png`} />
                 <meta property="og:url" content={`https://centralsurdigital.netlify.app/noticias/${noticia.id}-${slugify(noticia.title)}`}/>
+                <link
+                    rel="canonical"
+                    href={`https://centralsurdigital.netlify.app/noticias/${noticia.id}`}
+                />
                 <meta property="og:type" content="article" />
                 
                 {/* Twitter Card */}
