@@ -18,6 +18,16 @@ import BannerInstagram from "../assets/imgs/Banner-instagram.png";
 
 
 const Home = () => {
+    function slugify(text) {
+    return text
+        .toString()
+        .normalize("NFD")                   // Descompone acentos
+        .replace(/[\u0300-\u036f]/g, "")    // Elimina los acentos
+        .replace(/[^\w\s-]/g, "")           // Elimina caracteres especiales excepto guiones
+        .trim()                             // Elimina espacios al inicio y final
+        .replace(/\s+/g, '-')               // Reemplaza espacios por guiones
+        .toLowerCase();                     // Convierte a minúsculas
+    }
     const todasLasPalabras = [
         "PERU", "NADINE", "NOTICIA", "POLITICA", "REPORTE", "REGION", "SUR", "ANDES",
         "ECONOMIA", "LIMA", "CULTURA", "HISTORIA", "AMAZONAS", "INCA", "CONGRESO",
@@ -230,69 +240,75 @@ const Home = () => {
                         <div className="cspiframes">
                             <div className="csconifr">
                                 <iframe
-                                src="https://www.canva.com/design/DAGWZm1oJCk/msjmpuM3PTtdUUXi1kmUmw/watch?embed"
                                 width="auto"
                                 height="auto"
-                                style={{ border: "none", overflow: "hidden" }}
-                                scrolling="no"
-                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                                allowFullScreen={true}
+                                src="https://www.youtube.com/embed/SXdax0gGmW4?si=WQF0FX3NhzzxtkPc"
+                                title="YouTube video player"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerPolicy="strict-origin-when-cross-origin"
+                                allowFullScreen
                                 ></iframe>
                             </div>
                             <div className="csconifr">
                                 <iframe
-                                src="https://www.canva.com/design/DAGWYkm42fg/lW0u_8aZmVWkBbXkzWlR8g/watch?embed"
                                 width="auto"
                                 height="auto"
-                                style={{ border: "none", overflow: "hidden" }}
-                                scrolling="no"
-                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                                allowFullScreen={true}
+                                src="https://www.youtube.com/embed/-oJnM2LNs9I?si=tmEjKqPp5GjFW5fx"
+                                title="YouTube video player"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerPolicy="strict-origin-when-cross-origin"
+                                allowFullScreen
                                 ></iframe>
 
                             </div>
                             <div className="csconifr">
                                 <iframe
-                                src="https://www.canva.com/design/DAGWHua6weQ/JPFFyx67Gqolu_-8O5u2pQ/watch?embed"
                                 width="auto"
                                 height="auto"
-                                style={{ border: "none", overflow: "hidden" }}
-                                scrolling="no"
-                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                                allowFullScreen={true}
+                                src="https://www.youtube.com/embed/eon0Gkaxk_U?si=WkIcyEw4kzlGozeH"
+                                title="YouTube video player"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerPolicy="strict-origin-when-cross-origin"
+                                allowFullScreen
                                 ></iframe>
                             </div>
                             <div className="csconifr">
                                 <iframe
-                                src="https://www.canva.com/design/DAGWZoctrhU/GDv-VJkeASj7QaIQtJ1_GQ/watch?embed"
                                 width="auto"
                                 height="auto"
-                                style={{ border: "none", overflow: "hidden" }}
-                                scrolling="no"
-                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                                allowFullScreen={true}
+                                src="https://www.youtube.com/embed/lg8CRqa3uPI?si=OABr0G47vorkzDqV"
+                                title="YouTube video player"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerPolicy="strict-origin-when-cross-origin"
+                                allowFullScreen
                                 ></iframe>
                             </div>
                             <div className="csconifr">
                                 <iframe
-                                src="https://www.canva.com/design/DAGWkqh07B0/dNq8xSrK97947Ytu6uJLIA/watch?embed"
                                 width="auto"
                                 height="auto"
-                                style={{ border: "none", overflow: "hidden" }}
-                                scrolling="no"
-                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                                allowFullScreen={true}
+                                src="https://www.youtube.com/embed/IS2ybbhi9Z4?si=RrzxkrHiuI2hy4aH"
+                                title="YouTube video player"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerPolicy="strict-origin-when-cross-origin"
+                                allowFullScreen
                                 ></iframe>
                             </div>
                             <div className="csconifr">
                                 <iframe
-                                src="https://www.canva.com/design/DAGWw_lEpLc/Mt_mrOQAiCB93a8ZZ2WYXQ/watch?embed"
                                 width="auto"
                                 height="auto"
-                                style={{ border: "none", overflow: "hidden" }}
-                                scrolling="no"
-                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                                allowFullScreen={true}
+                                src="https://www.youtube.com/embed/3UrDYAk40Co?si=E7LpJ_3o0GjkO4Ru"
+                                title="YouTube video player"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerPolicy="strict-origin-when-cross-origin"
+                                allowFullScreen
                                 ></iframe>
                             </div>
                     
@@ -304,7 +320,7 @@ const Home = () => {
                             <Link to="/noticias">Leer más</Link>
                     </div>
                     {noticiasActuales.slice(0, 7).map((noticia, index) => (
-                        <Link to={`/noticias/${noticia.id}-${noticia.title.replace(/\s+/g, '-').toLowerCase()}`} className="n-card" id={`ncard${String(index + 1).padStart(2, '0')}`} key={index}>
+                        <Link to={`/noticias/${noticia.id}-${slugify(noticia.title)}`} className="n-card" id={`ncard${String(index + 1).padStart(2, '0')}`} key={index}>
                             <div>
                                 <span className="cat">
                                     | {noticia.category.charAt(0).toUpperCase() + noticia.category.slice(1)}
@@ -326,7 +342,7 @@ const Home = () => {
                         <span>En tendencia</span>
                     </div>
                     {noticiasTendencia.slice(0, 3).map((noticia, index) => (
-                        <Link to={`/noticias/${noticia.id}-${noticia.title.replace(/\s+/g, '-').toLowerCase()}`}  className="n-card" id={`ncard${String(index + 8).padStart(2, '0')}`} key={index}>
+                        <Link to={`/noticias/${noticia.id}-${slugify(noticia.title)}`}  className="n-card" id={`ncard${String(index + 8).padStart(2, '0')}`} key={index}>
                             <div>
                                 <span className="cat">
                                     | {noticia.category.charAt(0).toUpperCase() + noticia.category.slice(1)}
@@ -349,7 +365,7 @@ const Home = () => {
                         </div>
                         <div className="colum-n">
                         {noticiasSalud.map((n) => (
-                            <Link to={`/noticias/${n.id}-${n.title.replace(/\s+/g, '-').toLowerCase()}`} key={n.id} className="colum-n-g">
+                            <Link to={`/noticias/${n.id}-${slugify(n.title)}`} key={n.id} className="colum-n-g">
                                 <div>
                                     <span className='c-t'>
                                         {n.title}

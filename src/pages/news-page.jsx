@@ -10,6 +10,16 @@ import { Helmet } from "react-helmet";
 import { Link } from 'react-router-dom';
 const Newspage = () =>{
     
+    function slugify(text) {
+    return text
+        .toString()
+        .normalize("NFD")                   // Descompone acentos
+        .replace(/[\u0300-\u036f]/g, "")    // Elimina los acentos
+        .replace(/[^\w\s-]/g, "")           // Elimina caracteres especiales excepto guiones
+        .trim()                             // Elimina espacios al inicio y final
+        .replace(/\s+/g, '-')               // Reemplaza espacios por guiones
+        .toLowerCase();                     // Convierte a minúsculas
+    }
 
 
 
@@ -80,8 +90,7 @@ const Newspage = () =>{
                 <meta property="og:title" content={noticia.title} />
                 <meta property="og:description" content={noticia.content.substring(0, 150)} />
                 <meta property="og:image" content={`https://centralsurdigital.netlify.app/imgs/${noticia.img}.png`} />
-
-                <meta property="og:url" content={`https://centralsurdigital.netlify.app/noticias/${noticia.id}`} />
+                <meta property="og:url" content={`https://centralsurdigital.netlify.app/noticias/${noticia.id}-${slugify(noticia.title)}`}/>
                 <meta property="og:type" content="article" />
                 
                 {/* Twitter Card */}
@@ -148,7 +157,7 @@ const Newspage = () =>{
                     <h3>Lo más relevante</h3>
                     <div className="nprcontent">
                     {Tendencia.slice(0, 4).map((n) => (
-                        <Link to={`/noticias/${n.id}-${n.title.replace(/\s+/g, '-').toLowerCase()}`}  key={n.id} className="nprcontents">
+                        <Link to={`/noticias/${n.id}-${slugify(n.title)}`}  key={n.id} className="nprcontents">
                             <div className="nprcontentcard">
                                 <span>
                                 {n.category}
@@ -176,7 +185,7 @@ const Newspage = () =>{
                     <h3>Lo último en economía</h3>
                     
                     {Economía.slice(0, 5).map((n) => (
-                    <Link to={`/noticias/${n.id}-${n.title.replace(/\s+/g, '-').toLowerCase()}`}  key={n.id}>
+                    <Link to={`/noticias/${n.id}-${slugify(n.title)}`}  key={n.id}>
                         <span>{n.title}</span>
                     </Link>
                     ))}
@@ -187,7 +196,7 @@ const Newspage = () =>{
                     </h3>
                     <div className="npugcontent">
                         {Actuales.slice(0, 5).map((n) => (
-                        <Link to={`/noticias/${n.id}-${n.title.replace(/\s+/g, '-').toLowerCase()}`}  key={n.id} className="npugcard">
+                        <Link to={`/noticias/${n.id}-${slugify(n.title)}`}  key={n.id} className="npugcard">
                             <div className="npugcardcont">
                                 <span>{n.category}</span>
                                 <span>{n.title}</span>                            

@@ -7,7 +7,16 @@ import { Link } from 'react-router-dom';
 const Health = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const itemsPerPage = 5;
-
+    function slugify(text) {
+    return text
+        .toString()
+        .normalize("NFD")                   // Descompone acentos
+        .replace(/[\u0300-\u036f]/g, "")    // Elimina los acentos
+        .replace(/[^\w\s-]/g, "")           // Elimina caracteres especiales excepto guiones
+        .trim()                             // Elimina espacios al inicio y final
+        .replace(/\s+/g, '-')               // Reemplaza espacios por guiones
+        .toLowerCase();                     // Convierte a minúsculas
+    }
     const parseDate = (dateStr) => {
         const meses = {
             enero: 0,
@@ -64,7 +73,7 @@ const Health = () => {
                         <div className="newsbody">
                             <div className="newscontent">
                                 {noticiasPagina.map((n) => (
-                                    <Link to={`/noticias/${n.id}-${n.title.replace(/\s+/g, '-').toLowerCase()}`} className="newscard" key={n.id}>
+                                    <Link to={`/noticias/${n.id}-${slugify(n.title)}`} className="newscard" key={n.id}>
                                         <div className="newsimg">
                                             <img src={`/imgs/${n.img}.png`} alt="" width="100%" />
                                         </div>

@@ -3,6 +3,16 @@ import NoticiasJson from '../data/data.json';
 import IMG1 from "../assets/imgs/Economia.png"
 import IMG2 from "../assets/imgs/politica.jpg"
 const News = () => {
+    function slugify(text) {
+    return text
+        .toString()
+        .normalize("NFD")                   // Descompone acentos
+        .replace(/[\u0300-\u036f]/g, "")    // Elimina los acentos
+        .replace(/[^\w\s-]/g, "")           // Elimina caracteres especiales excepto guiones
+        .trim()                             // Elimina espacios al inicio y final
+        .replace(/\s+/g, '-')               // Reemplaza espacios por guiones
+        .toLowerCase();                     // Convierte a minúsculas
+    }
     const parseDate = (dateStr) => {
         const meses = {
             enero: 0,
@@ -85,7 +95,7 @@ const News = () => {
                 </div>
                 <div className="nlist-b">
                     {Politica.slice(0, 5).map((n) => (
-                        <Link to={`/noticias/${n.id}-${n.title.replace(/\s+/g, '-').toLowerCase()}`} className="nlbc" key={n.id}>
+                        <Link to={`/noticias/${n.id}-${slugify(n.title)}`} className="nlbc" key={n.id}>
                             <div className="nlbc-img">
                                 <img src={`/imgs/${n.img}.png`} alt="" width="40px"/>
                             </div>
@@ -106,7 +116,7 @@ const News = () => {
                 </div>
                 <div className="nlist-b">
                     {Economía.slice(0, 5).map((n) => (
-                        <Link to={`/noticias/${n.id}-${n.title.replace(/\s+/g, '-').toLowerCase()}`} className="nlbc" key={n.id}>
+                        <Link to={`/noticias/${n.id}-${slugify(n.title)}`} className="nlbc" key={n.id}>
                             <div className="nlbc-img">
                                 <img src={`/imgs/${n.img}.png`} alt="" width="40px"/>
                             </div>
@@ -128,7 +138,7 @@ const News = () => {
                 </div>
                 <div className="nlist-b">
                     {Salud.slice(0, 5).map((n) => (
-                        <Link to={`/noticias/${n.id}-${n.title.replace(/\s+/g, '-').toLowerCase()}`} className="nlbc" key={n.id}>
+                        <Link to={`/noticias/${n.id}-${slugify(n.title)}`} className="nlbc" key={n.id}>
                             <div className="nlbc-img">
                                 <img src={`/imgs/${n.img}.png`} alt="" width="40px"/>
                             </div>
@@ -149,7 +159,7 @@ const News = () => {
                 </div>
                 <div className="nlist-b">
                     {Sociedad.slice(0, 5).map((n) => (
-                        <Link to={`/noticias/${n.id}-${n.title.replace(/\s+/g, '-').toLowerCase()}`} className="nlbc" key={n.id}>
+                        <Link to={`/noticias/${n.id}-${slugify(n.title)}`} className="nlbc" key={n.id}>
                             <div className="nlbc-img">
                                 <img src={`/imgs/${n.img}.png`} alt="" width="40px"/>
                             </div>
@@ -171,7 +181,7 @@ const News = () => {
                 </div>
                 <div className="nlist-b">
                     {Deporte.slice(0, 5).map((n) => (
-                        <Link to={`/noticias/${n.id}-${n.title.replace(/\s+/g, '-').toLowerCase()}`} className="nlbc" key={n.id}>
+                        <Link to={`/noticias/${n.id}-${slugify(n.title)}`} className="nlbc" key={n.id}>
                             <div className="nlbc-img">
                                 <img src={`/imgs/${n.img}.png`} alt="" width="40px"/>
                             </div>
@@ -192,7 +202,7 @@ const News = () => {
                 </div>
                 <div className="nlist-b">
                     {Transporte.slice(0, 5).map((n) => (
-                        <Link to={`/noticias/${n.id}-${n.title.replace(/\s+/g, '-').toLowerCase()}`} className="nlbc" key={n.id}>
+                        <Link to={`/noticias/${n.id}-${slugify(n.title)}`} className="nlbc" key={n.id}>
                             <div className="nlbc-img">
                                 <img src={`/imgs/${n.img}.png`} alt="" width="40px"/>
                             </div>
@@ -213,7 +223,7 @@ const News = () => {
                 </div>
                 <div className="nlist-b">
                     {Tecnología.slice(0, 5).map((n) => (
-                        <Link to={`/noticias/${n.id}-${n.title.replace(/\s+/g, '-').toLowerCase()}`} className="nlbc" key={n.id}>
+                        <Link to={`/noticias/${n.id}-${slugify(n.title)}`} className="nlbc" key={n.id}>
                             <div className="nlbc-img">
                                 <img src={`/imgs/${n.img}.png`} alt="" width="40px"/>
                             </div>
@@ -235,7 +245,7 @@ const News = () => {
                 </div>
                 <div className="nlist-b">
                     {Educación.slice(0, 5).map((n) => (
-                        <Link to={`/noticias/${n.id}-${n.title.replace(/\s+/g, '-').toLowerCase()}`} className="nlbc" key={n.id}>
+                        <Link to={`/noticias/${n.id}-${slugify(n.title)}`} className="nlbc" key={n.id}>
                             <div className="nlbc-img">
                                 <img src={`/imgs/${n.img}.png`} alt="" width="40px"/>
                             </div>
@@ -257,7 +267,7 @@ const News = () => {
                 </div>
                 <div className="nlist-b">
                     {Cultura.slice(0, 5).map((n) => (
-                        <Link to={`/noticias/${n.id}-${n.title.replace(/\s+/g, '-').toLowerCase()}`} className="nlbc" key={n.id}>
+                        <Link to={`/noticias/${n.id}-${slugify(n.title)}`} className="nlbc" key={n.id}>
                             <div className="nlbc-img">
                                 <img src={`/imgs/${n.img}.png`} alt="" width="40px"/>
                             </div>
@@ -278,7 +288,7 @@ const News = () => {
                 </div>
                 <div className="nlist-b">
                     {Ambiente.slice(0, 5).map((n) => (
-                        <Link to={`/noticias/${n.id}-${n.title.replace(/\s+/g, '-').toLowerCase()}`} className="nlbc" key={n.id}>
+                        <Link to={`/noticias/${n.id}-${slugify(n.title)}`} className="nlbc" key={n.id}>
                             <div className="nlbc-img">
                                 <img src={`/imgs/${n.img}.png`} alt="" width="40px"/>
                             </div>

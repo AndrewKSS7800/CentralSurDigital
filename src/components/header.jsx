@@ -5,6 +5,16 @@ import { Link } from 'react-router-dom';
 import NoticiasJson from '../data/data.json'; // Ajusta esta ruta si es diferente
 import { useParams } from "react-router-dom";
 const Header = () => {
+    function slugify(text) {
+    return text
+        .toString()
+        .normalize("NFD")                   // Descompone acentos
+        .replace(/[\u0300-\u036f]/g, "")    // Elimina los acentos
+        .replace(/[^\w\s-]/g, "")           // Elimina caracteres especiales excepto guiones
+        .trim()                             // Elimina espacios al inicio y final
+        .replace(/\s+/g, '-')               // Reemplaza espacios por guiones
+        .toLowerCase();                     // Convierte a minúsculas
+    }
     const [currentIndex, setCurrentIndex] = useState(0);
     const parseDate = (dateStr) => {
         const meses = {
@@ -59,18 +69,18 @@ const Header = () => {
                 <div className="bhactnot">
                     <div className="bhc">
                     {noticiasTop10.length > 0 && (
-                    <Link to={`/noticias/${noticiasTop10[currentIndex].id}-${noticiasTop10[currentIndex].title.replace(/\s+/g, '-').toLowerCase()}`} key={currentIndex} className="fade">{noticiasTop10[currentIndex].title}</Link>
+                    <Link to={`/noticias/${noticiasTop10[currentIndex].id}-${slugify(noticiasTop10[currentIndex].title)}`} key={currentIndex} className="fade">{noticiasTop10[currentIndex].title}</Link>
                 )}
                     </div>
                 
                 </div>
             </div>
             <div className="header">
-                <div className="logo">
+                <Link to="/" className="logo">
                     <img src={Logo} alt="logo" className="logo-img"/>
-                </div>
-                <div className="name"><span>Central Sur Digital</span>
-                <span>Noticias</span></div>
+                </Link>
+                <Link to="/" className="name"><span>Central Sur Digital</span>
+                <span>Noticias</span></Link>
                 <div className="networks">
                     <ul>
                         <li><a href="https://www.youtube.com/@CentralSurDigital/videos" target="__blank"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M508.64 148.79c0-45-33.1-81.2-74-81.2C379.24 65 322.74 64 265 64h-18c-57.6 0-114.2 1-169.6 3.6C36.6 67.6 3.5 104 3.5 149 1 184.59-.06 220.19 0 255.79q-.15 53.4 3.4 106.9c0 45 33.1 81.5 73.9 81.5 58.2 2.7 117.9 3.9 178.6 3.8q91.2.3 178.6-3.8c40.9 0 74-36.5 74-81.5 2.4-35.7 3.5-71.3 3.4-107q.34-53.4-3.26-106.9zM207 353.89v-196.5l145 98.2z"/></svg></a></li>
