@@ -14,7 +14,7 @@ import BannerYoutube from "../assets/imgs/Banner-youtube.png";
 import BannerFacebook from "../assets/imgs/Banner-facebook.png";
 import BannerTiktok from "../assets/imgs/Banner-tiktok.png";
 import BannerInstagram from "../assets/imgs/Banner-instagram.png";
-
+import { Helmet } from "react-helmet";
 
 
 const Home = () => {
@@ -102,6 +102,28 @@ const Home = () => {
     
     return (
         <section className="home">
+            <Helmet>
+                <link rel="shortcut icon" href="../../public/Logo-ico.ico" type="image/x-icon"></link>
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="Central Sur Digital | Noticias del sur de Lima" />
+                <meta property="og:description" content="Información actualizada sobre política, sociedad, cultura y más. Conoce las decisiones que impactan tu región." />
+                <meta property="og:url" content="https://centralsurdigital.netlify.app/" />
+                <meta property="og:image" content="/banner.png" />
+
+                
+                <link
+                    rel="canonical"
+                    href={`https://centralsurdigital.netlify.app/`}
+                />
+                
+                
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Central Sur Digital | Noticias del sur de Lima" />
+                <meta name="twitter:description" content="Información actualizada sobre política, sociedad, cultura y más. Conoce las decisiones que impactan tu región."/>
+                <meta name="twitter:image" content={"/banner.png"} />
+
+            </Helmet>
             <div className="slider">
                 <input type="radio" name="toggle" id="btn-1" checked/>
                 <input type="radio" name="toggle" id="btn-2" checked />

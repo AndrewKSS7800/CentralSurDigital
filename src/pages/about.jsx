@@ -1,10 +1,32 @@
 import Img1 from "../assets/imgs/csd-g01.jpg"
 import Img2 from "../assets/imgs/csd-g02.jpg"
 import Img3 from "../assets/imgs/csd-g03.jpg"
-
+import { Helmet } from "react-helmet";
 const About = () =>{
     return (
         <section className="about-us">
+          <Helmet>
+                            <link rel="shortcut icon" href="../../public/Logo-ico.ico" type="image/x-icon"></link>
+                            <meta property="og:type" content="website" />
+                            <meta property="og:title" content="Central Sur Digital | Noticias del sur de Lima" />
+                            <meta property="og:description" content="Información actualizada sobre política, sociedad, cultura y más. Conoce las decisiones que impactan tu región." />
+                            <meta property="og:url" content="https://centralsurdigital.netlify.app/sobre-nosotros" />
+                            <meta property="og:image" content="/banner.png" />
+            
+                            
+                            <link
+                                rel="canonical"
+                                href={`https://centralsurdigital.netlify.app/sobre-nosotros`}
+                            />
+                            
+                            
+                            {/* Twitter Card */}
+                            <meta name="twitter:card" content="summary_large_image" />
+                            <meta name="twitter:title" content="Central Sur Digital | Noticias del sur de Lima" />
+                            <meta name="twitter:description" content="Información actualizada sobre política, sociedad, cultura y más. Conoce las decisiones que impactan tu región."/>
+                            <meta name="twitter:image" content={"/banner.png"} />
+            
+                        </Helmet>
           <div className="hero-title">
             <h2>Conócenos</h2>
             <p>Somos Central Sur Digital, conectando al sur con el mundo.</p>

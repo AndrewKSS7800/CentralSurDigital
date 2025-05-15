@@ -1,6 +1,7 @@
 import IMGCONTACT from "../assets/imgs/img-contact.jpg";
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { Helmet } from "react-helmet";
 const Contact = () => {
 
     const form = useRef();
@@ -36,6 +37,28 @@ const Contact = () => {
 
     return (
         <section className="contact">
+            <Helmet>
+                <link rel="shortcut icon" href="../../public/Logo-ico.ico" type="image/x-icon"></link>
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="Central Sur Digital | Noticias del sur de Lima" />
+                <meta property="og:description" content="Información actualizada sobre política, sociedad, cultura y más. Conoce las decisiones que impactan tu región." />
+                <meta property="og:url" content="https://centralsurdigital.netlify.app/contacto" />
+                <meta property="og:image" content="/banner.png" />
+
+                
+                <link
+                    rel="canonical"
+                    href={`https://centralsurdigital.netlify.app/contacto`}
+                />
+                
+                
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Central Sur Digital | Noticias del sur de Lima" />
+                <meta name="twitter:description" content="Información actualizada sobre política, sociedad, cultura y más. Conoce las decisiones que impactan tu región."/>
+                <meta name="twitter:image" content={"/banner.png"} />
+
+            </Helmet>
             <div className="cpar">
                 <div className="par">
                     <span>En Central Sur Digital, ¡tu voz es fundamental!</span>

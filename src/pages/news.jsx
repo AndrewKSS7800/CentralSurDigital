@@ -1,6 +1,7 @@
 import { Link} from "react-router-dom";
 import NoticiasJson from '../data/data.json'; 
-import IMG1 from "../assets/imgs/Economia.png"
+import IMG1 from "../assets/imgs/Economia.png";
+import { Helmet } from "react-helmet";
 import IMG2 from "../assets/imgs/politica.jpg"
 const News = () => {
     function slugify(text) {
@@ -88,6 +89,28 @@ const News = () => {
 
     return (
         <section className="news">
+            <Helmet>
+                            <link rel="shortcut icon" href="../../public/Logo-ico.ico" type="image/x-icon"></link>
+                            <meta property="og:type" content="website" />
+                            <meta property="og:title" content="Central Sur Digital | Noticias del sur de Lima" />
+                            <meta property="og:description" content="Información actualizada sobre política, sociedad, cultura y más. Conoce las decisiones que impactan tu región." />
+                            <meta property="og:url" content="https://centralsurdigital.netlify.app/noticias" />
+                            <meta property="og:image" content="/banner.png" />
+            
+                            
+                            <link
+                                rel="canonical"
+                                href={`https://centralsurdigital.netlify.app/noticias`}
+                            />
+                            
+                            
+                            {/* Twitter Card */}
+                            <meta name="twitter:card" content="summary_large_image" />
+                            <meta name="twitter:title" content="Central Sur Digital | Noticias del sur de Lima" />
+                            <meta name="twitter:description" content="Información actualizada sobre política, sociedad, cultura y más. Conoce las decisiones que impactan tu región."/>
+                            <meta name="twitter:image" content={"/banner.png"} />
+            
+                        </Helmet>
             <div className="news-list">
                 <div className="nlist-h">
                     <span>Lo último en Política</span>

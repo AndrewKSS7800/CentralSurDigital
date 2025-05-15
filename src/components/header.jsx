@@ -1,4 +1,5 @@
 import Navbar from "./navbar";
+import { Helmet } from "react-helmet";
 import Logo from "../assets/imgs/Logo.png";
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
