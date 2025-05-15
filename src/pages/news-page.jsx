@@ -88,9 +88,9 @@ const Newspage = () =>{
         <section className="news-page">
             <Helmet>
                 <link rel="shortcut icon" href="../../public/Logo-ico.ico" type="image/x-icon"></link>
-                <meta name="description" content={noticia.content.substring(0, 150)} />
+                <meta name="description" content={noticia.content.substring(0, 450)} />
                 <meta property="og:title" content={noticia.title} />
-                <meta property="og:description" content={noticia.content.substring(0, 150)} />
+                <meta property="og:description" content={noticia.content.substring(0, 450)} />
                 <meta property="og:image" content={`https://centralsurdigital.netlify.app/imgs/${noticia.img}.png`} />
                 <meta property="og:url" content={`https://centralsurdigital.netlify.app/noticias/${noticia.id}-${slugify(noticia.title)}`}/>
                 <link
