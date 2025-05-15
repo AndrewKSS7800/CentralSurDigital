@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://centralsurdigital.netlify.app/sitemap.xml
